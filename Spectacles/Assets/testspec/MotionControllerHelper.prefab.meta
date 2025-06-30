@@ -1,0 +1,117 @@
+- !<AssetImportMetadata/ac9ba6f8-5dec-45bc-b768-ace1d5635904>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 71a80a3c-28a6-4352-89df-5372be7cb3b3
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 71a80a3c-28a6-4352-89df-5372be7cb3b3
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    ObjectPrefab: !<own> 3cbcabc5-4706-43ea-9953-cfdc71e3798d
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptComponent/08b0e879-bb2a-4557-b62a-95ceb490c44b>
+  PrefabRemaps:
+    []
+  Name: MotionControllerHelper
+  Enabled: true
+  ScriptAsset: !<reference> 84af6140-7ca5-4d9d-90d7-12c69fc84535
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      childObject: !<reference.SceneObject> c74112db-1807-4551-a774-1fbb3c1af475
+      childCollider: !<reference.ColliderComponent> 7db8c894-0452-4a36-acbd-d5a1527fbbfe
+      treasureBound: !<reference.SceneObject> f4a2fd4b-8f37-4f61-b2b0-44e9b6f31be8
+  ScriptTypes:
+    "":
+      {}
+- !<ObjectPrefabAssetData/3cbcabc5-4706-43ea-9953-cfdc71e3798d>
+  SourceRemaps:
+    - 64378c9f-43a6-4203-93eb-d0153f8a5e9a: 08b0e879-bb2a-4557-b62a-95ceb490c44b
+    - 9494de33-0779-45d5-9140-ba71c684919f: 7db8c894-0452-4a36-acbd-d5a1527fbbfe
+    - ce49abc5-6d68-4634-9f3f-5819ce68ffb8: c74112db-1807-4551-a774-1fbb3c1af475
+    - e88d1d94-7dfb-401a-bafc-89a7832ecd9c: d1c2f71a-6788-4e30-8dbb-922511bccfec
+    - fff3d258-ed19-4a1f-823d-ab06a62ae540: 4552a15f-09d3-476a-83fd-80270548b6ec
+  SourceState: !<own> cbad456d-3321-41e8-b0b1-f6415649299f
+- !<RenderMeshVisual/4552a15f-09d3-476a-83fd-80270548b6ec>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> bd589f12-4d74-4042-bef3-ba904188847c
+  Mesh: !<reference> 6a5728bc-f4ac-4a69-818d-1dbbbb4e59b7
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<ColliderComponent/7db8c894-0452-4a36-acbd-d5a1527fbbfe>
+  PrefabRemaps:
+    []
+  Name: Physics Collider
+  Enabled: true
+  Shape: !<Box>
+    FitVisual: true
+    Size: {x: 15.000000, y: 15.000000, z: 15.000000}
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 7e2bfe7e-8dc4-4595-8c9f-74a9c185a933
+  WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false
+- !<SceneObject/c74112db-1807-4551-a774-1fbb3c1af475>
+  PrefabRemaps:
+    []
+  Name: Ray
+  Enabled: true
+  Layers: 2
+  LocalTransform:
+    position: {x: 0.000000, y: 50.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 10.000000, y: 100.000000, z: 10.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 4552a15f-09d3-476a-83fd-80270548b6ec
+    - !<own> 7db8c894-0452-4a36-acbd-d5a1527fbbfe
+- !<ObjectPrefab/cbad456d-3321-41e8-b0b1-f6415649299f>
+  PackagePath: ""
+  objects:
+    - !<own> d1c2f71a-6788-4e30-8dbb-922511bccfec
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/d1c2f71a-6788-4e30-8dbb-922511bccfec>
+  PrefabRemaps:
+    []
+  Name: MotionControllerHelper
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> c74112db-1807-4551-a774-1fbb3c1af475
+  Components:
+    - !<own> 08b0e879-bb2a-4557-b62a-95ceb490c44b

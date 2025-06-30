@@ -1,0 +1,126 @@
+- !<ObjectPrefab/8b505425-73a6-4e03-a92a-64f3f43909d2>
+  PackagePath: ""
+  objects:
+    - !<own> f184360e-8dde-4ade-b1f3-b4fb6ad565a4
+  LazyLoading: false
+  RetainAssets: true
+- !<BodyComponent/b589b00f-f29a-42b7-a2be-6eb0a6a10676>
+  PrefabRemaps:
+    []
+  Name: Physics Body
+  Enabled: true
+  Shape: !<Sphere>
+    FitVisual: true
+    Radius: 6.000000
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false
+  Dynamic: true
+  BodySetting: Density
+  BodySettingValue: 1.000000
+  Damping: 0.150000
+  AngularDamping: 0.000000
+- !<RenderMeshVisual/d03848d2-09dc-48d4-a555-35bc47422240>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 1
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> ed5c4064-d82f-4fb5-b8f5-c04aac7d4303
+  Mesh: !<reference> eec37365-a30f-45a5-94fd-c66ebe8ec992
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: true
+        roughHarden: 0.500000
+        roughCurve: 2.000000
+    IndirectDiffuse:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    AmbientOcclusion:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<BodyComponent/e1de7fe9-e737-42ee-967b-28b8d787fe8f>
+  PrefabRemaps:
+    []
+  Name: Physics Body
+  Enabled: true
+  Shape: !<Sphere>
+    FitVisual: true
+    Radius: 6.000000
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false
+  Dynamic: true
+  BodySetting: Density
+  BodySettingValue: 1.000000
+  Damping: 0.000000
+  AngularDamping: 0.000000
+- !<SceneObject/ea2aec5a-eb42-47c9-bdee-6625395282a7>
+  PrefabRemaps:
+    []
+  Name: hat
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.034360, y: 18.085104, z: 0.171820}
+    rotation: {x: -7.912527, y: 0.000000, z: 0.000000}
+    scale: {x: 0.933776, y: 0.869694, z: 0.915467}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> d03848d2-09dc-48d4-a555-35bc47422240
+    - !<own> e1de7fe9-e737-42ee-967b-28b8d787fe8f
+- !<SceneObject/f184360e-8dde-4ade-b1f3-b4fb6ad565a4>
+  PrefabRemaps:
+    []
+  Name: YellowHat
+  Enabled: true
+  Layers: 8
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> ea2aec5a-eb42-47c9-bdee-6625395282a7
+  Components:
+    - !<own> b589b00f-f29a-42b7-a2be-6eb0a6a10676

@@ -1,0 +1,120 @@
+- !<ObjectPrefab/7cc996e4-e93c-45a4-b08a-f28a878a0950>
+  PackagePath: ""
+  objects:
+    - !<own> c16d36d3-45ec-4f3b-b54a-34eacbcfa3c9
+  LazyLoading: false
+  RetainAssets: true
+- !<ScriptComponent/6ff6f18e-37f4-4559-83fd-5076f423702c>
+  PrefabRemaps:
+    []
+  Name: TweenAlpha
+  Enabled: true
+  ScriptAsset: !<reference> 792bae37-2c94-4550-95be-7a48180d929f
+  ScriptInputsDefault:
+    playAutomatically: true
+    loopType: true
+    movementType: true
+    from: true
+    to: true
+    offset: true
+    additive: true
+    recursive: true
+    time: true
+    easingFunction: true
+    easingType: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      sceneObjectReference: !<reference.SceneObject> c16d36d3-45ec-4f3b-b54a-34eacbcfa3c9
+      tweenName: sparklesFade
+      playAutomatically: true
+      loopType: 0
+      movementType: 0
+      start: !<float> 1.000000
+      end: !<float> 0.000000
+      from: !<float> 0.000000
+      to: !<float> 0.000000
+      offset: !<float> 0.000000
+      additive: false
+      recursive: false
+      time: !<float> 1.000000
+      delay: !<float> 5.000000
+      easingFunction: Quadratic
+      easingType: Out
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/7249546b-aee3-4291-9f2d-8109b09f40a2>
+  PrefabRemaps:
+    []
+  Name: Simple GPU Particles Controller
+  Enabled: true
+  ScriptAsset: !<reference> 7a6dbb6c-8c91-480f-b18f-229d929f4d6d
+  ScriptInputsDefault:
+    advanced: true
+    minParticles: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      particles: !<reference.RenderMeshVisual[]>
+        - !<reference> e37e5ec4-1597-4ae3-8212-2d7fd02953cd
+      particlesIntensity: 0.160000
+      advanced: false
+      minParticles: 0
+      maxParticles: 2000
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/c16d36d3-45ec-4f3b-b54a-34eacbcfa3c9>
+  PrefabRemaps:
+    []
+  Name: Sparkles
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> daf742e7-429e-454f-bbcf-6b81c13555cf
+  Components:
+    - !<own> 7249546b-aee3-4291-9f2d-8109b09f40a2
+    - !<own> 6ff6f18e-37f4-4559-83fd-5076f423702c
+- !<SceneObject/daf742e7-429e-454f-bbcf-6b81c13555cf>
+  PrefabRemaps:
+    []
+  Name: Particle_Preset_Sparkles
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> e37e5ec4-1597-4ae3-8212-2d7fd02953cd
+- !<RenderMeshVisual/e37e5ec4-1597-4ae3-8212-2d7fd02953cd>
+  PrefabRemaps:
+    []
+  Name: Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: Caster
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 0.000000
+  Materials:
+    - !<reference> d67c97c6-46a0-4d87-9229-8263377271e4
+  Mesh: !<reference> 5dfab5df-e9f1-4806-9b4b-7efdebef0cd1
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}

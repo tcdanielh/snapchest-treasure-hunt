@@ -1,0 +1,51 @@
+- !<AssetImportMetadata/7b35152a-97bb-437a-a16b-571177002f0f>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 5566abcb-042e-47b2-adee-e453749ab1ca
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 5566abcb-042e-47b2-adee-e453749ab1ca
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> f403ec79-37e8-4f5b-a7ef-06fc6b957dcf
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/f403ec79-37e8-4f5b-a7ef-06fc6b957dcf>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 235e658b-d44c-4e31-a966-ed5bec1b8d54
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    audio: false
+    chestPrefab: false
+    sparklesPrefab: false
+    trailEffectPrefab: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - sparklesPrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      trailEffectPrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      chestPrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      audio: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input Asset.ObjectPrefab sparklesPrefab
+    - // @input Asset.ObjectPrefab trailEffectPrefab
+    - // @input Asset.ObjectPrefab chestPrefab
+    - // @input Component.AudioComponent audio

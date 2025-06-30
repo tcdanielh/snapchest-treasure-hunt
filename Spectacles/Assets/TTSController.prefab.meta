@@ -1,0 +1,80 @@
+- !<AssetImportMetadata/23ceba51-873e-4db2-b101-10fbd0782325>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 34e11c6c-a7df-4acf-919f-ae40a93f916a
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 34e11c6c-a7df-4acf-919f-ae40a93f916a
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    ObjectPrefab: !<own> a8fc083f-5805-47aa-91c7-e7c675934e64
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<AudioComponent/5e328cec-0b12-4ab0-9a4e-b5dd01f600ba>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 00000000-0000-0000-0000-000000000000
+  EnableAutoplayLoop: true
+  Volume: 1.000000
+  EnableMixToSnap: true
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
+- !<ScriptComponent/635556bd-adf0-405c-96bb-39fd7bd2afaf>
+  PrefabRemaps:
+    []
+  Name: TestVoice
+  Enabled: true
+  ScriptAsset: !<reference> 528ba080-3336-4045-925d-93f1d182627a
+  ScriptInputsDefault:
+    vmlModule: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      vmlModule: !<reference.VoiceMLModule> fb17a560-2d1d-427c-afea-02df4bccff6d
+      tts: !<reference.TextToSpeechModule> 92f556f7-6a10-40d9-9d4b-721855daf96b
+      audio: !<reference.AudioComponent> 5e328cec-0b12-4ab0-9a4e-b5dd01f600ba
+      mch: !<reference.ScriptComponent> 94bf6c5a-964a-48e0-96f6-db40e94e006c
+  ScriptTypes:
+    "":
+      {}
+- !<ObjectPrefab/6587c1ca-69f4-448e-8604-ceec26de8255>
+  PackagePath: ""
+  objects:
+    - !<own> d98bb65d-144c-4a70-8b4c-18304d38b264
+  LazyLoading: false
+  RetainAssets: true
+- !<ObjectPrefabAssetData/a8fc083f-5805-47aa-91c7-e7c675934e64>
+  SourceRemaps:
+    - 4dcbaa2e-7546-4b7f-81f5-a1da1dcbeed2: d98bb65d-144c-4a70-8b4c-18304d38b264
+    - 649bd9eb-b807-491a-b8dd-a0540f1aec0e: 5e328cec-0b12-4ab0-9a4e-b5dd01f600ba
+    - b9f669ae-69c6-4976-a860-478e240de317: 635556bd-adf0-405c-96bb-39fd7bd2afaf
+  SourceState: !<own> 6587c1ca-69f4-448e-8604-ceec26de8255
+- !<SceneObject/d98bb65d-144c-4a70-8b4c-18304d38b264>
+  PrefabRemaps:
+    []
+  Name: TTSController
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 5e328cec-0b12-4ab0-9a4e-b5dd01f600ba
+    - !<own> 635556bd-adf0-405c-96bb-39fd7bd2afaf

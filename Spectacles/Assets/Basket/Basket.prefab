@@ -1,0 +1,49 @@
+- !<ObjectPrefab/e29e8e73-1f3c-4059-bcf5-a5a151955473>
+  PackagePath: ""
+  objects:
+    - !<own> 6a56cae0-67d2-43f9-a327-81c90843898a
+  LazyLoading: false
+  RetainAssets: true
+- !<ScriptComponent/3ba25df3-1a85-473b-96ee-b6a6a79796ea>
+  PrefabRemaps:
+    []
+  Name: Generative 3D Component
+  Enabled: true
+  ScriptAsset: !<reference> 94939eba-2c50-44ad-859b-c842f2467c8f
+  ScriptInputsDefault:
+    mesh: true
+    texture: true
+    material: true
+    renderOrder: true
+    useShadow: true
+    shadowDensity: true
+    whiteTex: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      mesh: !<reference.RenderMesh> 339da4c4-a6f4-49c5-af54-1193f3c41637
+      texture: !<reference.Texture> e8d727eb-3b18-49ff-b4c3-98ba827c13ef
+      material: !<reference.Material> dd59a97a-a71c-414a-9c29-d3c41fcedc09
+      renderOrder: 0
+      useShadow: true
+      shadowDensity: !<float> 1.000000
+      whiteTex: !<reference.Texture> 8197b349-2101-47c2-bc6b-dee6c917dcc5
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/6a56cae0-67d2-43f9-a327-81c90843898a>
+  PrefabRemaps:
+    []
+  Name: Generative 3D Asset
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: -200.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 100.000000, y: 100.000000, z: 100.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 3ba25df3-1a85-473b-96ee-b6a6a79796ea

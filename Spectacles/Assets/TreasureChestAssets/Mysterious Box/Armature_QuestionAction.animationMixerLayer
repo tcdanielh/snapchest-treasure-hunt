@@ -1,0 +1,17 @@
+- !<AnimationMixerLayer/fb2293c8-7911-42df-8ede-bd4a6ed7f2f1>
+  PackagePath: ""
+  Layer: Armature_QuestionAction
+  Name: Armature_QuestionAction
+  Weight: 1.000000
+  SpeedRatio: 1.000000
+  From: 0.000000
+  To: 6.250000
+  Offset: 0.000000
+  FPS: 30.000000
+  NumCycles: 1
+  Reversed: false
+  Disabled: false
+  PostInfinity: Cycle
+  BlendMode: Default
+  ScaleMode: Multiply
+  RangeType: TimeInSeconds

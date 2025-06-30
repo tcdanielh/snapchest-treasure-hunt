@@ -1,0 +1,70 @@
+- !<AssetImportMetadata/3e14e819-d805-40b3-abbc-2466f645f111>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> b4f38e79-0507-4b0e-b403-90b89a4da4db
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> b4f38e79-0507-4b0e-b403-90b89a4da4db
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    ObjectPrefab: !<own> 7bd16ec0-79a7-4403-9416-af6acd212c9e
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefabAssetData/7bd16ec0-79a7-4403-9416-af6acd212c9e>
+  SourceRemaps:
+    - 8b6510d4-2ead-46da-9b89-0caca627763d: d5053082-68ba-416b-8789-31a8f6c12cb0
+    - ceb20255-a4ff-4fcf-94bd-0fc3cf57c7ca: b7fc1689-8014-422e-b503-e0dd6e392c0a
+  SourceState: !<own> f3c43183-7a1c-4bb4-a461-c8d15ec25ca2
+- !<ScriptComponent/b7fc1689-8014-422e-b503-e0dd6e392c0a>
+  PrefabRemaps:
+    []
+  Name: Generative 3D Component
+  Enabled: true
+  ScriptAsset: !<reference> 6b31990e-f313-49e3-b1a0-04b9953a3478
+  ScriptInputsDefault:
+    mesh: true
+    texture: true
+    material: true
+    renderOrder: true
+    useShadow: true
+    shadowDensity: true
+    whiteTex: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      mesh: !<reference.RenderMesh> 260c8e4f-5b90-410c-aa31-df1134062d9b
+      texture: !<reference.Texture> cf70b32c-1fa6-4e96-aac1-4f3446e35a18
+      material: !<reference.Material> afc5eef7-cf93-4137-8408-07780f955b92
+      renderOrder: 0
+      useShadow: true
+      shadowDensity: !<float> 1.000000
+      whiteTex: !<reference.Texture> 23221951-17bc-429c-9abf-31170ea86194
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/d5053082-68ba-416b-8789-31a8f6c12cb0>
+  PrefabRemaps:
+    []
+  Name: Generative 3D Asset
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: -200.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 100.000000, y: 100.000000, z: 100.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> b7fc1689-8014-422e-b503-e0dd6e392c0a
+- !<ObjectPrefab/f3c43183-7a1c-4bb4-a461-c8d15ec25ca2>
+  PackagePath: ""
+  objects:
+    - !<own> d5053082-68ba-416b-8789-31a8f6c12cb0
+  LazyLoading: false
+  RetainAssets: true

@@ -1,0 +1,432 @@
+- !<AssetImportMetadata/f42e3290-23db-41f6-a5d1-25ff5e0bef2d>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> b2c987a0-66f8-4f07-aad5-66b69597db11
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> b2c987a0-66f8-4f07-aad5-66b69597db11
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    ObjectPrefab: !<own> 02ea8870-41ea-48b1-b4a6-19169db0d8d0
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefabAssetData/02ea8870-41ea-48b1-b4a6-19169db0d8d0>
+  SourceRemaps:
+    - 08c4849b-7de9-4874-8162-85d92a20059c: 83d112fc-d87b-4c52-adb9-6bb0c2f8cd06
+    - 1d075281-2120-4007-90fa-9503fd3df7c7: 3dac5e01-f8ff-466b-bec8-d932d8c9f3b2
+    - 275ac46d-7fba-4838-ba38-0b3c507ebfdd: ac49d9c0-056d-4ed1-8850-1918580c8a4c
+    - 2d618682-788f-4b32-a8a5-c1a78b7d522f: 828722c1-c1aa-4b4e-afe4-86d99589b293
+    - 2db1cfa1-d51a-4000-ad2e-67248e767b63: 985e67b0-aa20-450d-b8a8-5782673bcffc
+    - 34951882-ba7c-4eaa-abaa-87ad872f302a: d71509f9-07bb-4356-920e-218ac2290ab4
+    - 39c57e8f-854a-4a47-bc87-6e08c9608ff5: ff2e1e20-00b4-4e74-ab07-e1090b8bab43
+    - 5a03138a-48ab-40c8-b7ab-227971af7cd3: 52d88d94-0a86-4195-b58a-45125ceaae1a
+    - 6a80ca70-cdf7-4686-92bc-5562a2579755: a4ae8dbe-1f2f-490d-b2af-034a6360be9d
+    - 6e77b9fe-1369-4453-8264-36cad8b68384: 4ef6e38a-fdaf-47c4-b764-43be2edd778a
+    - 6ef8b846-314e-4be7-9f33-41e94d92bd06: 1852d3bc-bef9-4189-bc33-2883c449df92
+    - 8284ce2d-322a-4ea0-bd2d-9bbd415ddcfb: 2bb894d9-46dd-46da-a1f2-6df371ab4ba4
+    - 878c1486-6880-46e3-a629-5bba0e43fd57: ea3b2740-1a17-4b59-a4ed-9c09bb5bdcc7
+    - a4e6f873-9929-4954-8e7e-03927215e2b5: e41bb692-0353-44ef-891d-555701595f95
+    - a719e03f-6aae-47da-8b7e-bf382b635790: 10a6aed7-e08b-44c4-813c-8f2965b6db2f
+    - a89f958f-eff8-4b84-8aa8-8406e886bdf1: a0d03ee9-9867-4dd8-9799-120571650643
+    - be255d35-ead4-4010-a6a8-9a917a43df1b: b7d45f79-b859-4f3c-b59f-ac9fc69fb62a
+    - c107e3dd-d99c-4098-8fe4-24d92b32088c: cbda8277-2ec3-4d6c-a946-7aeb371bb7e5
+    - c5452846-58c8-4858-8a6c-f5565c425718: 18cad27e-79cb-47b5-8352-e956a133d44d
+    - c89a2976-5180-4c9f-b6cc-2cb08a7bd33d: 82b3e1ba-1a63-4bab-8d3e-f851d29f77e9
+    - e37dbcc3-4d8f-483e-bbdf-e930c2cfc21b: 95f548b9-43ec-416a-981a-c8fff11b85f1
+    - e961f6f2-9c08-49e2-9150-ba89ac013092: 2d2e157a-85ac-488c-89d7-e4c5c7315fe3
+    - f5e3d679-d7a3-4ee0-8660-8ef56c503c73: 8fbb1735-30b3-48e8-b206-30c7e2f7747b
+    - f7b96bc6-01dd-4f94-950a-57e0c902f27f: 1880669b-1339-4193-8d35-06cce5f03472
+    - f88617d2-679b-4956-8e98-ec26478545f6: 5a1c7afb-e434-4265-8706-295cdef88078
+    - f9ca5d5b-7da7-4932-a2b0-2e31281bf38e: 0deacd05-6ecb-4ef7-8888-550afd3125c2
+  SourceState: !<own> 63d138c6-a0bc-4e1e-b348-cc2a4f923a26
+- !<SceneObject/0deacd05-6ecb-4ef7-8888-550afd3125c2>
+  PrefabRemaps:
+    []
+  Name: Armature_Box_Lid
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.030000, z: -0.020000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> a0d03ee9-9867-4dd8-9799-120571650643
+    - !<own> cbda8277-2ec3-4d6c-a946-7aeb371bb7e5
+  Components:
+    []
+- !<Animation/10a6aed7-e08b-44c4-813c-8f2965b6db2f>
+  PrefabRemaps:
+    []
+  Name: component_3
+  Enabled: true
+  AnimationLayers:
+    ArmatureAction.001: !<reference> 83f2700d-bd9b-4f1e-aaa9-f72bce81811d
+- !<AnimationMixer/1852d3bc-bef9-4189-bc33-2883c449df92>
+  PrefabRemaps:
+    []
+  Name: component_10
+  Enabled: true
+  Layers:
+    - !<reference> 68e9ade6-d888-45b0-b269-33921d68da8d
+    - !<reference> 290f367c-5072-4326-96c0-37c782631d4e
+    - !<reference> fb2293c8-7911-42df-8ede-bd4a6ed7f2f1
+  Autoplay: true
+  Version: FBX
+- !<SceneObject/1880669b-1339-4193-8d35-06cce5f03472>
+  PrefabRemaps:
+    []
+  Name: Scene
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> ff2e1e20-00b4-4e74-ab07-e1090b8bab43
+    - !<own> 8fbb1735-30b3-48e8-b206-30c7e2f7747b
+    - !<own> 0deacd05-6ecb-4ef7-8888-550afd3125c2
+    - !<own> d71509f9-07bb-4356-920e-218ac2290ab4
+    - !<own> 985e67b0-aa20-450d-b8a8-5782673bcffc
+  Components:
+    - !<own> 1852d3bc-bef9-4189-bc33-2883c449df92
+    - !<own> 2bb894d9-46dd-46da-a1f2-6df371ab4ba4
+- !<Animation/18cad27e-79cb-47b5-8352-e956a133d44d>
+  PrefabRemaps:
+    []
+  Name: component_9
+  Enabled: true
+  AnimationLayers:
+    Armature_ExclamationAction: !<reference> b5f97a46-5c95-4280-8d48-5e01e3d66fcd
+- !<Skin/2bb894d9-46dd-46da-a1f2-6df371ab4ba4>
+  PrefabRemaps:
+    []
+  Name: component_11
+  Enabled: true
+  skinBones:
+    Armature_Box_Lid: !<reference> 0deacd05-6ecb-4ef7-8888-550afd3125c2
+    Armature_Exclamation: !<reference> 985e67b0-aa20-450d-b8a8-5782673bcffc
+    Armature_Question: !<reference> d71509f9-07bb-4356-920e-218ac2290ab4
+    Bone_Box_Lid: !<reference> cbda8277-2ec3-4d6c-a946-7aeb371bb7e5
+    Bone_Exclamation: !<reference> 3dac5e01-f8ff-466b-bec8-d932d8c9f3b2
+    Bone_Question: !<reference> 4ef6e38a-fdaf-47c4-b764-43be2edd778a
+    Box: !<reference> 8fbb1735-30b3-48e8-b206-30c7e2f7747b
+    Box_Lid: !<reference> a0d03ee9-9867-4dd8-9799-120571650643
+    Exclamation: !<reference> 52d88d94-0a86-4195-b58a-45125ceaae1a
+    InnerBox: !<reference> ff2e1e20-00b4-4e74-ab07-e1090b8bab43
+    Question: !<reference> a4ae8dbe-1f2f-490d-b2af-034a6360be9d
+- !<Animation/2d2e157a-85ac-488c-89d7-e4c5c7315fe3>
+  PrefabRemaps:
+    []
+  Name: component_7
+  Enabled: true
+  AnimationLayers:
+    Armature_ExclamationAction: !<reference> a40fe092-ba5c-410d-aaa3-0a74d56bcca1
+- !<SceneObject/3dac5e01-f8ff-466b-bec8-d932d8c9f3b2>
+  PrefabRemaps:
+    []
+  Name: Bone_Exclamation
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 18cad27e-79cb-47b5-8352-e956a133d44d
+- !<SceneObject/4ef6e38a-fdaf-47c4-b764-43be2edd778a>
+  PrefabRemaps:
+    []
+  Name: Bone_Question
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 828722c1-c1aa-4b4e-afe4-86d99589b293
+- !<SceneObject/52d88d94-0a86-4195-b58a-45125ceaae1a>
+  PrefabRemaps:
+    []
+  Name: Exclamation
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 83d112fc-d87b-4c52-adb9-6bb0c2f8cd06
+- !<RenderMeshVisual/5a1c7afb-e434-4265-8706-295cdef88078>
+  PrefabRemaps:
+    []
+  Name: InnerBox
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 5e779e5a-fcbd-40a7-a239-73350f0959ea
+  Mesh: !<reference> 267687d5-7587-4dc3-bdc9-16d686668f69
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<ObjectPrefab/63d138c6-a0bc-4e1e-b348-cc2a4f923a26>
+  PackagePath: ""
+  objects:
+    - !<own> ac49d9c0-056d-4ed1-8850-1918580c8a4c
+  LazyLoading: false
+  RetainAssets: true
+- !<Animation/828722c1-c1aa-4b4e-afe4-86d99589b293>
+  PrefabRemaps:
+    []
+  Name: component_6
+  Enabled: true
+  AnimationLayers:
+    Armature_QuestionAction: !<reference> 7d255245-da48-4466-bb52-76084c96f5c7
+- !<RenderMeshVisual/82b3e1ba-1a63-4bab-8d3e-f851d29f77e9>
+  PrefabRemaps:
+    []
+  Name: Box_Lid
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 412b7f56-16d5-43f6-8c63-eccd4ffecfba
+  Mesh: !<reference> 7abc00c1-6ed9-486d-a365-8e43622243b5
+  Skin: !<reference> 2bb894d9-46dd-46da-a1f2-6df371ab4ba4
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/83d112fc-d87b-4c52-adb9-6bb0c2f8cd06>
+  PrefabRemaps:
+    []
+  Name: Exclamation
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> ff6d5ada-83d4-405b-a389-bdb21aa4ae71
+  Mesh: !<reference> 99ae520a-8898-4bec-83ca-5aff8df45159
+  Skin: !<reference> 2bb894d9-46dd-46da-a1f2-6df371ab4ba4
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/8fbb1735-30b3-48e8-b206-30c7e2f7747b>
+  PrefabRemaps:
+    []
+  Name: Box
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> ea3b2740-1a17-4b59-a4ed-9c09bb5bdcc7
+- !<RenderMeshVisual/95f548b9-43ec-416a-981a-c8fff11b85f1>
+  PrefabRemaps:
+    []
+  Name: Question
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 0857bb35-10cc-4147-8703-01d82aab2dc5
+  Mesh: !<reference> 5800492a-ea38-4a14-9a7d-70575c95465b
+  Skin: !<reference> 2bb894d9-46dd-46da-a1f2-6df371ab4ba4
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/985e67b0-aa20-450d-b8a8-5782673bcffc>
+  PrefabRemaps:
+    []
+  Name: Armature_Exclamation
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.015500, y: 0.006000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 52d88d94-0a86-4195-b58a-45125ceaae1a
+    - !<own> 3dac5e01-f8ff-466b-bec8-d932d8c9f3b2
+  Components:
+    - !<own> 2d2e157a-85ac-488c-89d7-e4c5c7315fe3
+- !<SceneObject/a0d03ee9-9867-4dd8-9799-120571650643>
+  PrefabRemaps:
+    []
+  Name: Box_Lid
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 82b3e1ba-1a63-4bab-8d3e-f851d29f77e9
+- !<SceneObject/a4ae8dbe-1f2f-490d-b2af-034a6360be9d>
+  PrefabRemaps:
+    []
+  Name: Question
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 95f548b9-43ec-416a-981a-c8fff11b85f1
+- !<SceneObject/ac49d9c0-056d-4ed1-8850-1918580c8a4c>
+  PrefabRemaps:
+    []
+  Name: Chest
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 100.000000, y: 100.000000, z: 100.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> e41bb692-0353-44ef-891d-555701595f95
+  Components:
+    []
+- !<Animation/b7d45f79-b859-4f3c-b59f-ac9fc69fb62a>
+  PrefabRemaps:
+    []
+  Name: component_4
+  Enabled: true
+  AnimationLayers:
+    Armature_QuestionAction: !<reference> 1260cf55-67e8-4f23-bdc4-6bfd3d1ac6da
+- !<SceneObject/cbda8277-2ec3-4d6c-a946-7aeb371bb7e5>
+  PrefabRemaps:
+    []
+  Name: Bone_Box_Lid
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 90.000000, y: -0.000000, z: -0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 10a6aed7-e08b-44c4-813c-8f2965b6db2f
+- !<SceneObject/d71509f9-07bb-4356-920e-218ac2290ab4>
+  PrefabRemaps:
+    []
+  Name: Armature_Question
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.008500, y: 0.006000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> a4ae8dbe-1f2f-490d-b2af-034a6360be9d
+    - !<own> 4ef6e38a-fdaf-47c4-b764-43be2edd778a
+  Components:
+    - !<own> b7d45f79-b859-4f3c-b59f-ac9fc69fb62a
+- !<SceneObject/e41bb692-0353-44ef-891d-555701595f95>
+  PrefabRemaps:
+    []
+  Name: Scenes
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 1880669b-1339-4193-8d35-06cce5f03472
+  Components:
+    []
+- !<RenderMeshVisual/ea3b2740-1a17-4b59-a4ed-9c09bb5bdcc7>
+  PrefabRemaps:
+    []
+  Name: Box
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> ce991b75-b5f2-4bf5-8feb-788c1a0b85c8
+  Mesh: !<reference> 4fea8abc-ea37-4397-9960-e5d9a2b0e2fb
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/ff2e1e20-00b4-4e74-ab07-e1090b8bab43>
+  PrefabRemaps:
+    []
+  Name: InnerBox
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 5a1c7afb-e434-4265-8706-295cdef88078

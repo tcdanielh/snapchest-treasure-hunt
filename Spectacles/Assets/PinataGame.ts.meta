@@ -1,0 +1,45 @@
+- !<AssetImportMetadata/4a0e00ea-cba5-4fb8-8be3-b7787f5d12d6>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 6a30103f-c7fc-41b9-9c7d-aae7b966c587
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 6a30103f-c7fc-41b9-9c7d-aae7b966c587
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> c21a0c65-ede5-4540-a666-40da4c45aae6
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/c21a0c65-ede5-4540-a666-40da4c45aae6>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 554ea61b-d5b7-427e-8411-eabbc841eb7b
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    childCollider: false
+    childObject: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - childObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      childCollider: !<reference.ColliderComponent> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input SceneObject childObject
+    - // @input Component.ColliderComponent childCollider

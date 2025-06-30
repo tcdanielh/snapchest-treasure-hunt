@@ -1,0 +1,54 @@
+- !<AssetImportMetadata/df72c2be-d26d-4431-835b-0a37eb775add>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 36d7e47c-ae19-479e-adf0-d799b2a943b4
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 36d7e47c-ae19-479e-adf0-d799b2a943b4
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 8cb95019-6d71-49ff-9a28-cecfb2e17f9e
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/8cb95019-6d71-49ff-9a28-cecfb2e17f9e>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 6e6e3b91-6f90-48cb-baf2-2a4a52a34ac5
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    cameraObject: false
+    filterEnabled: false
+    found: false
+    targetObject: false
+    treasureBound: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - cameraObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      targetObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      filterEnabled: false
+      treasureBound: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      found: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input SceneObject cameraObject
+    - // @input SceneObject targetObject
+    - // @input bool filterEnabled
+    - // @input SceneObject treasureBound
+    - // @input bool found

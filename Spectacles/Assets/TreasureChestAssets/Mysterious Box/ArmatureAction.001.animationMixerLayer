@@ -1,0 +1,17 @@
+- !<AnimationMixerLayer/68e9ade6-d888-45b0-b269-33921d68da8d>
+  PackagePath: ""
+  Layer: ArmatureAction.001
+  Name: ArmatureAction.001
+  Weight: 1.000000
+  SpeedRatio: 1.000000
+  From: 0.000000
+  To: 6.250000
+  Offset: 0.000000
+  FPS: 30.000000
+  NumCycles: 1
+  Reversed: false
+  Disabled: false
+  PostInfinity: Cycle
+  BlendMode: Default
+  ScaleMode: Multiply
+  RangeType: TimeInSeconds

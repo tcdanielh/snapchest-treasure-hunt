@@ -1,0 +1,3421 @@
+- !<AssetImportMetadata/5416e678-6a82-4b3c-8e64-5e7869af10e4>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 94506310-e2d4-42b6-b532-7e576026d4be
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 94506310-e2d4-42b6-b532-7e576026d4be
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    ObjectPrefab: !<own> 65dbdc25-46ec-4b89-8f0a-94ef6de2ee5d
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/00a24277-68d5-4c24-91ee-b1bc0343268f>
+  PrefabRemaps:
+    []
+  Name: bind_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> b3d5f87b-d603-42df-8382-9c68ec0289b7
+  Components:
+    []
+- !<SceneObject/01a4c3fb-8065-4cc9-b421-779e4afb3918>
+  PrefabRemaps:
+    []
+  Name: C_base_bind_JNT
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/028ecec8-7204-4223-8d6f-45cd2ac05e53>
+  PrefabRemaps:
+    []
+  Name: C_kayak_GEO
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 9a6893b2-8236-4422-9ea8-7bed81325fa4
+- !<RenderMeshVisual/029ebd51-88b5-4163-b1ce-302b9df2fae5>
+  PrefabRemaps:
+    []
+  Name: component_2
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> a7fa780f-fda5-4c58-9b5a-50a4f10b0aef
+  Mesh: !<reference> e8e38c52-ff3b-46cc-8720-0a8a53f0c62e
+  Skin: !<reference> 07d53487-4965-48a7-87b0-163fbb6f94f3
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<Skin/02b90a1a-ddb1-4db5-a498-1a5744382157>
+  PrefabRemaps:
+    []
+  Name: component_2
+  Enabled: true
+  skinBones:
+    C_base_bind_JNT: !<reference> 50064ca9-233d-44e0-84f4-b22beffe9f75
+    C_baseball_pitcher_mound_GEO: !<reference> 15046f38-d555-448a-9a71-0951ded0fc67
+    PROP: !<reference> 0e814b01-6716-4b1a-aa21-ace52f57d16c
+    baseball_pitcher_mound_GRP: !<reference> 4381a2a1-5331-43c2-bc5a-9b4c3a9e1106
+    baseball_pitcher_mound_bindrig: !<reference> 6be14edc-17a5-44ac-9bfa-d5a521649eb5
+    bind_GRP: !<reference> dddbf116-1709-4bcd-a406-5a958d46ebe6
+    geo_GRP: !<reference> 6f141fb7-f76d-4757-9d3f-8632290ec5d5
+    rig_GRP: !<reference> 20a0d081-1609-4d11-919d-538edb0f3286
+- !<SceneObject/04c82659-c835-4afa-9cf7-02ca7758dc67>
+  PrefabRemaps:
+    []
+  Name: C_hockey_puck_GEO
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 91a43a92-4265-4b3b-825d-8adf6971c7f0
+- !<SceneObject/04c8aa3e-5412-4ea4-bf50-4d3877078f42>
+  PrefabRemaps:
+    []
+  Name: PROP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 3ad91cb7-584f-47e3-aa1b-f525376f8f55
+    - !<own> ca8bd71c-5ba4-4d55-9633-f105459c6b41
+  Components:
+    []
+- !<Skin/04e6f7d3-03ff-4a67-889d-4f7757e2442e>
+  PrefabRemaps:
+    []
+  Name: component_2
+  Enabled: true
+  skinBones:
+    C_boomerang_GEO: !<reference> 1a087d44-024a-4ad7-b3de-684e2a193a07
+    C_prop0001_bind_JNT: !<reference> 18b41cab-7e5e-49f6-98ec-a669843e5bc7
+    PROP: !<reference> 92fb72a9-2f89-40af-8faa-173afa90035e
+    bind_GRP: !<reference> 5c51e10b-1fc8-4f0e-82a2-15bb3b323aaf
+    boomerang_GRP: !<reference> 9950d8e6-1208-4a34-92d9-0e84c4af9c7a
+    boomerang_bindrig: !<reference> c34a8bd9-92b2-48a4-86b2-c191243f769f
+    geo_GRP: !<reference> 63ea59b5-dcc6-43d3-8af4-b634874eb638
+    rig_GRP: !<reference> 5a9593b7-75db-4ec4-a2ca-98155c8a4638
+- !<SceneObject/057a0dab-c163-48d8-806a-a00272e287de>
+  PrefabRemaps:
+    []
+  Name: geo_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 145b5e2b-bc32-42a3-8852-41092c554f3a
+  Components:
+    []
+- !<Skin/07d53487-4965-48a7-87b0-163fbb6f94f3>
+  PrefabRemaps:
+    []
+  Name: component_4
+  Enabled: true
+  skinBones:
+    L_karateBoardSub_bind_JNT: !<reference> 62cc6029-09cb-4382-8613-7e0f42814957
+    L_karate_board: !<reference> 117a09a9-e769-4453-8743-50ee7bb36a55
+    PROP: !<reference> 92244b0f-8cb5-40f6-a441-a147d87ce6a0
+    R_karateBoardSub_bind_JNT: !<reference> a7a56245-e20b-4327-93e7-4574369b90e1
+    R_karate_board: !<reference> 1137cbbf-afd9-455d-8b98-7db6acfaf35f
+    bind_GRP: !<reference> 4afe629b-2f92-4757-bf3a-5f97624159ba
+    geo_GRP: !<reference> 09c47d3a-f4e2-4189-9e79-6683853ec7ee
+    karate_board_GRP: !<reference> 5056d38f-b977-4c46-a93e-e201b4708a4a
+    karate_board_bindrig: !<reference> 7ffd3c53-a28b-435b-85db-ff15552f626a
+    rig_GRP: !<reference> f70a974f-3912-40da-86dd-176bb3fd7719
+- !<SceneObject/09c47d3a-f4e2-4189-9e79-6683853ec7ee>
+  PrefabRemaps:
+    []
+  Name: geo_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 5056d38f-b977-4c46-a93e-e201b4708a4a
+  Components:
+    []
+- !<SceneObject/0e1f1883-bef9-4d8a-a8f3-64de435d8a52>
+  PrefabRemaps:
+    []
+  Name: PROP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.223799, y: 0.223799, z: 0.223799}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 8343231b-7058-4bc9-afaf-34ea7221fe14
+    - !<own> c1258c11-1003-4527-9d69-0c159c9277c0
+  Components:
+    []
+- !<SceneObject/0e814b01-6716-4b1a-aa21-ace52f57d16c>
+  PrefabRemaps:
+    []
+  Name: PROP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 6f141fb7-f76d-4757-9d3f-8632290ec5d5
+    - !<own> 20a0d081-1609-4d11-919d-538edb0f3286
+  Components:
+    []
+- !<SceneObject/0eae21b9-e17e-447f-aadc-efb046ca5ff3>
+  PrefabRemaps:
+    []
+  Name: PROP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> f3177fcd-337b-41ec-b9eb-1a021831b6e3
+    - !<own> b5482664-d392-422a-a5f2-c129875bd2d7
+    - !<own> d6ac3481-aab8-410e-9131-3580ed9b65b8
+  Components:
+    []
+- !<SceneObject/0fad3329-67f8-4404-a2bd-ef5a36fa76b0>
+  PrefabRemaps:
+    []
+  Name: C_kayakPaddle_GEO
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 98613e46-4d58-4695-b770-41fd698e854a
+- !<Skin/10376896-7a1e-4895-9f30-216577150bc9>
+  PrefabRemaps:
+    []
+  Name: component_2
+  Enabled: true
+  skinBones:
+    C_base_bind_JNT: !<reference> b3d5f87b-d603-42df-8382-9c68ec0289b7
+    C_karate_board_pile_GEO: !<reference> 38d8ca17-1bb2-46fe-ad11-4c8e1e489223
+    PROP: !<reference> 10864f41-d46b-429e-8d7b-3518fb961605
+    bind_GRP: !<reference> 00a24277-68d5-4c24-91ee-b1bc0343268f
+    geo_GRP: !<reference> 1c702128-383b-4b08-b7c5-a7bfc115be78
+    karate_board_pile_GRP: !<reference> d2d43c99-267b-4399-b260-c85b4a69da8b
+    karate_board_pile_bindrig: !<reference> 37b0a211-6601-4c6d-a793-b113e7b4d3ca
+    rig_GRP: !<reference> 5d888504-884c-48db-948e-ea11ee31223c
+- !<SceneObject/10864f41-d46b-429e-8d7b-3518fb961605>
+  PrefabRemaps:
+    []
+  Name: PROP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 1c702128-383b-4b08-b7c5-a7bfc115be78
+    - !<own> 5d888504-884c-48db-948e-ea11ee31223c
+  Components:
+    []
+- !<SceneObject/1137cbbf-afd9-455d-8b98-7db6acfaf35f>
+  PrefabRemaps:
+    []
+  Name: R_karate_board
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 029ebd51-88b5-4163-b1ce-302b9df2fae5
+- !<SceneObject/117a09a9-e769-4453-8743-50ee7bb36a55>
+  PrefabRemaps:
+    []
+  Name: L_karate_board
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 7958dae6-1953-42a4-8dc1-0506a5b91c33
+- !<Skin/11a9c8dd-ad24-41e9-88f5-8cb6b357fd9e>
+  PrefabRemaps:
+    []
+  Name: component_2
+  Enabled: true
+  skinBones:
+    C_ballBaseball_GEO: !<reference> 13117689-b85d-4da0-9fad-2c1976059566
+    C_prop0001_bind_JNT: !<reference> bb1e4617-ceab-44d4-933e-f2680f90bd85
+    PROP: !<reference> f1761520-4132-4e65-ba16-8dd826d6d57d
+    ballBaseball_GRP: !<reference> 781e5ec0-a5a7-4cd8-9d93-d7c6a41850b4
+    ball_baseball_bindrig: !<reference> 59410cb1-c4bd-4cf9-801f-209678c6c7f0
+    bind_GRP: !<reference> b764b079-0b1c-4055-b381-1fd2e502af6e
+    geo_GRP: !<reference> 39b9e399-2ec8-41e4-b5d4-511048e454de
+    rig_GRP: !<reference> d54afc1f-271c-4000-baeb-aceed2282497
+- !<SceneObject/13117689-b85d-4da0-9fad-2c1976059566>
+  PrefabRemaps:
+    []
+  Name: C_ballBaseball_GEO
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> be7547ce-53b8-42ef-93e9-3c9126db4e88
+- !<SceneObject/145b5e2b-bc32-42a3-8852-41092c554f3a>
+  PrefabRemaps:
+    []
+  Name: skipoles_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 8c6c6e53-a5e4-49f4-8f21-5039089addff
+  Components:
+    []
+- !<SceneObject/1477a849-0511-4f5c-8cd6-9dfb0493433d>
+  PrefabRemaps:
+    []
+  Name: bind_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 46bdc75d-7633-44d6-af0e-3df707e4167a
+  Components:
+    []
+- !<SceneObject/148020a7-11ae-4de7-a924-fd8944f3eb71>
+  PrefabRemaps:
+    []
+  Name: C_tennis_ball_GEO
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> c4bc6590-3be0-4b5b-9b63-74d7b699a715
+- !<SceneObject/15046f38-d555-448a-9a71-0951ded0fc67>
+  PrefabRemaps:
+    []
+  Name: C_baseball_pitcher_mound_GEO
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 5552752c-266b-46cc-b695-ce7ae72e1fc1
+- !<SceneObject/17e17ae9-7e2b-45ee-8775-dfc0030d1db5>
+  PrefabRemaps:
+    []
+  Name: curling_stone_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 7b5f7a0a-3b87-49f7-8c6b-295c0444359d
+    - !<own> f0fb6d8e-ebf3-459a-9ff1-cb034e4ac6b9
+  Components:
+    []
+- !<SceneObject/18b41cab-7e5e-49f6-98ec-a669843e5bc7>
+  PrefabRemaps:
+    []
+  Name: C_prop0001_bind_JNT
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 6.967751, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/1a087d44-024a-4ad7-b3de-684e2a193a07>
+  PrefabRemaps:
+    []
+  Name: C_boomerang_GEO
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> b90893a1-2d58-4537-b538-f6b10e278fac
+- !<SceneObject/1b40c335-e4d7-4eca-93e8-4874a033a799>
+  PrefabRemaps:
+    []
+  Name: curling_stone_bindrig
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 12.217884, z: 0.000000}
+    rotation: {x: 43.889561, y: -11.616968, z: -4.375910}
+    scale: {x: 0.244463, y: 0.244463, z: 0.244463}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 916ea3c1-85e3-4e87-8d16-ad7f806e2e28
+  Components:
+    - !<own> 530052aa-fc23-4ce8-af4a-fcb4906601cc
+- !<SceneObject/1c702128-383b-4b08-b7c5-a7bfc115be78>
+  PrefabRemaps:
+    []
+  Name: geo_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> d2d43c99-267b-4399-b260-c85b4a69da8b
+  Components:
+    []
+- !<SceneObject/1ee4af30-696f-45cf-86cf-2fe050ea9ecb>
+  PrefabRemaps:
+    []
+  Name: C_trekPole001_base_JNT
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 180.000000, y: -0.000000, z: 90.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 4478ace4-67be-487d-90d0-5dd3d813e90e
+  Components:
+    []
+- !<SceneObject/1f0b8924-f7d3-444c-b0b5-3ed4f93f21d1>
+  PrefabRemaps:
+    []
+  Name: rig_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 7147bd8e-e5e5-400a-9cb4-73653976fe78
+  Components:
+    []
+- !<SceneObject/1f6d8482-fcf1-473b-b3e6-77e5821c0ffd>
+  PrefabRemaps:
+    []
+  Name: rig_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 78d34866-05be-4bda-9892-3fca7431cb97
+  Components:
+    []
+- !<SceneObject/1fc24195-cd96-48ea-bcda-5e50524ab1c8>
+  PrefabRemaps:
+    []
+  Name: PROP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 61ed2a53-1c2a-4e41-9c72-637a5d77e214
+    - !<own> 7e54cf37-f4e7-4ba3-8794-66e4e9a19746
+  Components:
+    []
+- !<SceneObject/20a0d081-1609-4d11-919d-538edb0f3286>
+  PrefabRemaps:
+    []
+  Name: rig_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> dddbf116-1709-4bcd-a406-5a958d46ebe6
+  Components:
+    []
+- !<SceneObject/22745e78-dfd8-4a8f-9bf1-f959503b84e1>
+  PrefabRemaps:
+    []
+  Name: bind_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> fa13d179-84eb-4339-b91f-4ab98253be09
+  Components:
+    []
+- !<SceneObject/23a0a71c-418d-489c-9a6d-1ec5bda6e429>
+  PrefabRemaps:
+    []
+  Name: bind_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 34ca0179-0cdb-4743-8d2f-0406d7803d6f
+  Components:
+    []
+- !<SceneObject/23fbccb2-6f68-4671-ae7a-7d117772c600>
+  PrefabRemaps:
+    []
+  Name: tennis_ball_bindrig
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 13.957748, y: -21.855938, z: 3.164406}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.215467, y: 0.215467, z: 0.215467}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 4bb2c9b1-d507-4171-b888-cfa8a52d941e
+  Components:
+    - !<own> af072816-912e-4684-92ed-b50a2d21e4af
+- !<SceneObject/24222c74-ecec-4fcd-b77a-6e6dcdf9c832>
+  PrefabRemaps:
+    []
+  Name: bind_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 9b1ef44a-2de6-436e-aa97-c16fcc17e9e5
+  Components:
+    []
+- !<SceneObject/24a95cb1-2a3d-49ca-9622-cd6aff83241f>
+  PrefabRemaps:
+    []
+  Name: bind_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 82d7e257-b596-47c2-85bd-de9e69833cc3
+  Components:
+    []
+- !<SceneObject/2588aff1-c243-4f19-a75f-b80084a072ff>
+  PrefabRemaps:
+    []
+  Name: hockey_puck_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 04c82659-c835-4afa-9cf7-02ca7758dc67
+  Components:
+    []
+- !<SceneObject/275f9b0f-e523-4242-846b-3221087ddbf2>
+  PrefabRemaps:
+    []
+  Name: C_skiPoleHandle_bind_JNT
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000000, y: 0.809292, z: -37.040779}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<Skin/2c6e645c-495b-4b3a-b512-90d3f930e5c0>
+  PrefabRemaps:
+    []
+  Name: component_2
+  Enabled: true
+  skinBones:
+    C_prop0001_bind_JNT: !<reference> 4ab785e6-c5f1-476a-a165-3c3dc20d3287
+    C_tee_GEO: !<reference> 876752d8-45c3-42e9-b079-0103cb1bb706
+    PROP: !<reference> a0aa0752-c4cc-41a4-9329-44268b680509
+    bind_GRP: !<reference> d8246fb5-b412-4fcb-9d34-afbc4cf518cc
+    geo_GRP: !<reference> c2686c14-82a0-429d-b78f-7ac125933697
+    rig_GRP: !<reference> 909efddc-d994-4143-91a5-1589dca7f699
+    teeBaseball_GRP: !<reference> 62846a42-d468-442b-bcf9-8faea407cb4e
+    tee_baseball_bindrig: !<reference> 3b0cd63a-57cc-4319-80d5-18afa868c494
+- !<SceneObject/2ce21123-9fd4-4d92-a4a3-cae80cbd56b7>
+  PrefabRemaps:
+    []
+  Name: C_trekkingPole_GEO
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 731c4e0a-1b8e-41b1-96f0-4935e779bc07
+- !<SceneObject/2f698714-8194-40d4-b78a-74bd5c10e71b>
+  PrefabRemaps:
+    []
+  Name: karate_board_holder_bindrig
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 13.000000, y: -2.816963, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.081335, y: 0.081335, z: 0.081335}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> f3c1d91b-2935-4c1b-aee0-15b58b62e3a2
+  Components:
+    - !<own> ce34cc29-6dee-4d2c-9328-193c327bd132
+- !<SceneObject/326c039c-9363-4174-9e9c-7b507fb2c352>
+  PrefabRemaps:
+    []
+  Name: geo_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 416672d2-cf94-4fcd-8128-b21e64829e32
+  Components:
+    []
+- !<SceneObject/32b13bf9-37c9-4e01-99fe-ce8ad1fb6937>
+  PrefabRemaps:
+    []
+  Name: BitmojiSports__PLACE_IN_OBJECTS_PANEL
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 59410cb1-c4bd-4cf9-801f-209678c6c7f0
+    - !<own> 6be14edc-17a5-44ac-9bfa-d5a521649eb5
+    - !<own> 994c2221-6049-4cbe-ad7c-cdfdce047e0a
+    - !<own> c34a8bd9-92b2-48a4-86b2-c191243f769f
+    - !<own> 1b40c335-e4d7-4eca-93e8-4874a033a799
+    - !<own> f810699b-4b08-4ac3-8cb0-8a2e6b108eb8
+    - !<own> 5434fba3-e8c7-4fc8-9781-8bd942d5f42b
+    - !<own> 7ffd3c53-a28b-435b-85db-ff15552f626a
+    - !<own> 37b0a211-6601-4c6d-a793-b113e7b4d3ca
+    - !<own> 2f698714-8194-40d4-b78a-74bd5c10e71b
+    - !<own> a4eb0642-0fa7-4981-bad3-d0a966edbff8
+    - !<own> 58371d07-02c3-44c4-95a1-33312463df99
+    - !<own> ef45253f-8e59-4e48-a534-40c7c0d9e479
+    - !<own> d3455f18-f534-4425-8355-0bebb2e6b4f2
+    - !<own> 42da65df-f1de-4d3b-ba83-dd41ebf566d4
+    - !<own> 3b0cd63a-57cc-4319-80d5-18afa868c494
+    - !<own> ee9bb0bd-d9e9-4362-8d66-a2d8b835e243
+    - !<own> 23fbccb2-6f68-4671-ae7a-7d117772c600
+    - !<own> 967f227b-d3e7-4630-a426-7d57e60c97aa
+  Components:
+    []
+- !<SceneObject/32e3e2d4-1694-4904-8ec5-7725b0206654>
+  PrefabRemaps:
+    []
+  Name: C_prop0001_bind_JNT
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 3.843870, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/34ca0179-0cdb-4743-8d2f-0406d7803d6f>
+  PrefabRemaps:
+    []
+  Name: C_prop_bind_JNT
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: -0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 180.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/35bb2e7c-d5b5-43b4-bd38-8814e1a48fba>
+  PrefabRemaps:
+    []
+  Name: PROP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> c3ecf765-f350-4980-932e-d6af98d34293
+    - !<own> 4632b1bb-bf5d-41f8-9391-65b78235f35c
+  Components:
+    []
+- !<SceneObject/37b0a211-6601-4c6d-a793-b113e7b4d3ca>
+  PrefabRemaps:
+    []
+  Name: karate_board_pile_bindrig
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: -0.363861, z: 0.000000}
+    rotation: {x: 14.608638, y: 45.115459, z: -7.060091}
+    scale: {x: 0.081335, y: 0.081335, z: 0.081335}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 10864f41-d46b-429e-8d7b-3518fb961605
+  Components:
+    - !<own> 10376896-7a1e-4895-9f30-216577150bc9
+- !<SceneObject/38d8ca17-1bb2-46fe-ad11-4c8e1e489223>
+  PrefabRemaps:
+    []
+  Name: C_karate_board_pile_GEO
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> a94c9493-2c18-455b-9287-05946e7c23f4
+- !<SceneObject/39b9e399-2ec8-41e4-b5d4-511048e454de>
+  PrefabRemaps:
+    []
+  Name: geo_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 781e5ec0-a5a7-4cd8-9d93-d7c6a41850b4
+  Components:
+    []
+- !<SceneObject/3ad91cb7-584f-47e3-aa1b-f525376f8f55>
+  PrefabRemaps:
+    []
+  Name: geo_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 915a592f-ba27-4b70-9df9-c22ef99266c9
+  Components:
+    []
+- !<SceneObject/3b0cd63a-57cc-4319-80d5-18afa868c494>
+  PrefabRemaps:
+    []
+  Name: tee_baseball_bindrig
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -13.000000, y: -27.992716, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.118704, y: 0.118704, z: 0.118704}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> a0aa0752-c4cc-41a4-9329-44268b680509
+  Components:
+    - !<own> 2c6e645c-495b-4b3a-b512-90d3f930e5c0
+- !<Skin/3d0734ea-86b7-4f4e-9498-d2b327340d4f>
+  PrefabRemaps:
+    []
+  Name: component_2
+  Enabled: true
+  skinBones:
+    C_stadiumSit_bind_JNT: !<reference> 40283c4f-2956-4f62-b73c-e8b19d31dd6d
+    C_stadium_seat_GEO: !<reference> 3e496498-c60e-4cab-aed3-8c4f5cf22e9b
+    PROP: !<reference> 1fc24195-cd96-48ea-bcda-5e50524ab1c8
+    bind_GRP: !<reference> 4b28fb66-992d-4daf-a53e-b9b9ef7ecea3
+    geo_GRP: !<reference> 61ed2a53-1c2a-4e41-9c72-637a5d77e214
+    rig_GRP: !<reference> 7e54cf37-f4e7-4ba3-8794-66e4e9a19746
+    stadium_seat_GRP: !<reference> 88935d11-0c5e-445b-9317-d89b42bb0a6e
+    stadium_seat_bindrig: !<reference> ee9bb0bd-d9e9-4362-8d66-a2d8b835e243
+- !<SceneObject/3e496498-c60e-4cab-aed3-8c4f5cf22e9b>
+  PrefabRemaps:
+    []
+  Name: C_stadium_seat_GEO
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 95617933-1324-4692-9baa-3ab8be1eec4c
+- !<SceneObject/40283c4f-2956-4f62-b73c-e8b19d31dd6d>
+  PrefabRemaps:
+    []
+  Name: C_stadiumSit_bind_JNT
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<Skin/408f1ab9-f0c8-4a7d-bbbd-30925f57d5c8>
+  PrefabRemaps:
+    []
+  Name: component_2
+  Enabled: true
+  skinBones:
+    C_prop_bind_JNT: !<reference> 6a4c6bcc-4750-47e3-be95-511e9329c97c
+    C_trekPole001_base_JNT: !<reference> 1ee4af30-696f-45cf-86cf-2fe050ea9ecb
+    C_trekPole002_base_JNT: !<reference> 4478ace4-67be-487d-90d0-5dd3d813e90e
+    C_trekPole_base_GRP: !<reference> 86997e6a-a625-49e0-a258-e9176c5023cd
+    C_trekkingPole_GEO: !<reference> 2ce21123-9fd4-4d92-a4a3-cae80cbd56b7
+    Extras: !<reference> d6ac3481-aab8-410e-9131-3580ed9b65b8
+    PROP: !<reference> 0eae21b9-e17e-447f-aadc-efb046ca5ff3
+    bind_GRP: !<reference> f3177fcd-337b-41ec-b9eb-1a021831b6e3
+    geo_GRP: !<reference> b5482664-d392-422a-a5f2-c129875bd2d7
+    trekking_pole_bindrig: !<reference> d3455f18-f534-4425-8355-0bebb2e6b4f2
+- !<RenderMeshVisual/40ba1474-9837-4f80-b565-d97d3cff152e>
+  PrefabRemaps:
+    []
+  Name: component_2
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> c225b3a6-2dc0-4ecb-8c2e-d44a3c12c3f0
+  Mesh: !<reference> def44358-8c3c-4e0c-8c52-13e38686cd0e
+  Skin: !<reference> 530052aa-fc23-4ce8-af4a-fcb4906601cc
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/416672d2-cf94-4fcd-8128-b21e64829e32>
+  PrefabRemaps:
+    []
+  Name: kayakPaddle_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 0fad3329-67f8-4404-a2bd-ef5a36fa76b0
+    - !<own> 9829d861-414b-4dc5-b008-987c053c7903
+  Components:
+    []
+- !<SceneObject/42da65df-f1de-4d3b-ba83-dd41ebf566d4>
+  PrefabRemaps:
+    []
+  Name: ski_poles_bindrig
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 14.147256, y: -10.880047, z: 0.000000}
+    rotation: {x: 65.709236, y: -38.282631, z: -12.628497}
+    scale: {x: 0.150926, y: 0.150926, z: 0.150926}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> c7023ad4-4a21-42b3-a199-2a93a0afed3d
+  Components:
+    - !<own> d3231b46-8025-4a3c-a12a-0204a66b6fbf
+- !<SceneObject/4381a2a1-5331-43c2-bc5a-9b4c3a9e1106>
+  PrefabRemaps:
+    []
+  Name: baseball_pitcher_mound_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 15046f38-d555-448a-9a71-0951ded0fc67
+  Components:
+    []
+- !<SceneObject/4478ace4-67be-487d-90d0-5dd3d813e90e>
+  PrefabRemaps:
+    []
+  Name: C_trekPole002_base_JNT
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 66.849106, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/4632b1bb-bf5d-41f8-9391-65b78235f35c>
+  PrefabRemaps:
+    []
+  Name: rig_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 24222c74-ecec-4fcd-b77a-6e6dcdf9c832
+  Components:
+    []
+- !<SceneObject/46bdc75d-7633-44d6-af0e-3df707e4167a>
+  PrefabRemaps:
+    []
+  Name: C_sled_bind_JNT
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/4704314c-3066-47dc-a2e1-a87cf4b1a09d>
+  PrefabRemaps:
+    []
+  Name: PROP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 11.687981, y: 12.613920, z: 0.000000}
+    rotation: {x: -98.714500, y: -76.565086, z: 113.749992}
+    scale: {x: 0.123211, y: 0.123211, z: 0.123211}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 641879ac-ee37-4b52-9705-e39ad58bb506
+    - !<own> 7a52bfa7-a5cd-400c-9c49-c44d8f205f01
+  Components:
+    []
+- !<RenderMeshVisual/4a9ce7f0-c3d8-4968-ba32-f4c00aac71aa>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> ecbee0d5-1241-4710-bf83-257ae937325e
+  Mesh: !<reference> 9be5fb33-1105-4957-a86f-0efcbbff9e61
+  Skin: !<reference> f8a22219-001c-47a9-a72e-9ca6aed7cfcf
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/4ab785e6-c5f1-476a-a165-3c3dc20d3287>
+  PrefabRemaps:
+    []
+  Name: C_prop0001_bind_JNT
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/4afe629b-2f92-4757-bf3a-5f97624159ba>
+  PrefabRemaps:
+    []
+  Name: bind_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 62cc6029-09cb-4382-8613-7e0f42814957
+    - !<own> a7a56245-e20b-4327-93e7-4574369b90e1
+  Components:
+    []
+- !<SceneObject/4b28fb66-992d-4daf-a53e-b9b9ef7ecea3>
+  PrefabRemaps:
+    []
+  Name: bind_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 40283c4f-2956-4f62-b73c-e8b19d31dd6d
+  Components:
+    []
+- !<Skin/4b37e0a1-a4f9-4ad4-aa6b-56d15ebdf18c>
+  PrefabRemaps:
+    []
+  Name: component_4
+  Enabled: true
+  skinBones:
+    C_kayakPaddle_GEO: !<reference> 0fad3329-67f8-4404-a2bd-ef5a36fa76b0
+    C_kayakPaddle_part_GEO: !<reference> 9829d861-414b-4dc5-b008-987c053c7903
+    L_kayakPaddle_bind_JNT: !<reference> 68c42b1f-3368-48b9-9366-4122bdadd88d
+    PROP: !<reference> c12b61a1-b44f-45c9-8bbf-9f225666179e
+    R_kayakPaddle_bind_JNT: !<reference> 62843ca9-f0c9-46f6-ba5b-e58c64a91bd2
+    bind_GRP: !<reference> a831d476-8b0b-4da8-97e8-d4119997f456
+    geo_GRP: !<reference> 326c039c-9363-4174-9e9c-7b507fb2c352
+    kayakPaddle_GRP: !<reference> 416672d2-cf94-4fcd-8128-b21e64829e32
+    kayak_paddle_bindrig: !<reference> 58371d07-02c3-44c4-95a1-33312463df99
+    rig_GRP: !<reference> b488866a-77da-4b26-8f12-21cc7177dc02
+- !<SceneObject/4bb2c9b1-d507-4171-b888-cfa8a52d941e>
+  PrefabRemaps:
+    []
+  Name: PROP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> f65923d9-4a91-49b8-b2cc-8e1762e99fad
+    - !<own> c0ebae4a-db0d-437d-82fd-9d844e599004
+  Components:
+    []
+- !<RenderMeshVisual/4d807ff5-6940-4d6b-9d4c-b786eec07aa6>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 8ce3dd7c-29f0-447f-8ef1-0f2a05d0e661
+  Mesh: !<reference> 415301ed-860e-43c6-8dfb-0da2c4b19d18
+  Skin: !<reference> 2c6e645c-495b-4b3a-b512-90d3f930e5c0
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/4e6bfddc-32ee-4bac-af9d-681f81924f71>
+  PrefabRemaps:
+    []
+  Name: hockey_stick_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> b9db78d4-a1a7-47e1-a8dd-e47cb8fac705
+  Components:
+    []
+- !<SceneObject/50064ca9-233d-44e0-84f4-b22beffe9f75>
+  PrefabRemaps:
+    []
+  Name: C_base_bind_JNT
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/5056d38f-b977-4c46-a93e-e201b4708a4a>
+  PrefabRemaps:
+    []
+  Name: karate_board_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 117a09a9-e769-4453-8743-50ee7bb36a55
+    - !<own> 1137cbbf-afd9-455d-8b98-7db6acfaf35f
+  Components:
+    []
+- !<Skin/530052aa-fc23-4ce8-af4a-fcb4906601cc>
+  PrefabRemaps:
+    []
+  Name: component_4
+  Enabled: true
+  skinBones:
+    C_curling_stoneBlue_GEO: !<reference> f0fb6d8e-ebf3-459a-9ff1-cb034e4ac6b9
+    C_curling_stoneRed_GEO: !<reference> 7b5f7a0a-3b87-49f7-8c6b-295c0444359d
+    C_prop0001_bind_JNT: !<reference> 539d60cc-f31a-4f68-8d99-6b0397f042ff
+    PROP: !<reference> 916ea3c1-85e3-4e87-8d16-ad7f806e2e28
+    bind_GRP: !<reference> 7147bd8e-e5e5-400a-9cb4-73653976fe78
+    curling_stone_GRP: !<reference> 17e17ae9-7e2b-45ee-8775-dfc0030d1db5
+    curling_stone_bindrig: !<reference> 1b40c335-e4d7-4eca-93e8-4874a033a799
+    geo_GRP: !<reference> b8280f64-e6f2-4201-91b3-9080e74de4d1
+    rig_GRP: !<reference> 1f0b8924-f7d3-444c-b0b5-3ed4f93f21d1
+- !<SceneObject/539d60cc-f31a-4f68-8d99-6b0397f042ff>
+  PrefabRemaps:
+    []
+  Name: C_prop0001_bind_JNT
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/5434fba3-e8c7-4fc8-9781-8bd942d5f42b>
+  PrefabRemaps:
+    []
+  Name: hockey_puck_bindrig
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 11.330826, y: 11.762482, z: 0.000000}
+    rotation: {x: 44.248867, y: 11.558180, z: 28.936926}
+    scale: {x: 0.307115, y: 0.307115, z: 0.307115}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 35bb2e7c-d5b5-43b4-bd38-8814e1a48fba
+  Components:
+    - !<own> cb5467a6-3be2-43f0-be8a-5e64e19e0557
+- !<RenderMeshVisual/5552752c-266b-46cc-b695-ce7ae72e1fc1>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> c30e9d24-4f09-4b95-9e23-bfe14a5156f4
+  Mesh: !<reference> 3c5aa168-01c4-4137-8349-a63ad1548e28
+  Skin: !<reference> 02b90a1a-ddb1-4db5-a498-1a5744382157
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/556dbb9d-a551-4e8f-b4c5-0ef71ea1f2db>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> bca12b1e-f055-4454-bd8a-858736662630
+  Mesh: !<reference> 8fa1959e-a25d-4c3b-bbc4-28c96346351b
+  Skin: !<reference> d3231b46-8025-4a3c-a12a-0204a66b6fbf
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/56dd289d-6ffe-48f4-980a-c969a1f84dd6>
+  PrefabRemaps:
+    []
+  Name: karate_board_holder_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 9dfde22b-0ce5-44e3-9298-bbb246ae67b3
+  Components:
+    []
+- !<RenderMeshVisual/572f94d5-72c6-43b4-83d4-d352cb3c2795>
+  PrefabRemaps:
+    []
+  Name: component_2
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 9faafebe-7aa8-49d8-b885-be1644bcae7d
+  Mesh: !<reference> 71608124-1312-4178-81c2-4807b493d1d6
+  Skin: !<reference> 4b37e0a1-a4f9-4ad4-aa6b-56d15ebdf18c
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/58371d07-02c3-44c4-95a1-33312463df99>
+  PrefabRemaps:
+    []
+  Name: kayak_paddle_bindrig
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -15.385957, y: -6.379248, z: 0.000000}
+    rotation: {x: 18.494331, y: 3.866256, z: -1.329911}
+    scale: {x: 0.100670, y: 0.100670, z: 0.100670}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> c12b61a1-b44f-45c9-8bbf-9f225666179e
+  Components:
+    - !<own> 4b37e0a1-a4f9-4ad4-aa6b-56d15ebdf18c
+- !<SceneObject/59410cb1-c4bd-4cf9-801f-209678c6c7f0>
+  PrefabRemaps:
+    []
+  Name: ball_baseball_bindrig
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -13.000000, y: 23.700464, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> f1761520-4132-4e65-ba16-8dd826d6d57d
+  Components:
+    - !<own> 11a9c8dd-ad24-41e9-88f5-8cb6b357fd9e
+- !<SceneObject/5a9593b7-75db-4ec4-a2ca-98155c8a4638>
+  PrefabRemaps:
+    []
+  Name: rig_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 5c51e10b-1fc8-4f0e-82a2-15bb3b323aaf
+  Components:
+    []
+- !<SceneObject/5c51e10b-1fc8-4f0e-82a2-15bb3b323aaf>
+  PrefabRemaps:
+    []
+  Name: bind_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 18b41cab-7e5e-49f6-98ec-a669843e5bc7
+  Components:
+    []
+- !<SceneObject/5d888504-884c-48db-948e-ea11ee31223c>
+  PrefabRemaps:
+    []
+  Name: rig_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 00a24277-68d5-4c24-91ee-b1bc0343268f
+  Components:
+    []
+- !<SceneObject/61ed2a53-1c2a-4e41-9c72-637a5d77e214>
+  PrefabRemaps:
+    []
+  Name: geo_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 88935d11-0c5e-445b-9317-d89b42bb0a6e
+  Components:
+    []
+- !<SceneObject/62843ca9-f0c9-46f6-ba5b-e58c64a91bd2>
+  PrefabRemaps:
+    []
+  Name: R_kayakPaddle_bind_JNT
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 43.572884}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/62846a42-d468-442b-bcf9-8faea407cb4e>
+  PrefabRemaps:
+    []
+  Name: teeBaseball_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 876752d8-45c3-42e9-b079-0103cb1bb706
+  Components:
+    []
+- !<SceneObject/62cc6029-09cb-4382-8613-7e0f42814957>
+  PrefabRemaps:
+    []
+  Name: L_karateBoardSub_bind_JNT
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 25.305153, y: 2.406492, z: 0.015478}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/63ea59b5-dcc6-43d3-8af4-b634874eb638>
+  PrefabRemaps:
+    []
+  Name: geo_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 9950d8e6-1208-4a34-92d9-0e84c4af9c7a
+  Components:
+    []
+- !<SceneObject/641879ac-ee37-4b52-9705-e39ad58bb506>
+  PrefabRemaps:
+    []
+  Name: geo_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 4e6bfddc-32ee-4bac-af9d-681f81924f71
+  Components:
+    []
+- !<ObjectPrefabAssetData/65dbdc25-46ec-4b89-8f0a-94ef6de2ee5d>
+  SourceRemaps:
+    - 01ef938b-5016-437f-a37d-22d58c4ca733: 7e54cf37-f4e7-4ba3-8794-66e4e9a19746
+    - 053b7a23-9a99-4d4d-9f85-63a20a53d294: ee9bb0bd-d9e9-4362-8d66-a2d8b835e243
+    - 0540bc55-323c-41d2-981d-1dbc8400bf74: fd6fc521-f610-4d56-9e0d-8ca93cdda625
+    - 06deb5a5-4eea-4134-8003-69027df1232b: 91a43a92-4265-4b3b-825d-8adf6971c7f0
+    - 0796335e-de16-498d-a90a-0863a7a6aa06: abd3cb44-5fd1-43bd-89c9-e99d198ea767
+    - 081f84dd-79ad-4c3d-b67b-91d593fefcc0: 0fad3329-67f8-4404-a2bd-ef5a36fa76b0
+    - 09173954-a010-4996-972c-8106e45096e4: 32e3e2d4-1694-4904-8ec5-7725b0206654
+    - 09213732-18c9-4443-93ba-a051f155a585: 7958dae6-1953-42a4-8dc1-0506a5b91c33
+    - 098783fc-2649-4d04-8260-a7da6cb428e8: 56dd289d-6ffe-48f4-980a-c969a1f84dd6
+    - 0ae60e55-5500-4a1b-9825-c0c221ad6c07: 326c039c-9363-4174-9e9c-7b507fb2c352
+    - 0f4e7ff5-eede-4d34-9bf0-a4d5325aaef6: 13117689-b85d-4da0-9fad-2c1976059566
+    - 0fc68a71-3245-4a8b-b1b8-63799cf9cb5e: 40ba1474-9837-4f80-b565-d97d3cff152e
+    - 11220fe7-4b89-4f0b-8808-b8b89d71a802: 275f9b0f-e523-4242-846b-3221087ddbf2
+    - 124ca5be-aed4-4344-9011-7d2f6d56c350: 967f227b-d3e7-4630-a426-7d57e60c97aa
+    - 12a31809-cbf3-48db-9c85-5e71f63aa80a: f0fb6d8e-ebf3-459a-9ff1-cb034e4ac6b9
+    - 16763bda-b31f-4dd5-9f9a-9666e53965de: 0e1f1883-bef9-4d8a-a8f3-64de435d8a52
+    - 171f7a33-6df9-4d54-a080-36c83c6bde16: a94c9493-2c18-455b-9287-05946e7c23f4
+    - 17927e6d-a104-4fc4-bb62-3b0df775ec52: 39b9e399-2ec8-41e4-b5d4-511048e454de
+    - 179f6780-9df0-4144-92d8-9779f1a6ce95: 4bb2c9b1-d507-4171-b888-cfa8a52d941e
+    - 1a951002-cdd1-41a5-8a06-39e8947a91fd: 408f1ab9-f0c8-4a7d-bbbd-30925f57d5c8
+    - 1b69c70f-2514-48ba-9d0e-afcd53e91c13: 916ea3c1-85e3-4e87-8d16-ad7f806e2e28
+    - 1dde45cd-f94f-4f09-b21f-59415cf4d802: 6a4c6bcc-4750-47e3-be95-511e9329c97c
+    - 1e81a620-9e55-4488-aa52-8bbcc9ee4eb9: 88935d11-0c5e-445b-9317-d89b42bb0a6e
+    - 1e8a281b-4d1a-4b4a-9577-493ca811051f: 78d34866-05be-4bda-9892-3fca7431cb97
+    - 1fc3339a-fd16-46c1-8006-caf0e185b881: b5482664-d392-422a-a5f2-c129875bd2d7
+    - 206fa6bb-cc9b-43e9-818f-148769717b58: 1f0b8924-f7d3-444c-b0b5-3ed4f93f21d1
+    - 207174d8-58fd-493d-81e0-4c7bef5a8755: dd03af78-707f-492c-9a29-152ff423b46d
+    - 22795fcc-472f-43ab-bbae-b0cddd3a0b9f: bdd741ee-6c1e-4282-afac-cc22e583e7db
+    - 23059825-336b-43d1-99c1-efd78be37826: 4a9ce7f0-c3d8-4968-ba32-f4c00aac71aa
+    - 23c1b818-08f4-433d-910a-e7f9f17d6356: a6e9ebec-e993-427b-a7d6-48f9462a9b69
+    - 23e9e9c3-ab2a-468b-8c8a-e5dc267e7daf: 1477a849-0511-4f5c-8cd6-9dfb0493433d
+    - 2497967a-4614-4e25-a227-1badfcc6a600: 5c51e10b-1fc8-4f0e-82a2-15bb3b323aaf
+    - 25472dc3-cc15-4996-af18-2c53b01e711d: d54afc1f-271c-4000-baeb-aceed2282497
+    - 274ddccb-12ee-4724-ab34-2c5268f5f2a8: 98613e46-4d58-4695-b770-41fd698e854a
+    - 27612c00-c012-4d7a-8ec7-f8dc7206c2d0: 04c82659-c835-4afa-9cf7-02ca7758dc67
+    - 279bc21e-6c2e-4508-9922-69840b973d9f: 42da65df-f1de-4d3b-ba83-dd41ebf566d4
+    - 27de4c42-353a-4338-b760-48bdeff5e6a1: 1137cbbf-afd9-455d-8b98-7db6acfaf35f
+    - 2854ced0-6849-4ccc-bfc2-15615751492a: 2f698714-8194-40d4-b78a-74bd5c10e71b
+    - 28c17046-bd4e-41ac-95a4-35102678e708: 3b0cd63a-57cc-4319-80d5-18afa868c494
+    - 298ff898-a1e5-454e-aa18-28ba886f69af: 909efddc-d994-4143-91a5-1589dca7f699
+    - 29ceef24-cd94-470f-924d-e4cef9b69abf: 4b28fb66-992d-4daf-a53e-b9b9ef7ecea3
+    - 2af395f3-2675-4f8c-b49c-c49adb401f1f: 8c6c6e53-a5e4-49f4-8f21-5039089addff
+    - 2c48ff86-782a-4a52-9071-36dd7384bbf7: 1a087d44-024a-4ad7-b3de-684e2a193a07
+    - 2ccdde3d-746d-4300-89c3-d72c3d54356e: a0aa0752-c4cc-41a4-9329-44268b680509
+    - 319ad2c2-547b-4f12-8445-5e77cc30c5e6: a34a205f-81cc-4471-bd24-c92292bcb612
+    - 334fe0f5-0848-40c9-97f2-8470f82a4b51: 62cc6029-09cb-4382-8613-7e0f42814957
+    - 364d0a59-0f7d-4e51-9069-7b40bebc75cd: 9e3b522c-2c96-468b-8645-78acff72e20b
+    - 372bb8a4-949c-40b8-9857-0ae3ea55abc1: f3177fcd-337b-41ec-b9eb-1a021831b6e3
+    - 378e2c2f-6d29-457d-967b-bb84bc09cdcc: d2f9ff76-528d-42df-95a6-b4db41d78c30
+    - 38d49380-d52b-4a04-9b49-df247906c7d8: 07d53487-4965-48a7-87b0-163fbb6f94f3
+    - 39618248-2d06-42ef-beb3-fd1e99393990: 63ea59b5-dcc6-43d3-8af4-b634874eb638
+    - 3b1f0496-ba7e-4e04-8de9-c9c3564cd3c7: 530052aa-fc23-4ce8-af4a-fcb4906601cc
+    - 3ccea6a0-9b75-4d66-8f31-35713d315eab: 59410cb1-c4bd-4cf9-801f-209678c6c7f0
+    - 3d4c3952-8abd-426c-a84f-34b597b0cf7e: d2d43c99-267b-4399-b260-c85b4a69da8b
+    - 3ea91e64-53bf-4918-b789-4700c2412c54: c2686c14-82a0-429d-b78f-7ac125933697
+    - 3ed4f616-bc7a-48c6-a098-6dac3f45bb1c: 58371d07-02c3-44c4-95a1-33312463df99
+    - 405e4db9-6761-450e-b23d-626238b6ee2d: 028ecec8-7204-4223-8d6f-45cd2ac05e53
+    - 4250a2e6-1a9d-4af3-95be-c9eb1403d84c: c3ecf765-f350-4980-932e-d6af98d34293
+    - 4258c7b8-81f8-446d-a278-6d1821b4faae: cb5467a6-3be2-43f0-be8a-5e64e19e0557
+    - 42baded4-871d-44dd-b1bf-b27cfa2ca275: 34ca0179-0cdb-4743-8d2f-0406d7803d6f
+    - 445dd710-bee9-4c13-8573-cab4dab38359: 04c8aa3e-5412-4ea4-bf50-4d3877078f42
+    - 44de193c-9123-454e-95c6-adca916e8b64: c8a55ca0-ecf6-407d-bbfe-b2884a3ec3ab
+    - 451c3d98-24ea-47a0-b985-d853a9055590: 4478ace4-67be-487d-90d0-5dd3d813e90e
+    - 4680cfa7-dcf7-4147-96aa-421724a55f2c: 35bb2e7c-d5b5-43b4-bd38-8814e1a48fba
+    - 47a9d7df-dac1-412b-a4ec-e685450dda68: 6a17eae6-0574-4867-b691-f336e0b14501
+    - 47ac3c46-4513-4d6e-97e3-8a43947a7be1: 0e814b01-6716-4b1a-aa21-ace52f57d16c
+    - 48895165-419b-444e-9988-7131eb15809a: d1aea3d1-f7b6-4e48-b2fe-94753bdb0e97
+    - 4893804e-34fd-4ebc-b6f9-724d66d36105: c1258c11-1003-4527-9d69-0c159c9277c0
+    - 48ccbcf4-f08a-45b3-98ed-5f171b138a92: 7a52bfa7-a5cd-400c-9c49-c44d8f205f01
+    - 4912e071-3e3a-45ec-aac2-f1960790f9e7: 23a0a71c-418d-489c-9a6d-1ec5bda6e429
+    - 49d0f9b2-2d11-478a-846b-2f6d9297802c: 22745e78-dfd8-4a8f-9bf1-f959503b84e1
+    - 4ff81d0e-27e9-4be5-82c3-f9ce8dec9fc4: 556dbb9d-a551-4e8f-b4c5-0ef71ea1f2db
+    - 5362a182-b572-46f4-ac53-5a3d5f5b2b21: 82d7e257-b596-47c2-85bd-de9e69833cc3
+    - 53e6dab6-3d31-4888-9b2e-e01d48051a44: 8bc3ac9d-436c-44c2-9453-976b0d1cf4d8
+    - 541ca9ac-e864-49a9-a32a-4267994845ef: f65923d9-4a91-49b8-b2cc-8e1762e99fad
+    - 54b068c7-33b5-4b60-b71c-6e6f0791bb0b: ef45253f-8e59-4e48-a534-40c7c0d9e479
+    - 54b31715-e751-45b9-b997-0e363ce03f80: 9e01acbe-3094-4c41-9079-f1609ae1fea9
+    - 5514d6c5-802d-4d18-9601-e2665b9e2c4f: 38d8ca17-1bb2-46fe-ad11-4c8e1e489223
+    - 5637fea9-14ec-4065-91ad-82c3d66c3463: 68c42b1f-3368-48b9-9366-4122bdadd88d
+    - 598a45f1-bc7c-462f-8b3d-9c46dc360b54: c9ddc989-bd8f-47f6-86e7-e2439a53cd0d
+    - 5ccb5bee-71b7-45cf-aa03-bb81f3517cd6: 1fc24195-cd96-48ea-bcda-5e50524ab1c8
+    - 5d9c4814-1dc0-4385-941e-ce3d7d751d53: 9dfde22b-0ce5-44e3-9298-bbb246ae67b3
+    - 5e97b3eb-5484-4863-93f9-716b5ecf4fcd: dddbf116-1709-4bcd-a406-5a958d46ebe6
+    - 60eb3fff-6e9b-42f4-a234-93c864798900: 029ebd51-88b5-4163-b1ce-302b9df2fae5
+    - 6113314d-075c-4881-8b83-014bb4883257: ff85f219-065c-4928-9875-f4520d301789
+    - 6172bb8e-3b63-48aa-81a1-ccbe6ce918e1: a0f12171-6a4e-47e5-a498-08e007ab3170
+    - 63076ab2-5d48-4638-91f9-19529f84a9df: 5d888504-884c-48db-948e-ea11ee31223c
+    - 6636a201-6e04-4ca6-9c47-f39bcfb954b8: 17e17ae9-7e2b-45ee-8775-dfc0030d1db5
+    - 6a885513-5097-43fd-9ee0-ec9d081bcdc8: 6b2c4813-4f9a-4c39-8f69-9c78709e72f6
+    - 6abee907-6e45-4000-a5a7-ea0630970536: 24a95cb1-2a3d-49ca-9622-cd6aff83241f
+    - 6ae20426-b9e6-407c-992d-4dee06d22af7: b90893a1-2d58-4537-b538-f6b10e278fac
+    - 6bfaa3b8-09bc-44b0-a6fa-b41126bb2c4f: 11a9c8dd-ad24-41e9-88f5-8cb6b357fd9e
+    - 6c12c1ab-e7f1-4f4e-bd15-d50a42ba51a1: f8a22219-001c-47a9-a72e-9ca6aed7cfcf
+    - 6d1b27a0-7cdc-46d5-b2b4-ca67579ae532: 4704314c-3066-47dc-a2e1-a87cf4b1a09d
+    - 6d8c79eb-3bbb-4237-a30c-a0740a75b824: 1c702128-383b-4b08-b7c5-a7bfc115be78
+    - 6ddfffbb-d9e5-436b-8d58-af7de61d21b9: 1f6d8482-fcf1-473b-b3e6-77e5821c0ffd
+    - 6f234cfe-a6ee-44b8-b8bb-8be729bfb6e7: d8246fb5-b412-4fcb-9d34-afbc4cf518cc
+    - 71843603-475c-4b03-a648-ee8e3896f26c: 20a0d081-1609-4d11-919d-538edb0f3286
+    - 71c8ad76-448f-45f8-93a9-118fd8221475: 09c47d3a-f4e2-4189-9e79-6683853ec7ee
+    - 722eb933-5296-4a15-80ad-24414a9cdae2: 01a4c3fb-8065-4cc9-b421-779e4afb3918
+    - 723044c0-56bd-4476-9333-a8832b2a5532: 32b13bf9-37c9-4e01-99fe-ce8ad1fb6937
+    - 725276d4-f516-495e-aabc-30cf0e3c19fe: 23fbccb2-6f68-4671-ae7a-7d117772c600
+    - 7676d996-9f25-4adf-8ee1-01d88bf4fb8e: f3c1d91b-2935-4c1b-aee0-15b58b62e3a2
+    - 78039ff7-9d40-41c0-8bf1-b0c7e232c64b: 8f4149da-9586-4eda-9771-78c627fb7d53
+    - 7c770865-ba1a-4bb8-a517-9cd60e6c4d32: 9950d8e6-1208-4a34-92d9-0e84c4af9c7a
+    - 7c821dce-437a-4fef-a131-768cb06ff7b5: 40283c4f-2956-4f62-b73c-e8b19d31dd6d
+    - 7d47a1dd-7f42-48fd-b634-adbd9b7b9a02: 92fb72a9-2f89-40af-8faa-173afa90035e
+    - 7dc36d43-81b1-4c1f-8f38-76961428725a: 7ffd3c53-a28b-435b-85db-ff15552f626a
+    - 7dfff0c8-467a-4797-af81-fc7a5a064530: 731c4e0a-1b8e-41b1-96f0-4935e779bc07
+    - 7e9f4635-4bd6-415d-8bf8-0e88fc0f115d: c12b61a1-b44f-45c9-8bbf-9f225666179e
+    - 7ffe22c5-bf74-44f1-9274-41faab1375d3: 62846a42-d468-442b-bcf9-8faea407cb4e
+    - 89ba7e22-6739-48d0-8862-c868ea3209e0: e5d4eca0-321d-475f-b129-e6a31a9255fd
+    - 8a6013e1-80e9-4321-aef6-ecedeadd11c9: 18b41cab-7e5e-49f6-98ec-a669843e5bc7
+    - 8d426ecb-358b-424f-8980-36ab089e5d20: d3455f18-f534-4425-8355-0bebb2e6b4f2
+    - 8e950e52-794a-494f-88f2-3c7604a0aaf5: 4381a2a1-5331-43c2-bc5a-9b4c3a9e1106
+    - 8efe6c14-a2f0-4cc4-b9de-05a8ec2dfacd: 9eff36be-bda3-445d-a75b-916039757ce3
+    - 8f365973-79ab-44e5-8e1d-c2030c082627: be7547ce-53b8-42ef-93e9-3c9126db4e88
+    - 8f6ab561-5663-43a3-9bac-e537cdef75c3: 8343231b-7058-4bc9-afaf-34ea7221fe14
+    - 902a3bb9-ec08-424e-8394-02eee671325c: 24222c74-ecec-4fcd-b77a-6e6dcdf9c832
+    - 91c1c2c5-dae8-4abf-ba31-18ecb129c530: 61ed2a53-1c2a-4e41-9c72-637a5d77e214
+    - 93ceae81-f696-41b4-baba-cb0f43ba6d6e: 9829d861-414b-4dc5-b008-987c053c7903
+    - 94795095-cfaa-4838-9d3c-45d26dca68af: 02b90a1a-ddb1-4db5-a498-1a5744382157
+    - 9b36375a-b076-40d7-b691-38d8d698bc72: 9a6893b2-8236-4422-9ea8-7bed81325fa4
+    - 9c55b1ba-dccc-46db-bc83-9ae8c2b8bc14: 4d807ff5-6940-4d6b-9d4c-b786eec07aa6
+    - 9da08f96-2c88-4f58-9895-ef39cda18949: 37b0a211-6601-4c6d-a793-b113e7b4d3ca
+    - 9dce5570-286e-48f5-bfb4-4832ca620dc4: 572f94d5-72c6-43b4-83d4-d352cb3c2795
+    - 9dd59bc3-263c-4382-9e4a-ec6549bf93ea: 1b40c335-e4d7-4eca-93e8-4874a033a799
+    - a08e0319-83f7-4d40-b140-5101d79f8d10: 5a9593b7-75db-4ec4-a2ca-98155c8a4638
+    - a0a62958-833d-4827-b85e-a106119ff6dc: 3ad91cb7-584f-47e3-aa1b-f525376f8f55
+    - a40f996c-f896-41ef-b6cd-00211d8db70d: 15046f38-d555-448a-9a71-0951ded0fc67
+    - a4afee73-65e5-4d49-8942-28fd1acf0637: d3231b46-8025-4a3c-a12a-0204a66b6fbf
+    - a78f6d68-a926-4cd7-868f-68ec5f7ee135: 915a592f-ba27-4b70-9df9-c22ef99266c9
+    - a917e3cd-cf26-4114-b2a0-506662ca1b08: b9db78d4-a1a7-47e1-a8dd-e47cb8fac705
+    - aa87a658-4fe0-44ca-993f-93feea28081e: a4735901-a8bf-47ed-a48d-393d2b97c753
+    - aa904801-006d-4990-895b-8be3194a0aac: ce34cc29-6dee-4d2c-9328-193c327bd132
+    - ac9914eb-cda0-4157-bfc0-bca91340b99a: 00a24277-68d5-4c24-91ee-b1bc0343268f
+    - acab26b1-8462-41b4-8e1b-93c9cc1d8871: af072816-912e-4684-92ed-b50a2d21e4af
+    - aeeb3d13-184c-4cb1-95ad-f1c3d1d455b8: 945ff0f3-5bb9-4f18-a30b-728729ac7014
+    - aeee234c-fc85-4b6f-b80d-bb472bf7a5c5: 3d0734ea-86b7-4f4e-9498-d2b327340d4f
+    - aefa66c7-2d90-43eb-b77c-deaaf4c8e9c3: 4632b1bb-bf5d-41f8-9391-65b78235f35c
+    - b0dcee49-6966-4bdf-b94d-5dec78ec4a15: b488866a-77da-4b26-8f12-21cc7177dc02
+    - b0e4efff-11ed-44b0-bcb2-346fc1955b4a: de282301-b944-48ab-ac34-e3022174a7b7
+    - b242b9d1-9c0d-4742-abe7-e9c8ec984ac3: c7023ad4-4a21-42b3-a199-2a93a0afed3d
+    - b3ea8dfb-1723-4731-bf2b-47aecb6d098f: 95617933-1324-4692-9baa-3ab8be1eec4c
+    - b49747e2-249b-4571-a776-b63ddb46524f: 416672d2-cf94-4fcd-8128-b21e64829e32
+    - b567a9fe-7632-4f70-9334-302a2baec3a9: 7b5f7a0a-3b87-49f7-8c6b-295c0444359d
+    - b621f423-ddb6-4a33-b576-e5d1f83f71c2: a1ed3ff4-300b-4604-a86f-064cb6cca54c
+    - b68b227f-0df5-4971-acd4-c6b523bf334e: 145b5e2b-bc32-42a3-8852-41092c554f3a
+    - b889d950-0c68-4f4a-81e9-2fadb17603ff: a7a56245-e20b-4327-93e7-4574369b90e1
+    - b8dca0be-ea4a-47fc-b854-ae23c8c46cb7: 539d60cc-f31a-4f68-8d99-6b0397f042ff
+    - b999ba50-d3f7-4fb2-976f-96cb234a9fe5: 7147bd8e-e5e5-400a-9cb4-73653976fe78
+    - babc432d-479d-4ffd-ac41-85863f82d79e: d5922cb4-b0ab-43de-9461-70370ab97c3b
+    - bb2e6edd-e290-47a7-b406-b43802395122: 4ab785e6-c5f1-476a-a165-3c3dc20d3287
+    - bb4d2696-10d9-4bd1-98df-dbb99a5d021b: b764b079-0b1c-4055-b381-1fd2e502af6e
+    - bc8a524e-59c5-47eb-b511-e8090bf5cc42: 4e6bfddc-32ee-4bac-af9d-681f81924f71
+    - bf1fb83e-4e2c-4f08-9dc7-f18ae41a8e2f: e398cce3-f59b-4a87-bd04-d579552d749c
+    - c0afe725-8df6-4815-917d-bc9eab5cad8b: 4b37e0a1-a4f9-4ad4-aa6b-56d15ebdf18c
+    - c22ea9d4-23ad-4371-85f8-df761ad1dc0c: 641879ac-ee37-4b52-9705-e39ad58bb506
+    - c232fdc8-4845-409e-b72a-a66f7e4ff086: a831d476-8b0b-4da8-97e8-d4119997f456
+    - c40a47b3-ace4-4386-9492-6cd9624a67ea: 5056d38f-b977-4c46-a93e-e201b4708a4a
+    - c45c8f2a-bf7c-4444-bab5-ad2d4b68ee7e: 04e6f7d3-03ff-4a67-889d-4f7757e2442e
+    - c6674562-cb23-46e8-82fc-583191ef18c2: 1ee4af30-696f-45cf-86cf-2fe050ea9ecb
+    - c7553f22-c1bb-4e68-8017-db37fcfb7d65: 0eae21b9-e17e-447f-aadc-efb046ca5ff3
+    - c8120bba-2c52-4615-ab04-7da505a4bf52: 9b1ef44a-2de6-436e-aa97-c16fcc17e9e5
+    - c987de8d-17c7-42c9-9956-de4b3f7e57e9: f70a974f-3912-40da-86dd-176bb3fd7719
+    - cd1d5d01-e208-4fe3-89b0-96403f4cb4fc: f810699b-4b08-4ac3-8cb0-8a2e6b108eb8
+    - cecc490d-28ef-4902-bb9f-2f5d92ef96c3: f1761520-4132-4e65-ba16-8dd826d6d57d
+    - cf71603f-3af2-4ee6-8c90-034d424fa95c: 62843ca9-f0c9-46f6-ba5b-e58c64a91bd2
+    - d0bf8b50-d3a1-43cc-afed-8d16a2d4a60b: ca8bd71c-5ba4-4d55-9633-f105459c6b41
+    - d40c7e19-1033-4f93-8b4a-eb4943a49631: c4bc6590-3be0-4b5b-9b63-74d7b699a715
+    - d623d46c-4224-4953-a50d-7229a29f58fe: b3d5f87b-d603-42df-8382-9c68ec0289b7
+    - d70c3be9-7e4f-46e6-9572-530a60a13142: 876752d8-45c3-42e9-b079-0103cb1bb706
+    - d962d2e1-d376-47e0-9438-17505220412b: 4afe629b-2f92-4757-bf3a-5f97624159ba
+    - dba388ca-9803-4367-8745-bd3e84518a46: 057a0dab-c163-48d8-806a-a00272e287de
+    - dbeb867d-97e8-43c0-b884-e32f3fa41f4d: 148020a7-11ae-4de7-a924-fd8944f3eb71
+    - dbfbd79c-6274-4b39-b0be-bca85026b415: 7ea51766-6feb-4434-a070-c60d46de9620
+    - dc1fd10b-6a2b-42dd-90bc-9b5865449b78: b8280f64-e6f2-4201-91b3-9080e74de4d1
+    - dc2a5c57-6804-4eb5-9690-cda6fd08a7a9: cbefb8ba-9843-4000-ad8d-797701ce225d
+    - dd2eb51f-381c-478a-bd71-49715ba99055: d4d78708-bd96-4a77-9604-9b1c144e754b
+    - dd873905-da87-4ac4-822e-dd97aef61baa: 46bdc75d-7633-44d6-af0e-3df707e4167a
+    - de399e26-9edc-4f5b-a3e4-6cc1483e583c: 86997e6a-a625-49e0-a258-e9176c5023cd
+    - df5e28d4-a527-4c12-9e8a-c519bd25865d: 2c6e645c-495b-4b3a-b512-90d3f930e5c0
+    - e2125919-f914-40c9-a621-6f3d5d094900: fa13d179-84eb-4339-b91f-4ab98253be09
+    - e4938e06-2655-4a3b-ae19-f25361b582ed: 5434fba3-e8c7-4fc8-9781-8bd942d5f42b
+    - e4e42525-9383-4505-8eb7-6bde2b3b63f0: bb1e4617-ceab-44d4-933e-f2680f90bd85
+    - e73520eb-515a-4cc8-a252-d24a1fc7db93: 5552752c-266b-46cc-b695-ce7ae72e1fc1
+    - e817590b-24ec-4f50-8a79-bf99e23c2fb9: 117a09a9-e769-4453-8743-50ee7bb36a55
+    - e955bd8c-66e5-4bfa-b937-34daeff7cb51: 10376896-7a1e-4895-9f30-216577150bc9
+    - e9ca1c55-1e64-4457-88a9-4b7036aa0b6e: 9ae4b957-ffd8-45af-ac81-112dd6d76c7a
+    - ea07315b-14fe-4a1a-bbc9-73b80b487823: c34a8bd9-92b2-48a4-86b2-c191243f769f
+    - ebb1e204-854e-4385-b443-8c0e002eb17d: 6f141fb7-f76d-4757-9d3f-8632290ec5d5
+    - ec570bc0-0ca2-46f5-b3c8-50505bd590c7: 2588aff1-c243-4f19-a75f-b80084a072ff
+    - eca9d73d-6c99-4614-a58f-8fc6f39e12d4: 50064ca9-233d-44e0-84f4-b22beffe9f75
+    - eecf78d0-698b-4de0-b357-0b485b8f49b1: 3e496498-c60e-4cab-aed3-8c4f5cf22e9b
+    - efceb271-23ec-4b03-918c-2c04496fea2a: 2ce21123-9fd4-4d92-a4a3-cae80cbd56b7
+    - f3f853cf-1adc-4784-826b-56f69694f82d: 994c2221-6049-4cbe-ad7c-cdfdce047e0a
+    - f8375cd7-861c-4329-be02-e686ba4938e5: 781e5ec0-a5a7-4cd8-9d93-d7c6a41850b4
+    - f9bef10e-b860-4763-8dae-5359e14863cc: c0ebae4a-db0d-437d-82fd-9d844e599004
+    - fb222651-ecbb-4e81-860e-d3eae3ee8ebb: 92244b0f-8cb5-40f6-a441-a147d87ce6a0
+    - fc675a4d-d9a5-4ac7-aae0-d90bfbe5a1d8: d6ac3481-aab8-410e-9131-3580ed9b65b8
+    - fde7e189-61d7-4658-b94b-95a08ca6941e: 6be14edc-17a5-44ac-9bfa-d5a521649eb5
+    - fe5c408e-ab6b-4383-8024-8c0ece49eb68: a4eb0642-0fa7-4981-bad3-d0a966edbff8
+    - fedc8fac-0fa1-4af9-aa6f-8f8eb982d748: 10864f41-d46b-429e-8d7b-3518fb961605
+  SourceState: !<own> 93d12422-78e9-4376-a2fa-01d872c1d45a
+- !<SceneObject/68c42b1f-3368-48b9-9366-4122bdadd88d>
+  PrefabRemaps:
+    []
+  Name: L_kayakPaddle_bind_JNT
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/6a17eae6-0574-4867-b691-f336e0b14501>
+  PrefabRemaps:
+    []
+  Name: C_base_bind_JNT
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000006, y: 4.350337, z: -0.000001}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/6a4c6bcc-4750-47e3-be95-511e9329c97c>
+  PrefabRemaps:
+    []
+  Name: C_prop_bind_JNT
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/6b2c4813-4f9a-4c39-8f69-9c78709e72f6>
+  PrefabRemaps:
+    []
+  Name: rig_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 8f4149da-9586-4eda-9771-78c627fb7d53
+  Components:
+    []
+- !<SceneObject/6be14edc-17a5-44ac-9bfa-d5a521649eb5>
+  PrefabRemaps:
+    []
+  Name: baseball_pitcher_mound_bindrig
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 26.504143, z: 0.000000}
+    rotation: {x: 61.648823, y: -0.000000, z: 0.000000}
+    scale: {x: 0.066909, y: 0.066909, z: 0.066909}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 0e814b01-6716-4b1a-aa21-ace52f57d16c
+  Components:
+    - !<own> 02b90a1a-ddb1-4db5-a498-1a5744382157
+- !<SceneObject/6f141fb7-f76d-4757-9d3f-8632290ec5d5>
+  PrefabRemaps:
+    []
+  Name: geo_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 4381a2a1-5331-43c2-bc5a-9b4c3a9e1106
+  Components:
+    []
+- !<SceneObject/7147bd8e-e5e5-400a-9cb4-73653976fe78>
+  PrefabRemaps:
+    []
+  Name: bind_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 539d60cc-f31a-4f68-8d99-6b0397f042ff
+  Components:
+    []
+- !<RenderMeshVisual/731c4e0a-1b8e-41b1-96f0-4935e779bc07>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 05df1e3a-9709-47ae-b762-e8ff0afedb56
+  Mesh: !<reference> 54dd9dd9-8661-45eb-819e-9c52f1d4b9fe
+  Skin: !<reference> 408f1ab9-f0c8-4a7d-bbbd-30925f57d5c8
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/781e5ec0-a5a7-4cd8-9d93-d7c6a41850b4>
+  PrefabRemaps:
+    []
+  Name: ballBaseball_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 13117689-b85d-4da0-9fad-2c1976059566
+  Components:
+    []
+- !<SceneObject/78d34866-05be-4bda-9892-3fca7431cb97>
+  PrefabRemaps:
+    []
+  Name: bind_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 6a17eae6-0574-4867-b691-f336e0b14501
+  Components:
+    []
+- !<RenderMeshVisual/7958dae6-1953-42a4-8dc1-0506a5b91c33>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> a7fa780f-fda5-4c58-9b5a-50a4f10b0aef
+  Mesh: !<reference> 8a4a4134-e1d6-48d8-9027-9c9d0483c312
+  Skin: !<reference> 07d53487-4965-48a7-87b0-163fbb6f94f3
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/7a52bfa7-a5cd-400c-9c49-c44d8f205f01>
+  PrefabRemaps:
+    []
+  Name: rig_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 22745e78-dfd8-4a8f-9bf1-f959503b84e1
+  Components:
+    []
+- !<SceneObject/7b5f7a0a-3b87-49f7-8c6b-295c0444359d>
+  PrefabRemaps:
+    []
+  Name: C_curling_stoneRed_GEO
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> d2f9ff76-528d-42df-95a6-b4db41d78c30
+- !<SceneObject/7e54cf37-f4e7-4ba3-8794-66e4e9a19746>
+  PrefabRemaps:
+    []
+  Name: rig_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 4b28fb66-992d-4daf-a53e-b9b9ef7ecea3
+  Components:
+    []
+- !<SceneObject/7ea51766-6feb-4434-a070-c60d46de9620>
+  PrefabRemaps:
+    []
+  Name: C_kayak_hole_GEO
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> e398cce3-f59b-4a87-bd04-d579552d749c
+- !<SceneObject/7ffd3c53-a28b-435b-85db-ff15552f626a>
+  PrefabRemaps:
+    []
+  Name: karate_board_bindrig
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -13.114565, y: 1.080066, z: 0.000000}
+    rotation: {x: 73.071274, y: 16.794268, z: 13.571730}
+    scale: {x: 0.081335, y: 0.081335, z: 0.081335}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 92244b0f-8cb5-40f6-a441-a147d87ce6a0
+  Components:
+    - !<own> 07d53487-4965-48a7-87b0-163fbb6f94f3
+- !<SceneObject/82d7e257-b596-47c2-85bd-de9e69833cc3>
+  PrefabRemaps:
+    []
+  Name: C_kayak_bind_JNT
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/8343231b-7058-4bc9-afaf-34ea7221fe14>
+  PrefabRemaps:
+    []
+  Name: geo_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> de282301-b944-48ab-ac34-e3022174a7b7
+  Components:
+    []
+- !<SceneObject/86997e6a-a625-49e0-a258-e9176c5023cd>
+  PrefabRemaps:
+    []
+  Name: C_trekPole_base_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 1ee4af30-696f-45cf-86cf-2fe050ea9ecb
+  Components:
+    []
+- !<SceneObject/876752d8-45c3-42e9-b079-0103cb1bb706>
+  PrefabRemaps:
+    []
+  Name: C_tee_GEO
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 4d807ff5-6940-4d6b-9d4c-b786eec07aa6
+- !<SceneObject/88935d11-0c5e-445b-9317-d89b42bb0a6e>
+  PrefabRemaps:
+    []
+  Name: stadium_seat_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 3e496498-c60e-4cab-aed3-8c4f5cf22e9b
+  Components:
+    []
+- !<SceneObject/8bc3ac9d-436c-44c2-9453-976b0d1cf4d8>
+  PrefabRemaps:
+    []
+  Name: geo_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 56dd289d-6ffe-48f4-980a-c969a1f84dd6
+  Components:
+    []
+- !<SceneObject/8c6c6e53-a5e4-49f4-8f21-5039089addff>
+  PrefabRemaps:
+    []
+  Name: C_skipoles_GEO
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 556dbb9d-a551-4e8f-b4c5-0ef71ea1f2db
+- !<SceneObject/8f4149da-9586-4eda-9771-78c627fb7d53>
+  PrefabRemaps:
+    []
+  Name: bind_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 275f9b0f-e523-4242-846b-3221087ddbf2
+  Components:
+    []
+- !<SceneObject/909efddc-d994-4143-91a5-1589dca7f699>
+  PrefabRemaps:
+    []
+  Name: rig_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> d8246fb5-b412-4fcb-9d34-afbc4cf518cc
+  Components:
+    []
+- !<SceneObject/915a592f-ba27-4b70-9df9-c22ef99266c9>
+  PrefabRemaps:
+    []
+  Name: kayak_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 7ea51766-6feb-4434-a070-c60d46de9620
+    - !<own> 028ecec8-7204-4223-8d6f-45cd2ac05e53
+  Components:
+    []
+- !<SceneObject/916ea3c1-85e3-4e87-8d16-ad7f806e2e28>
+  PrefabRemaps:
+    []
+  Name: PROP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 1f0b8924-f7d3-444c-b0b5-3ed4f93f21d1
+    - !<own> b8280f64-e6f2-4201-91b3-9080e74de4d1
+  Components:
+    []
+- !<RenderMeshVisual/91a43a92-4265-4b3b-825d-8adf6971c7f0>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 99acbede-5ad1-4fda-97b5-49fc0f2eac53
+  Mesh: !<reference> 65523500-47be-4d9b-87a1-2176ed7324b7
+  Skin: !<reference> cb5467a6-3be2-43f0-be8a-5e64e19e0557
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/92244b0f-8cb5-40f6-a441-a147d87ce6a0>
+  PrefabRemaps:
+    []
+  Name: PROP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 09c47d3a-f4e2-4189-9e79-6683853ec7ee
+    - !<own> f70a974f-3912-40da-86dd-176bb3fd7719
+  Components:
+    []
+- !<SceneObject/92fb72a9-2f89-40af-8faa-173afa90035e>
+  PrefabRemaps:
+    []
+  Name: PROP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 63ea59b5-dcc6-43d3-8af4-b634874eb638
+    - !<own> 5a9593b7-75db-4ec4-a2ca-98155c8a4638
+  Components:
+    []
+- !<ObjectPrefab/93d12422-78e9-4376-a2fa-01d872c1d45a>
+  PackagePath: BitmojiSports__PLACE_IN_OBJECTS_PANEL
+  objects:
+    - !<own> 32b13bf9-37c9-4e01-99fe-ce8ad1fb6937
+  LazyLoading: false
+  RetainAssets: true
+- !<Skin/945ff0f3-5bb9-4f18-a30b-728729ac7014>
+  PrefabRemaps:
+    []
+  Name: component_2
+  Enabled: true
+  skinBones:
+    C_sled_GEO: !<reference> a1ed3ff4-300b-4604-a86f-064cb6cca54c
+    C_sled_bind_JNT: !<reference> 46bdc75d-7633-44d6-af0e-3df707e4167a
+    PROP: !<reference> c8a55ca0-ecf6-407d-bbfe-b2884a3ec3ab
+    bind_GRP: !<reference> 1477a849-0511-4f5c-8cd6-9dfb0493433d
+    geo_GRP: !<reference> cbefb8ba-9843-4000-ad8d-797701ce225d
+    rig_GRP: !<reference> dd03af78-707f-492c-9a29-152ff423b46d
+    skeleton_sled_bindrig: !<reference> ef45253f-8e59-4e48-a534-40c7c0d9e479
+    sled_GRP: !<reference> a6e9ebec-e993-427b-a7d6-48f9462a9b69
+- !<RenderMeshVisual/95617933-1324-4692-9baa-3ab8be1eec4c>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> cf159886-3e56-4d20-9b40-adff3fb0a0e7
+  Mesh: !<reference> 5485427d-6f9a-44dd-b59a-431495e079fa
+  Skin: !<reference> 3d0734ea-86b7-4f4e-9498-d2b327340d4f
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/967f227b-d3e7-4630-a426-7d57e60c97aa>
+  PrefabRemaps:
+    []
+  Name: tennis_racket_bindrig
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 13.957748, y: -30.117538, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.617277, y: 0.617277, z: 0.617277}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 0e1f1883-bef9-4d8a-a8f3-64de435d8a52
+  Components:
+    - !<own> f8a22219-001c-47a9-a72e-9ca6aed7cfcf
+- !<SceneObject/9829d861-414b-4dc5-b008-987c053c7903>
+  PrefabRemaps:
+    []
+  Name: C_kayakPaddle_part_GEO
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 572f94d5-72c6-43b4-83d4-d352cb3c2795
+- !<RenderMeshVisual/98613e46-4d58-4695-b770-41fd698e854a>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 9faafebe-7aa8-49d8-b885-be1644bcae7d
+  Mesh: !<reference> 8bb89ebb-a3fb-43cd-b7e0-4b95c0d1b793
+  Skin: !<reference> 4b37e0a1-a4f9-4ad4-aa6b-56d15ebdf18c
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/994c2221-6049-4cbe-ad7c-cdfdce047e0a>
+  PrefabRemaps:
+    []
+  Name: bat_baseball_bindrig
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 11.623867, y: 21.311220, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: -18.853727}
+    scale: {x: 0.191363, y: 0.191363, z: 0.191363}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> d4d78708-bd96-4a77-9604-9b1c144e754b
+  Components:
+    - !<own> a0f12171-6a4e-47e5-a498-08e007ab3170
+- !<SceneObject/9950d8e6-1208-4a34-92d9-0e84c4af9c7a>
+  PrefabRemaps:
+    []
+  Name: boomerang_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 1a087d44-024a-4ad7-b3de-684e2a193a07
+  Components:
+    []
+- !<RenderMeshVisual/9a6893b2-8236-4422-9ea8-7bed81325fa4>
+  PrefabRemaps:
+    []
+  Name: component_2
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> f920f3c5-5ecb-4eef-890b-d66e8c560d88
+  Mesh: !<reference> 33010103-62d5-4111-b9b0-db611dadd106
+  Skin: !<reference> 9e01acbe-3094-4c41-9079-f1609ae1fea9
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/9ae4b957-ffd8-45af-ac81-112dd6d76c7a>
+  PrefabRemaps:
+    []
+  Name: rig_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 9e3b522c-2c96-468b-8645-78acff72e20b
+  Components:
+    []
+- !<SceneObject/9b1ef44a-2de6-436e-aa97-c16fcc17e9e5>
+  PrefabRemaps:
+    []
+  Name: C_hockeyPuck_bind_JNT
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/9dfde22b-0ce5-44e3-9298-bbb246ae67b3>
+  PrefabRemaps:
+    []
+  Name: C_karate_board_holder_GEO
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> d1aea3d1-f7b6-4e48-b2fe-94753bdb0e97
+- !<Skin/9e01acbe-3094-4c41-9079-f1609ae1fea9>
+  PrefabRemaps:
+    []
+  Name: component_4
+  Enabled: true
+  skinBones:
+    C_kayak_GEO: !<reference> 028ecec8-7204-4223-8d6f-45cd2ac05e53
+    C_kayak_bind_JNT: !<reference> 82d7e257-b596-47c2-85bd-de9e69833cc3
+    C_kayak_hole_GEO: !<reference> 7ea51766-6feb-4434-a070-c60d46de9620
+    PROP: !<reference> 04c8aa3e-5412-4ea4-bf50-4d3877078f42
+    bind_GRP: !<reference> 24a95cb1-2a3d-49ca-9622-cd6aff83241f
+    geo_GRP: !<reference> 3ad91cb7-584f-47e3-aa1b-f525376f8f55
+    kayak_GRP: !<reference> 915a592f-ba27-4b70-9df9-c22ef99266c9
+    kayak_bindrig: !<reference> a4eb0642-0fa7-4981-bad3-d0a966edbff8
+    rig_GRP: !<reference> ca8bd71c-5ba4-4d55-9633-f105459c6b41
+- !<SceneObject/9e3b522c-2c96-468b-8645-78acff72e20b>
+  PrefabRemaps:
+    []
+  Name: bind_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 01a4c3fb-8065-4cc9-b421-779e4afb3918
+  Components:
+    []
+- !<SceneObject/9eff36be-bda3-445d-a75b-916039757ce3>
+  PrefabRemaps:
+    []
+  Name: tennis_ball_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 148020a7-11ae-4de7-a924-fd8944f3eb71
+  Components:
+    []
+- !<SceneObject/a0aa0752-c4cc-41a4-9329-44268b680509>
+  PrefabRemaps:
+    []
+  Name: PROP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> c2686c14-82a0-429d-b78f-7ac125933697
+    - !<own> 909efddc-d994-4143-91a5-1589dca7f699
+  Components:
+    []
+- !<Skin/a0f12171-6a4e-47e5-a498-08e007ab3170>
+  PrefabRemaps:
+    []
+  Name: component_2
+  Enabled: true
+  skinBones:
+    C_base_bind_JNT: !<reference> 6a17eae6-0574-4867-b691-f336e0b14501
+    C_bat_GEO: !<reference> e5d4eca0-321d-475f-b129-e6a31a9255fd
+    PROP: !<reference> d4d78708-bd96-4a77-9604-9b1c144e754b
+    batBaseball_GRP: !<reference> d5922cb4-b0ab-43de-9461-70370ab97c3b
+    bat_baseball_bindrig: !<reference> 994c2221-6049-4cbe-ad7c-cdfdce047e0a
+    bind_GRP: !<reference> 78d34866-05be-4bda-9892-3fca7431cb97
+    geo_GRP: !<reference> abd3cb44-5fd1-43bd-89c9-e99d198ea767
+    rig_GRP: !<reference> 1f6d8482-fcf1-473b-b3e6-77e5821c0ffd
+- !<SceneObject/a1ed3ff4-300b-4604-a86f-064cb6cca54c>
+  PrefabRemaps:
+    []
+  Name: C_sled_GEO
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> ff85f219-065c-4928-9875-f4520d301789
+- !<SceneObject/a34a205f-81cc-4471-bd24-c92292bcb612>
+  PrefabRemaps:
+    []
+  Name: bind_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 32e3e2d4-1694-4904-8ec5-7725b0206654
+  Components:
+    []
+- !<Skin/a4735901-a8bf-47ed-a48d-393d2b97c753>
+  PrefabRemaps:
+    []
+  Name: component_2
+  Enabled: true
+  skinBones:
+    C_hockeyStick_bind_JNT: !<reference> fa13d179-84eb-4339-b91f-4ab98253be09
+    C_hockey_stick_GEO: !<reference> b9db78d4-a1a7-47e1-a8dd-e47cb8fac705
+    PROP: !<reference> 4704314c-3066-47dc-a2e1-a87cf4b1a09d
+    bind_GRP: !<reference> 22745e78-dfd8-4a8f-9bf1-f959503b84e1
+    geo_GRP: !<reference> 641879ac-ee37-4b52-9705-e39ad58bb506
+    hockey_stick_GRP: !<reference> 4e6bfddc-32ee-4bac-af9d-681f81924f71
+    hockey_stick_bindrig: !<reference> f810699b-4b08-4ac3-8cb0-8a2e6b108eb8
+    rig_GRP: !<reference> 7a52bfa7-a5cd-400c-9c49-c44d8f205f01
+- !<SceneObject/a4eb0642-0fa7-4981-bad3-d0a966edbff8>
+  PrefabRemaps:
+    []
+  Name: kayak_bindrig
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -12.852715, y: -11.611923, z: 0.000000}
+    rotation: {x: 18.494331, y: 3.866256, z: -1.329911}
+    scale: {x: 0.100670, y: 0.100670, z: 0.100670}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 04c8aa3e-5412-4ea4-bf50-4d3877078f42
+  Components:
+    - !<own> 9e01acbe-3094-4c41-9079-f1609ae1fea9
+- !<SceneObject/a6e9ebec-e993-427b-a7d6-48f9462a9b69>
+  PrefabRemaps:
+    []
+  Name: sled_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> a1ed3ff4-300b-4604-a86f-064cb6cca54c
+  Components:
+    []
+- !<SceneObject/a7a56245-e20b-4327-93e7-4574369b90e1>
+  PrefabRemaps:
+    []
+  Name: R_karateBoardSub_bind_JNT
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -25.301275, y: 2.406492, z: 0.015478}
+    rotation: {x: 180.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/a831d476-8b0b-4da8-97e8-d4119997f456>
+  PrefabRemaps:
+    []
+  Name: bind_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 68c42b1f-3368-48b9-9366-4122bdadd88d
+    - !<own> 62843ca9-f0c9-46f6-ba5b-e58c64a91bd2
+  Components:
+    []
+- !<RenderMeshVisual/a94c9493-2c18-455b-9287-05946e7c23f4>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> b8ca9575-c9e1-4266-9523-80724bb397bf
+  Mesh: !<reference> 104fbd46-44b7-47b8-a413-2aa6a0d36142
+  Skin: !<reference> 10376896-7a1e-4895-9f30-216577150bc9
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/abd3cb44-5fd1-43bd-89c9-e99d198ea767>
+  PrefabRemaps:
+    []
+  Name: geo_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> d5922cb4-b0ab-43de-9461-70370ab97c3b
+  Components:
+    []
+- !<Skin/af072816-912e-4684-92ed-b50a2d21e4af>
+  PrefabRemaps:
+    []
+  Name: component_2
+  Enabled: true
+  skinBones:
+    C_prop0001_bind_JNT: !<reference> 32e3e2d4-1694-4904-8ec5-7725b0206654
+    C_tennis_ball_GEO: !<reference> 148020a7-11ae-4de7-a924-fd8944f3eb71
+    PROP: !<reference> 4bb2c9b1-d507-4171-b888-cfa8a52d941e
+    bind_GRP: !<reference> a34a205f-81cc-4471-bd24-c92292bcb612
+    geo_GRP: !<reference> f65923d9-4a91-49b8-b2cc-8e1762e99fad
+    rig_GRP: !<reference> c0ebae4a-db0d-437d-82fd-9d844e599004
+    tennis_ball_GRP: !<reference> 9eff36be-bda3-445d-a75b-916039757ce3
+    tennis_ball_bindrig: !<reference> 23fbccb2-6f68-4671-ae7a-7d117772c600
+- !<SceneObject/b3d5f87b-d603-42df-8382-9c68ec0289b7>
+  PrefabRemaps:
+    []
+  Name: C_base_bind_JNT
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/b488866a-77da-4b26-8f12-21cc7177dc02>
+  PrefabRemaps:
+    []
+  Name: rig_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> a831d476-8b0b-4da8-97e8-d4119997f456
+  Components:
+    []
+- !<SceneObject/b5482664-d392-422a-a5f2-c129875bd2d7>
+  PrefabRemaps:
+    []
+  Name: geo_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 2ce21123-9fd4-4d92-a4a3-cae80cbd56b7
+  Components:
+    []
+- !<SceneObject/b764b079-0b1c-4055-b381-1fd2e502af6e>
+  PrefabRemaps:
+    []
+  Name: bind_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> bb1e4617-ceab-44d4-933e-f2680f90bd85
+  Components:
+    []
+- !<SceneObject/b8280f64-e6f2-4201-91b3-9080e74de4d1>
+  PrefabRemaps:
+    []
+  Name: geo_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 17e17ae9-7e2b-45ee-8775-dfc0030d1db5
+  Components:
+    []
+- !<RenderMeshVisual/b90893a1-2d58-4537-b538-f6b10e278fac>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 2c9ab50d-3a88-471f-9583-7d42a3b35f5a
+  Mesh: !<reference> 2ab58316-8201-49e7-81ed-891f0452530e
+  Skin: !<reference> 04e6f7d3-03ff-4a67-889d-4f7757e2442e
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/b9db78d4-a1a7-47e1-a8dd-e47cb8fac705>
+  PrefabRemaps:
+    []
+  Name: C_hockey_stick_GEO
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> bdd741ee-6c1e-4282-afac-cc22e583e7db
+- !<SceneObject/bb1e4617-ceab-44d4-933e-f2680f90bd85>
+  PrefabRemaps:
+    []
+  Name: C_prop0001_bind_JNT
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 3.843870, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<RenderMeshVisual/bdd741ee-6c1e-4282-afac-cc22e583e7db>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> a6a07362-138a-4ed4-a252-9ddf5bf68c25
+  Mesh: !<reference> 8273c64f-8325-42b3-903f-9a9da8b7e864
+  Skin: !<reference> a4735901-a8bf-47ed-a48d-393d2b97c753
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/be7547ce-53b8-42ef-93e9-3c9126db4e88>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> ec9e9fae-2d61-45b1-877f-a7d4be1e0374
+  Mesh: !<reference> c4e2a936-2fb5-48c6-84d9-f87c0cd70e46
+  Skin: !<reference> 11a9c8dd-ad24-41e9-88f5-8cb6b357fd9e
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/c0ebae4a-db0d-437d-82fd-9d844e599004>
+  PrefabRemaps:
+    []
+  Name: rig_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> a34a205f-81cc-4471-bd24-c92292bcb612
+  Components:
+    []
+- !<SceneObject/c1258c11-1003-4527-9d69-0c159c9277c0>
+  PrefabRemaps:
+    []
+  Name: rig_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 23a0a71c-418d-489c-9a6d-1ec5bda6e429
+  Components:
+    []
+- !<SceneObject/c12b61a1-b44f-45c9-8bbf-9f225666179e>
+  PrefabRemaps:
+    []
+  Name: PROP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 326c039c-9363-4174-9e9c-7b507fb2c352
+    - !<own> b488866a-77da-4b26-8f12-21cc7177dc02
+  Components:
+    []
+- !<SceneObject/c2686c14-82a0-429d-b78f-7ac125933697>
+  PrefabRemaps:
+    []
+  Name: geo_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 62846a42-d468-442b-bcf9-8faea407cb4e
+  Components:
+    []
+- !<SceneObject/c34a8bd9-92b2-48a4-86b2-c191243f769f>
+  PrefabRemaps:
+    []
+  Name: boomerang_bindrig
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -13.000000, y: 14.098354, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.205887, y: 0.205887, z: 0.205887}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 92fb72a9-2f89-40af-8faa-173afa90035e
+  Components:
+    - !<own> 04e6f7d3-03ff-4a67-889d-4f7757e2442e
+- !<SceneObject/c3ecf765-f350-4980-932e-d6af98d34293>
+  PrefabRemaps:
+    []
+  Name: geo_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 2588aff1-c243-4f19-a75f-b80084a072ff
+  Components:
+    []
+- !<RenderMeshVisual/c4bc6590-3be0-4b5b-9b63-74d7b699a715>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> dfca2685-1f0c-4231-80a5-d91a082905f8
+  Mesh: !<reference> 75ea4528-549a-4f24-9dcc-6ee820494766
+  Skin: !<reference> af072816-912e-4684-92ed-b50a2d21e4af
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/c7023ad4-4a21-42b3-a199-2a93a0afed3d>
+  PrefabRemaps:
+    []
+  Name: PROP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 057a0dab-c163-48d8-806a-a00272e287de
+    - !<own> 6b2c4813-4f9a-4c39-8f69-9c78709e72f6
+  Components:
+    []
+- !<SceneObject/c8a55ca0-ecf6-407d-bbfe-b2884a3ec3ab>
+  PrefabRemaps:
+    []
+  Name: PROP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> cbefb8ba-9843-4000-ad8d-797701ce225d
+    - !<own> dd03af78-707f-492c-9a29-152ff423b46d
+  Components:
+    []
+- !<SceneObject/c9ddc989-bd8f-47f6-86e7-e2439a53cd0d>
+  PrefabRemaps:
+    []
+  Name: C_tennis_racket_GEO
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 4a9ce7f0-c3d8-4968-ba32-f4c00aac71aa
+- !<SceneObject/ca8bd71c-5ba4-4d55-9633-f105459c6b41>
+  PrefabRemaps:
+    []
+  Name: rig_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 24a95cb1-2a3d-49ca-9622-cd6aff83241f
+  Components:
+    []
+- !<Skin/cb5467a6-3be2-43f0-be8a-5e64e19e0557>
+  PrefabRemaps:
+    []
+  Name: component_2
+  Enabled: true
+  skinBones:
+    C_hockeyPuck_bind_JNT: !<reference> 9b1ef44a-2de6-436e-aa97-c16fcc17e9e5
+    C_hockey_puck_GEO: !<reference> 04c82659-c835-4afa-9cf7-02ca7758dc67
+    PROP: !<reference> 35bb2e7c-d5b5-43b4-bd38-8814e1a48fba
+    bind_GRP: !<reference> 24222c74-ecec-4fcd-b77a-6e6dcdf9c832
+    geo_GRP: !<reference> c3ecf765-f350-4980-932e-d6af98d34293
+    hockey_puck_GRP: !<reference> 2588aff1-c243-4f19-a75f-b80084a072ff
+    hockey_puck_bindrig: !<reference> 5434fba3-e8c7-4fc8-9781-8bd942d5f42b
+    rig_GRP: !<reference> 4632b1bb-bf5d-41f8-9391-65b78235f35c
+- !<SceneObject/cbefb8ba-9843-4000-ad8d-797701ce225d>
+  PrefabRemaps:
+    []
+  Name: geo_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> a6e9ebec-e993-427b-a7d6-48f9462a9b69
+  Components:
+    []
+- !<Skin/ce34cc29-6dee-4d2c-9328-193c327bd132>
+  PrefabRemaps:
+    []
+  Name: component_2
+  Enabled: true
+  skinBones:
+    C_base_bind_JNT: !<reference> 01a4c3fb-8065-4cc9-b421-779e4afb3918
+    C_karate_board_holder_GEO: !<reference> 9dfde22b-0ce5-44e3-9298-bbb246ae67b3
+    PROP: !<reference> f3c1d91b-2935-4c1b-aee0-15b58b62e3a2
+    bind_GRP: !<reference> 9e3b522c-2c96-468b-8645-78acff72e20b
+    geo_GRP: !<reference> 8bc3ac9d-436c-44c2-9453-976b0d1cf4d8
+    karate_board_holder_GRP: !<reference> 56dd289d-6ffe-48f4-980a-c969a1f84dd6
+    karate_board_holder_bindrig: !<reference> 2f698714-8194-40d4-b78a-74bd5c10e71b
+    rig_GRP: !<reference> 9ae4b957-ffd8-45af-ac81-112dd6d76c7a
+- !<RenderMeshVisual/d1aea3d1-f7b6-4e48-b2fe-94753bdb0e97>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 55b8cd5a-2068-4181-a7b7-c43825f765aa
+  Mesh: !<reference> b610caa3-3069-4496-b35f-1b5d585205ba
+  Skin: !<reference> ce34cc29-6dee-4d2c-9328-193c327bd132
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/d2d43c99-267b-4399-b260-c85b4a69da8b>
+  PrefabRemaps:
+    []
+  Name: karate_board_pile_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 38d8ca17-1bb2-46fe-ad11-4c8e1e489223
+  Components:
+    []
+- !<RenderMeshVisual/d2f9ff76-528d-42df-95a6-b4db41d78c30>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> c225b3a6-2dc0-4ecb-8c2e-d44a3c12c3f0
+  Mesh: !<reference> cdc839aa-9e7e-42a4-a38b-2d43eb4285e0
+  Skin: !<reference> 530052aa-fc23-4ce8-af4a-fcb4906601cc
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<Skin/d3231b46-8025-4a3c-a12a-0204a66b6fbf>
+  PrefabRemaps:
+    []
+  Name: component_2
+  Enabled: true
+  skinBones:
+    C_skiPoleHandle_bind_JNT: !<reference> 275f9b0f-e523-4242-846b-3221087ddbf2
+    C_skipoles_GEO: !<reference> 8c6c6e53-a5e4-49f4-8f21-5039089addff
+    PROP: !<reference> c7023ad4-4a21-42b3-a199-2a93a0afed3d
+    bind_GRP: !<reference> 8f4149da-9586-4eda-9771-78c627fb7d53
+    geo_GRP: !<reference> 057a0dab-c163-48d8-806a-a00272e287de
+    rig_GRP: !<reference> 6b2c4813-4f9a-4c39-8f69-9c78709e72f6
+    ski_poles_bindrig: !<reference> 42da65df-f1de-4d3b-ba83-dd41ebf566d4
+    skipoles_GRP: !<reference> 145b5e2b-bc32-42a3-8852-41092c554f3a
+- !<SceneObject/d3455f18-f534-4425-8355-0bebb2e6b4f2>
+  PrefabRemaps:
+    []
+  Name: trekking_pole_bindrig
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 9.545612, y: -16.442940, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: -20.292334}
+    scale: {x: 0.177951, y: 0.177951, z: 0.177951}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 0eae21b9-e17e-447f-aadc-efb046ca5ff3
+  Components:
+    - !<own> 408f1ab9-f0c8-4a7d-bbbd-30925f57d5c8
+- !<SceneObject/d4d78708-bd96-4a77-9604-9b1c144e754b>
+  PrefabRemaps:
+    []
+  Name: PROP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> abd3cb44-5fd1-43bd-89c9-e99d198ea767
+    - !<own> 1f6d8482-fcf1-473b-b3e6-77e5821c0ffd
+  Components:
+    []
+- !<SceneObject/d54afc1f-271c-4000-baeb-aceed2282497>
+  PrefabRemaps:
+    []
+  Name: rig_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> b764b079-0b1c-4055-b381-1fd2e502af6e
+  Components:
+    []
+- !<SceneObject/d5922cb4-b0ab-43de-9461-70370ab97c3b>
+  PrefabRemaps:
+    []
+  Name: batBaseball_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> e5d4eca0-321d-475f-b129-e6a31a9255fd
+  Components:
+    []
+- !<SceneObject/d6ac3481-aab8-410e-9131-3580ed9b65b8>
+  PrefabRemaps:
+    []
+  Name: Extras
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 86997e6a-a625-49e0-a258-e9176c5023cd
+  Components:
+    []
+- !<SceneObject/d8246fb5-b412-4fcb-9d34-afbc4cf518cc>
+  PrefabRemaps:
+    []
+  Name: bind_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 4ab785e6-c5f1-476a-a165-3c3dc20d3287
+  Components:
+    []
+- !<SceneObject/dd03af78-707f-492c-9a29-152ff423b46d>
+  PrefabRemaps:
+    []
+  Name: rig_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 1477a849-0511-4f5c-8cd6-9dfb0493433d
+  Components:
+    []
+- !<SceneObject/dddbf116-1709-4bcd-a406-5a958d46ebe6>
+  PrefabRemaps:
+    []
+  Name: bind_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 50064ca9-233d-44e0-84f4-b22beffe9f75
+  Components:
+    []
+- !<SceneObject/de282301-b944-48ab-ac34-e3022174a7b7>
+  PrefabRemaps:
+    []
+  Name: tennis_racket_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> c9ddc989-bd8f-47f6-86e7-e2439a53cd0d
+  Components:
+    []
+- !<RenderMeshVisual/e398cce3-f59b-4a87-bd04-d579552d749c>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> f920f3c5-5ecb-4eef-890b-d66e8c560d88
+  Mesh: !<reference> 50052f98-e294-426b-99af-9b6afb3d6cf0
+  Skin: !<reference> 9e01acbe-3094-4c41-9079-f1609ae1fea9
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/e5d4eca0-321d-475f-b129-e6a31a9255fd>
+  PrefabRemaps:
+    []
+  Name: C_bat_GEO
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> fd6fc521-f610-4d56-9e0d-8ca93cdda625
+- !<SceneObject/ee9bb0bd-d9e9-4362-8d66-a2d8b835e243>
+  PrefabRemaps:
+    []
+  Name: stadium_seat_bindrig
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: -27.525249, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.073699, y: 0.073699, z: 0.073699}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 1fc24195-cd96-48ea-bcda-5e50524ab1c8
+  Components:
+    - !<own> 3d0734ea-86b7-4f4e-9498-d2b327340d4f
+- !<SceneObject/ef45253f-8e59-4e48-a534-40c7c0d9e479>
+  PrefabRemaps:
+    []
+  Name: skeleton_sled_bindrig
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: -11.337494, z: 0.000000}
+    rotation: {x: 12.030025, y: 11.484548, z: 3.639308}
+    scale: {x: 0.164921, y: 0.164921, z: 0.164921}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> c8a55ca0-ecf6-407d-bbfe-b2884a3ec3ab
+  Components:
+    - !<own> 945ff0f3-5bb9-4f18-a30b-728729ac7014
+- !<SceneObject/f0fb6d8e-ebf3-459a-9ff1-cb034e4ac6b9>
+  PrefabRemaps:
+    []
+  Name: C_curling_stoneBlue_GEO
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 40ba1474-9837-4f80-b565-d97d3cff152e
+- !<SceneObject/f1761520-4132-4e65-ba16-8dd826d6d57d>
+  PrefabRemaps:
+    []
+  Name: PROP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 39b9e399-2ec8-41e4-b5d4-511048e454de
+    - !<own> d54afc1f-271c-4000-baeb-aceed2282497
+  Components:
+    []
+- !<SceneObject/f3177fcd-337b-41ec-b9eb-1a021831b6e3>
+  PrefabRemaps:
+    []
+  Name: bind_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 6a4c6bcc-4750-47e3-be95-511e9329c97c
+  Components:
+    []
+- !<SceneObject/f3c1d91b-2935-4c1b-aee0-15b58b62e3a2>
+  PrefabRemaps:
+    []
+  Name: PROP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 8bc3ac9d-436c-44c2-9453-976b0d1cf4d8
+    - !<own> 9ae4b957-ffd8-45af-ac81-112dd6d76c7a
+  Components:
+    []
+- !<SceneObject/f65923d9-4a91-49b8-b2cc-8e1762e99fad>
+  PrefabRemaps:
+    []
+  Name: geo_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 9eff36be-bda3-445d-a75b-916039757ce3
+  Components:
+    []
+- !<SceneObject/f70a974f-3912-40da-86dd-176bb3fd7719>
+  PrefabRemaps:
+    []
+  Name: rig_GRP
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 4afe629b-2f92-4757-bf3a-5f97624159ba
+  Components:
+    []
+- !<SceneObject/f810699b-4b08-4ac3-8cb0-8a2e6b108eb8>
+  PrefabRemaps:
+    []
+  Name: hockey_stick_bindrig
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: -2.816963, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 4704314c-3066-47dc-a2e1-a87cf4b1a09d
+  Components:
+    - !<own> a4735901-a8bf-47ed-a48d-393d2b97c753
+- !<Skin/f8a22219-001c-47a9-a72e-9ca6aed7cfcf>
+  PrefabRemaps:
+    []
+  Name: component_2
+  Enabled: true
+  skinBones:
+    C_prop_bind_JNT: !<reference> 34ca0179-0cdb-4743-8d2f-0406d7803d6f
+    C_tennis_racket_GEO: !<reference> c9ddc989-bd8f-47f6-86e7-e2439a53cd0d
+    PROP: !<reference> 0e1f1883-bef9-4d8a-a8f3-64de435d8a52
+    bind_GRP: !<reference> 23a0a71c-418d-489c-9a6d-1ec5bda6e429
+    geo_GRP: !<reference> 8343231b-7058-4bc9-afaf-34ea7221fe14
+    rig_GRP: !<reference> c1258c11-1003-4527-9d69-0c159c9277c0
+    tennis_racket_GRP: !<reference> de282301-b944-48ab-ac34-e3022174a7b7
+    tennis_racket_bindrig: !<reference> 967f227b-d3e7-4630-a426-7d57e60c97aa
+- !<SceneObject/fa13d179-84eb-4339-b91f-4ab98253be09>
+  PrefabRemaps:
+    []
+  Name: C_hockeyStick_bind_JNT
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 37.626141, z: -36.195801}
+    rotation: {x: 0.000000, y: 37.883869, z: 90.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<RenderMeshVisual/fd6fc521-f610-4d56-9e0d-8ca93cdda625>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 8097e431-c947-442e-9ff9-609ca429312d
+  Mesh: !<reference> 7ee762fc-381a-4ff7-9616-0b7730a07284
+  Skin: !<reference> a0f12171-6a4e-47e5-a498-08e007ab3170
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/ff85f219-065c-4928-9875-f4520d301789>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 101b0fec-b80f-43f7-9bc2-bc60756450b0
+  Mesh: !<reference> e90d1310-35de-4d94-97d6-66a454b16330
+  Skin: !<reference> 945ff0f3-5bb9-4f18-a30b-728729ac7014
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}

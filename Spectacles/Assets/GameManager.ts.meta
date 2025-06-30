@@ -1,0 +1,63 @@
+- !<AssetImportMetadata/9aaa8ad6-69fe-42f9-849a-fb7696159a25>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 7ca3d387-bc8b-430e-9af7-140bee2f7577
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 7ca3d387-bc8b-430e-9af7-140bee2f7577
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 09108f47-a63a-45af-9045-c87f591c5066
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/09108f47-a63a-45af-9045-c87f591c5066>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: e76b3741-5731-4638-b813-91ac076c6b74
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    detector: false
+    detectorScript: false
+    minigame: false
+    minigameScript: false
+    moneyChest: false
+    pinata: false
+    pinataScript: false
+    spawnScript: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - moneyChest: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      pinata: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      minigame: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      detector: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      spawnScript: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
+      detectorScript: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      pinataScript: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      minigameScript: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input SceneObject moneyChest
+    - // @input SceneObject pinata
+    - // @input SceneObject minigame
+    - // @input SceneObject detector
+    - // @input AssignableType spawnScript
+    - // @input AssignableType_1 detectorScript
+    - // @input AssignableType_2 pinataScript
+    - // @input AssignableType_3 minigameScript

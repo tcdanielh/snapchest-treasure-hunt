@@ -1,0 +1,211 @@
+- !<AssetImportMetadata/90e9caa5-f51f-4606-b1d7-77d95a531666>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 9ea750f9-6647-4e0d-a4de-22f52be7350b
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 9ea750f9-6647-4e0d-a4de-22f52be7350b
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    ObjectPrefab: !<own> 7accdad0-3036-408f-b256-774694f109a3
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefab/13fc2f74-c2ca-468f-b65c-4005b9e88e5c>
+  PackagePath: Witch Hat__PUT_UNDER_MAIN_CAM
+  objects:
+    - !<own> 5f48d4f8-7001-4ce6-ad41-e6cf6f58c35d
+  LazyLoading: false
+  RetainAssets: true
+- !<RenderMeshVisual/496d9de8-6a34-4d87-aaae-13a1d2158a66>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> aff2360e-5193-46a1-823a-757d8b3812ab
+  Mesh: !<reference> fb629002-4d2f-4531-83f0-f354065cd79d
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: false
+        roughHarden: -1.000000
+        roughCurve: -1.000000
+    IndirectDiffuse:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    AmbientOcclusion:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<SceneObject/5f48d4f8-7001-4ce6-ad41-e6cf6f58c35d>
+  PrefabRemaps:
+    []
+  Name: Witch Hat__PUT_UNDER_MAIN_CAM
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 8888aff9-40cd-4ef6-af74-87419f89d48a
+  Components:
+    []
+- !<SceneObject/66ea4412-1ceb-463c-8d2e-1f7118b7bd2e>
+  PrefabRemaps:
+    []
+  Name: Face Occluder
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 7.330000, z: 8.740000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.830000, y: 0.830000, z: 0.830000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 496d9de8-6a34-4d87-aaae-13a1d2158a66
+- !<ObjectPrefabAssetData/7accdad0-3036-408f-b256-774694f109a3>
+  SourceRemaps:
+    - 3be8e55a-06c5-4fc9-9d76-0d8ab1ef6bed: 496d9de8-6a34-4d87-aaae-13a1d2158a66
+    - 700404e0-92ea-455e-b52c-967eeb81bd4d: dc7dc3a6-be1a-48de-9999-4c45b422ff7b
+    - 9cc9659b-fc8f-4ea9-9d47-37856ea8f6ee: 66ea4412-1ceb-463c-8d2e-1f7118b7bd2e
+    - aecebcd8-9c52-49fe-88dc-bfb61e1c0ed9: 804264e2-b14b-4bec-8032-ba63aab7e6d9
+    - bb661dfd-fc16-4854-b345-c0bb981af6cc: ff0a462f-4a76-46b4-923d-ba11605445e0
+    - cd51cdbc-0e86-48e6-85ea-839671a4d6b6: 5f48d4f8-7001-4ce6-ad41-e6cf6f58c35d
+    - d6e2c392-1dfd-47b6-891d-2c89ca23efa3: 80b3b930-7681-4a8f-bd77-6547a4940ce6
+    - e0c02e27-df7d-435d-a9b5-195865f4d4c4: ae575201-1bd4-4d4a-a6b3-b9a9b7592bcc
+    - e0c33d71-38c2-4c3f-8ef7-83dc0a4bc4d2: 8888aff9-40cd-4ef6-af74-87419f89d48a
+  SourceState: !<own> 13fc2f74-c2ca-468f-b65c-4005b9e88e5c
+- !<SceneObject/804264e2-b14b-4bec-8032-ba63aab7e6d9>
+  PrefabRemaps:
+    []
+  Name: Witch Hat
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: -160.326965, z: -0.275230}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> dc7dc3a6-be1a-48de-9999-4c45b422ff7b
+    - !<own> 80b3b930-7681-4a8f-bd77-6547a4940ce6
+- !<RenderMeshVisual/80b3b930-7681-4a8f-bd77-6547a4940ce6>
+  PrefabRemaps:
+    []
+  Name: component_1
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 518883e3-d6c1-4966-a064-3bb77e6493f5
+  Mesh: !<reference> 80dc61ce-752f-45dd-b07b-051eed6a258b
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/8888aff9-40cd-4ef6-af74-87419f89d48a>
+  PrefabRemaps:
+    []
+  Name: Head Binding 0
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 66ea4412-1ceb-463c-8d2e-1f7118b7bd2e
+    - !<own> ae575201-1bd4-4d4a-a6b3-b9a9b7592bcc
+  Components:
+    - !<own> ff0a462f-4a76-46b4-923d-ba11605445e0
+- !<SceneObject/ae575201-1bd4-4d4a-a6b3-b9a9b7592bcc>
+  PrefabRemaps:
+    []
+  Name: Witch Hat
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 5.577384, z: 2.918199}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.741243, y: 0.741243, z: 0.741243}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 804264e2-b14b-4bec-8032-ba63aab7e6d9
+  Components:
+    []
+- !<RenderMeshVisual/dc7dc3a6-be1a-48de-9999-4c45b422ff7b>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 518883e3-d6c1-4966-a064-3bb77e6493f5
+  Mesh: !<reference> 11f96baf-ed46-46ee-b2c4-b1a7f2300732
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<Head/ff0a462f-4a76-46b4-923d-ba11605445e0>
+  PrefabRemaps:
+    []
+  Name: Head Binding
+  Enabled: true
+  AttachmentPointType: HeadCenter
+  FaceIndex: 0
+  AttachedBarycentricVertex:
+    indices:
+      - 0
+      - 0
+      - 0
+    weights:
+      - 0.000000
+      - 0.000000
+      - 0.000000
+  TrackingScope: !<reference> 00000000-0000-0000-0000-000000000000

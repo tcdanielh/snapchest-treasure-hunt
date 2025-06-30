@@ -1,0 +1,58 @@
+- !<ObjectPrefab/8b26c5e2-c85b-41ab-9a3a-f3e014a09871>
+  PackagePath: ""
+  objects:
+    - !<own> d766d2fb-73bc-4b8e-8384-4d5c7cf32319
+  LazyLoading: false
+  RetainAssets: true
+- !<ScriptComponent/2c56b1b3-2fd8-45e9-9aa0-bb32583595c7>
+  PrefabRemaps:
+    []
+  Name: TreasureChestAnimation
+  Enabled: true
+  ScriptAsset: !<reference> 5566abcb-042e-47b2-adee-e453749ab1ca
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      sparklesPrefab: !<reference.ObjectPrefab> 7cc996e4-e93c-45a4-b08a-f28a878a0950
+      trailEffectPrefab: !<reference.ObjectPrefab> 2b243d93-df2a-4d9a-9f9b-898782e49946
+      chestPrefab: !<reference.ObjectPrefab> 095c47fa-90a3-42d6-96e2-2078c6f6b694
+      audio: !<reference.AudioComponent> 60a1e118-fe4e-4b33-962b-de8a774f19e4
+  ScriptTypes:
+    "":
+      {}
+- !<AudioComponent/60a1e118-fe4e-4b33-962b-de8a774f19e4>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 2a6f48e0-07fc-4ec2-81a6-428475485fb0
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
+- !<SceneObject/d766d2fb-73bc-4b8e-8384-4d5c7cf32319>
+  PrefabRemaps:
+    []
+  Name: GameChestOnSpawn
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 2c56b1b3-2fd8-45e9-9aa0-bb32583595c7
+    - !<own> 60a1e118-fe4e-4b33-962b-de8a774f19e4

@@ -1,0 +1,17 @@
+- !<AnimationMixerLayer/290f367c-5072-4326-96c0-37c782631d4e>
+  PackagePath: ""
+  Layer: Armature_ExclamationAction
+  Name: Armature_ExclamationAction
+  Weight: 1.000000
+  SpeedRatio: 1.000000
+  From: 0.000000
+  To: 6.250000
+  Offset: 0.000000
+  FPS: 30.000000
+  NumCycles: 1
+  Reversed: false
+  Disabled: false
+  PostInfinity: Cycle
+  BlendMode: Default
+  ScaleMode: Multiply
+  RangeType: TimeInSeconds

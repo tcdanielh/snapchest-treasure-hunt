@@ -1,0 +1,145 @@
+- !<AssetImportMetadata/4affddc5-2ba6-4a4a-b14a-2aebaf115fd5>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> e39857ff-16f0-4ef8-b32c-9cb6a323d87e
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> e39857ff-16f0-4ef8-b32c-9cb6a323d87e
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    ObjectPrefab: !<own> f6b96243-1224-4b92-87d7-766e44bd2662
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/16902466-af80-4553-b05b-f5b38bb2fcdc>
+  PrefabRemaps:
+    []
+  Name: Cheering Mid
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> bbf7088b-b612-49f8-9a51-4c666554c7de
+- !<ObjectPrefab/316e0978-b852-488a-9d4c-547d43171c70>
+  PackagePath: AudienceApplauseSFX__PLACE_IN_OBJECTS_PANEL
+  objects:
+    - !<own> 3c798fa1-d025-430e-976f-bcc8ca4af001
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/3c798fa1-d025-430e-976f-bcc8ca4af001>
+  PrefabRemaps:
+    []
+  Name: AudienceApplauseSFX__PLACE_IN_OBJECTS_PANEL
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> a21134d2-3888-4462-8a4e-4dcad7168f30
+    - !<own> 16902466-af80-4553-b05b-f5b38bb2fcdc
+    - !<own> 54d81391-380b-4d2b-86c9-f9cd2e725862
+  Components:
+    []
+- !<SceneObject/54d81391-380b-4d2b-86c9-f9cd2e725862>
+  PrefabRemaps:
+    []
+  Name: Cheering Short
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 744ae556-b44f-4f83-af51-307862ae0b60
+- !<AudioComponent/744ae556-b44f-4f83-af51-307862ae0b60>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 7086b1ce-87db-4214-a387-b14037555f60
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Inverse
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
+- !<SceneObject/a21134d2-3888-4462-8a4e-4dcad7168f30>
+  PrefabRemaps:
+    []
+  Name: Cheering Long
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> a3dd3f00-50cf-41b4-b3bf-65fc4b2112e1
+- !<AudioComponent/a3dd3f00-50cf-41b4-b3bf-65fc4b2112e1>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> b27ed9c5-7c1a-458f-8205-0e8315b413cd
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Inverse
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
+- !<AudioComponent/bbf7088b-b612-49f8-9a51-4c666554c7de>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 2a6f48e0-07fc-4ec2-81a6-428475485fb0
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Inverse
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
+- !<ObjectPrefabAssetData/f6b96243-1224-4b92-87d7-766e44bd2662>
+  SourceRemaps:
+    - 112b1176-9b55-47a8-bc25-041c1f61e478: 3c798fa1-d025-430e-976f-bcc8ca4af001
+    - 2887e7de-0bc7-498d-97d5-c1c00f48ccb5: bbf7088b-b612-49f8-9a51-4c666554c7de
+    - 600bdd35-d80f-435c-9b8a-f1928d4128e6: a3dd3f00-50cf-41b4-b3bf-65fc4b2112e1
+    - 842f3e01-2f00-4882-94d4-61c80c1ffe13: 16902466-af80-4553-b05b-f5b38bb2fcdc
+    - 8d123882-e05d-4b46-8276-5de7cb3713e1: a21134d2-3888-4462-8a4e-4dcad7168f30
+    - b0acc162-b6db-405c-ab0c-7e721a445d74: 54d81391-380b-4d2b-86c9-f9cd2e725862
+    - b5f9084d-1130-4559-8cc4-2391dc565652: 744ae556-b44f-4f83-af51-307862ae0b60
+  SourceState: !<own> 316e0978-b852-488a-9d4c-547d43171c70

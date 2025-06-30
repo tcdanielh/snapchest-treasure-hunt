@@ -1,0 +1,247 @@
+- !<ObjectPrefab/d8998438-ba09-4d46-ac6c-f54640c40af2>
+  PackagePath: ""
+  objects:
+    - !<own> 8a4d9508-2004-4b1b-b03d-c734e99c57b6
+  LazyLoading: false
+  RetainAssets: true
+- !<Text/0b0ffd4e-c8c1-4812-9369-e59c35075efd>
+  PrefabRemaps:
+    []
+  Name: Text
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Text: "Points: 0"
+  Editable: false
+  ShowEditingPreview: true
+  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
+  SizeToFit: false
+  FontSize: 500
+  Font: !<reference> 00000000-0000-0000-0000-000000000000
+  LayoutRect:
+    left: -7.500000
+    bottom: -2.250000
+    right: 7.500000
+    top: 2.250000
+  OverflowVertical: Overflow
+  OverflowHorizontal: Overflow
+  Fill: !<TextFill>
+    Mode: Solid
+    Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    TileCount: 5.000000
+    TileZone: Rect
+    TextureStretch: FitWidth
+  Outline: !<OutlineSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Size: 0.250000
+  Dropshadow: !<DropshadowSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    OffsetX: 0.250000
+    OffsetY: 0.250000
+  Background: !<BackgroundSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Margins:
+      left: 0.000000
+      bottom: 0.000000
+      right: 0.000000
+      top: 0.000000
+    CornerRadius: 0.000000
+  AdvancedLayout: !<TextAdvancedLayout>
+    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+    LetterSpacing: 0.000000
+    LineSpacing: 1.000000
+    CapitalizationOverride: None
+  DepthTest: false
+  TwoSided: false
+- !<SceneObject/0d4897e6-d8ac-45d4-b957-f36e194a15ec>
+  PrefabRemaps:
+    []
+  Name: MinigameShapeDestroyer
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: -100.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 400.000000, y: 5.000000, z: 400.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> d2e1b042-29dc-4e2f-9c8b-b214db257611
+- !<ScriptComponent/761fa4a5-204c-4e6d-8476-c678a8d914fc>
+  PrefabRemaps:
+    []
+  Name: MinigameShapeSpawner
+  Enabled: true
+  ScriptAsset: !<reference> 324499c4-8d2b-4f18-9538-f569ad09d268
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      shapePrefab: !<reference.ObjectPrefab[]>
+        - !<reference> 8b505425-73a6-4e03-a92a-64f3f43909d2
+        - !<reference> a86f517b-0656-4403-8995-db8d86ec60fe
+        - !<reference> 9258fbf6-d05a-41eb-a5e8-fc52ffc65151
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/8a4d9508-2004-4b1b-b03d-c734e99c57b6>
+  PrefabRemaps:
+    []
+  Name: CatchingMinigame
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> d5a8b72e-7800-46e9-aa00-ce47b7fa9683
+    - !<own> ebc91e02-ec59-4687-8dcb-0ce557c52fc7
+  Components:
+    []
+- !<RenderMeshVisual/a2309645-8928-4214-9126-01d9dd6b0634>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 8d9374e3-bf28-4053-9b02-922bc7525eb2
+  Mesh: !<reference> e542623c-1432-4bfa-881d-a28905bd9e57
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/c2f80207-b7d2-4425-a5bf-ac531e194447>
+  PrefabRemaps:
+    []
+  Name: PointsDisplay
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 50.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 0b0ffd4e-c8c1-4812-9369-e59c35075efd
+- !<SceneObject/d0178827-a34a-41f7-89ff-6a0dc1a54f02>
+  PrefabRemaps:
+    []
+  Name: MinigameShapeSpawner
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 761fa4a5-204c-4e6d-8476-c678a8d914fc
+- !<ScriptComponent/d2e1b042-29dc-4e2f-9c8b-b214db257611>
+  PrefabRemaps:
+    []
+  Name: MinigameShapeDestroyer
+  Enabled: true
+  ScriptAsset: !<reference> 1086b017-0fcd-415f-9274-26513d2e62d5
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/d5a8b72e-7800-46e9-aa00-ce47b7fa9683>
+  PrefabRemaps:
+    []
+  Name: MinigameEnvironment
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> d0178827-a34a-41f7-89ff-6a0dc1a54f02
+    - !<own> 0d4897e6-d8ac-45d4-b957-f36e194a15ec
+    - !<own> c2f80207-b7d2-4425-a5bf-ac531e194447
+  Components:
+    []
+- !<SceneObject/ebc91e02-ec59-4687-8dcb-0ce557c52fc7>
+  PrefabRemaps:
+    []
+  Name: "Catcher [EDIT THIS FOR PHONE]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: -12.249817, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 26.163099, y: 10.000000, z: 28.599939}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> a2309645-8928-4214-9126-01d9dd6b0634
+    - !<own> ff3e6f64-1439-4284-8c9c-f10d9cdc59a0
+- !<ScriptComponent/ff3e6f64-1439-4284-8c9c-f10d9cdc59a0>
+  PrefabRemaps:
+    []
+  Name: CatchingGameTester
+  Enabled: true
+  ScriptAsset: !<reference> 4526a147-607d-41fa-9c18-fef002db016b
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      textUI: !<reference.Text> 0b0ffd4e-c8c1-4812-9369-e59c35075efd
+  ScriptTypes:
+    "":
+      {}

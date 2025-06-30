@@ -1,0 +1,186 @@
+- !<AssetImportMetadata/ce596491-097a-4163-8a22-97ade86c42c3>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> a86f517b-0656-4403-8995-db8d86ec60fe
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> a86f517b-0656-4403-8995-db8d86ec60fe
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    ObjectPrefab: !<own> 1fa6b5cd-f45f-4f2b-b8ab-dbce78203fba
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<RenderMeshVisual/154a3466-bbc9-44f1-8f50-46ad44279a2f>
+  PrefabRemaps:
+    []
+  Name: component_1
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> ce8bda8f-1d0a-43eb-992d-1302b99be2eb
+  Mesh: !<reference> ca436b5e-5cd1-4de8-9545-fa8255b4e1ba
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: false
+        roughHarden: -1.000000
+        roughCurve: -1.000000
+    IndirectDiffuse:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    AmbientOcclusion:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<ObjectPrefabAssetData/1fa6b5cd-f45f-4f2b-b8ab-dbce78203fba>
+  SourceRemaps:
+    - 09c97299-4ff8-418c-b307-30431c707a00: f79e1b53-757e-4dab-81ed-f6c6d023c747
+    - 5d1d099e-bff2-40ad-8571-2e9cf018c4a8: 4aa0e79d-c70d-4730-9fe7-9c5635fd85f8
+    - 61be604f-6d33-4d68-9214-fd55bbb0d330: 154a3466-bbc9-44f1-8f50-46ad44279a2f
+    - 7675ee5e-4099-4001-b7f0-e1e96ad24e4f: 810e4c6b-4d20-442f-9acc-4d8edab16c41
+    - a4e0eb27-8a72-490e-9797-17a35af9de11: d606e154-149a-4be9-b9ba-2a4b390f8235
+    - d4f5ee03-4542-46c3-afe8-c496381fec74: e494da19-1ec3-4810-a167-b3c137300f82
+  SourceState: !<own> c1eaa5ea-61f4-41b0-b9d1-95242cb34390
+- !<SceneObject/4aa0e79d-c70d-4730-9fe7-9c5635fd85f8>
+  PrefabRemaps:
+    []
+  Name: Hat
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.333761, y: 5.206576, z: -7.521950}
+    rotation: {x: -0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 0.759211, y: 0.672662, z: 0.759211}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 810e4c6b-4d20-442f-9acc-4d8edab16c41
+- !<RenderMeshVisual/810e4c6b-4d20-442f-9acc-4d8edab16c41>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 510166af-d06a-447d-b981-870c1d72e752
+  Mesh: !<reference> 139cac0c-0a3f-4c8b-bd66-e46093ed0439
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: false
+        roughHarden: -1.000000
+        roughCurve: -1.000000
+    IndirectDiffuse:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    AmbientOcclusion:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<ObjectPrefab/c1eaa5ea-61f4-41b0-b9d1-95242cb34390>
+  PackagePath: ""
+  objects:
+    - !<own> d606e154-149a-4be9-b9ba-2a4b390f8235
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/d606e154-149a-4be9-b9ba-2a4b390f8235>
+  PrefabRemaps:
+    []
+  Name: BlackWitchHat
+  Enabled: true
+  Layers: 8
+  LocalTransform:
+    position: {x: 0.044413, y: 7.922399, z: 9.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 4aa0e79d-c70d-4730-9fe7-9c5635fd85f8
+    - !<own> f79e1b53-757e-4dab-81ed-f6c6d023c747
+  Components:
+    - !<own> e494da19-1ec3-4810-a167-b3c137300f82
+- !<BodyComponent/e494da19-1ec3-4810-a167-b3c137300f82>
+  PrefabRemaps:
+    []
+  Name: Physics Body
+  Enabled: true
+  Shape: !<Sphere>
+    FitVisual: true
+    Radius: 6.000000
+  Matter: !<reference> bacd44a9-f51d-44ad-8229-4251009ad617
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false
+  Dynamic: true
+  BodySetting: Density
+  BodySettingValue: 1.000000
+  Damping: 0.150000
+  AngularDamping: 0.000000
+- !<SceneObject/f79e1b53-757e-4dab-81ed-f6c6d023c747>
+  PrefabRemaps:
+    []
+  Name: Band
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.333761, y: 5.206576, z: -7.521950}
+    rotation: {x: -0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 0.759211, y: 0.672662, z: 0.759211}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 154a3466-bbc9-44f1-8f50-46ad44279a2f

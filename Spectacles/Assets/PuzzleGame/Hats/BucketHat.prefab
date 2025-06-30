@@ -1,0 +1,79 @@
+- !<ObjectPrefab/b8046c59-69bc-4b37-9341-360315eb928b>
+  PackagePath: ""
+  objects:
+    - !<own> cd9e87cd-922f-4a25-a914-c47006703029
+  LazyLoading: false
+  RetainAssets: true
+- !<RenderMeshVisual/61021148-cba7-4cbe-a3e1-bfdaa99e4019>
+  PrefabRemaps:
+    []
+  Name: component_6
+  Enabled: true
+  RenderOrder: 1
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: Caster
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> bed3f471-7de8-4d67-84e2-8d3befa918bf
+  Mesh: !<reference> f8401504-ce18-4319-94fd-88572e539c52
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/998c3af5-e57f-4244-be9d-d61093e02169>
+  PrefabRemaps:
+    []
+  Name: B_hat
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.056324, y: 4.879713, z: -47.198883}
+    rotation: {x: -90.000008, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 61021148-cba7-4cbe-a3e1-bfdaa99e4019
+- !<BodyComponent/c3556cf5-a4df-4146-ac4e-eb2ff932d25d>
+  PrefabRemaps:
+    []
+  Name: Physics Body
+  Enabled: true
+  Shape: !<Sphere>
+    FitVisual: true
+    Radius: 6.000000
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false
+  Dynamic: true
+  BodySetting: Density
+  BodySettingValue: 1.000000
+  Damping: 0.150000
+  AngularDamping: 0.000000
+- !<SceneObject/cd9e87cd-922f-4a25-a914-c47006703029>
+  PrefabRemaps:
+    []
+  Name: BucketHat
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 998c3af5-e57f-4244-be9d-d61093e02169
+  Components:
+    - !<own> c3556cf5-a4df-4146-ac4e-eb2ff932d25d

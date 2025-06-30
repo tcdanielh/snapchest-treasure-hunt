@@ -1,0 +1,119 @@
+- !<ObjectPrefab/e39857ff-16f0-4ef8-b32c-9cb6a323d87e>
+  PackagePath: ""
+  objects:
+    - !<own> 112b1176-9b55-47a8-bc25-041c1f61e478
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/112b1176-9b55-47a8-bc25-041c1f61e478>
+  PrefabRemaps:
+    []
+  Name: AudienceApplauseSFX__PLACE_IN_OBJECTS_PANEL
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 8d123882-e05d-4b46-8276-5de7cb3713e1
+    - !<own> 842f3e01-2f00-4882-94d4-61c80c1ffe13
+    - !<own> b0acc162-b6db-405c-ab0c-7e721a445d74
+  Components:
+    []
+- !<AudioComponent/2887e7de-0bc7-498d-97d5-c1c00f48ccb5>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 2a6f48e0-07fc-4ec2-81a6-428475485fb0
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Inverse
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
+- !<AudioComponent/600bdd35-d80f-435c-9b8a-f1928d4128e6>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> b27ed9c5-7c1a-458f-8205-0e8315b413cd
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Inverse
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
+- !<SceneObject/842f3e01-2f00-4882-94d4-61c80c1ffe13>
+  PrefabRemaps:
+    []
+  Name: Cheering Mid
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 2887e7de-0bc7-498d-97d5-c1c00f48ccb5
+- !<SceneObject/8d123882-e05d-4b46-8276-5de7cb3713e1>
+  PrefabRemaps:
+    []
+  Name: Cheering Long
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 600bdd35-d80f-435c-9b8a-f1928d4128e6
+- !<SceneObject/b0acc162-b6db-405c-ab0c-7e721a445d74>
+  PrefabRemaps:
+    []
+  Name: Cheering Short
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> b5f9084d-1130-4559-8cc4-2391dc565652
+- !<AudioComponent/b5f9084d-1130-4559-8cc4-2391dc565652>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 7086b1ce-87db-4214-a387-b14037555f60
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Inverse
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
