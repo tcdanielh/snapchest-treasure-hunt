@@ -1,0 +1,58 @@
+- !<AssetImportMetadata/4d09a5a3-7de0-8c79-783b-eea1d84c58b2>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 8fe3bd0e-92f0-4ed8-aeca-d30362293ce7
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 8fe3bd0e-92f0-4ed8-aeca-d30362293ce7
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 42e21fa4-8521-4f4e-a507-2f4c836de53d
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/42e21fa4-8521-4f4e-a507-2f4c836de53d>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: c34a28e0-bc3c-47b1-a980-e191d11c1f6b
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    disabledMaterial: false
+    meshVisuals: false
+    toggledOffMaterial: false
+    toggledOffSelectMaterial: false
+    toggledOnMaterial: false
+    toggledOnSelectMaterial: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - toggledOffMaterial: !<reference.Material> 1b0c852c-f13b-4388-9d50-a4db6c830e91
+      toggledOffSelectMaterial: !<reference.Material> f7408e10-2f97-4579-86d6-f2fa1125ac09
+      toggledOnMaterial: !<reference.Material> 1f68edf9-eb45-4d53-a6ec-d2f94e9012ea
+      toggledOnSelectMaterial: !<reference.Material> 29520821-5d32-454a-8ad1-15b377489ea4
+      disabledMaterial: !<reference.Material> d7b2b0c3-d0ee-4462-ae94-1956920ac63b
+      meshVisuals: !<reference.RenderMeshVisual[]>
+        []
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input Asset.Material toggledOffMaterial
+    - // @input Asset.Material toggledOffSelectMaterial
+    - // @input Asset.Material toggledOnMaterial
+    - // @input Asset.Material toggledOnSelectMaterial
+    - // @input Asset.Material disabledMaterial
+    - "// @input Component.RenderMeshVisual[] meshVisuals = {}"

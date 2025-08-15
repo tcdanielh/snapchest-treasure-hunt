@@ -1,0 +1,54 @@
+- !<AssetImportMetadata/ef639a94-f29c-4c5f-ff65-25c5564005ba>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 585d875e-66ae-4f47-98a0-1288b7d5a07e
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 585d875e-66ae-4f47-98a0-1288b7d5a07e
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> b2a05b2c-27f2-4486-a031-a2c5d16df83d
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/b2a05b2c-27f2-4486-a031-a2c5d16df83d>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 4c9b73c8-ee65-47c8-a4e8-29884ed87719
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    cubeNum: false
+    cubePrefab: false
+    cubeScale: false
+    fallSpeed: false
+    scoreText: false
+    spawnHeight: false
+    spawnRangeX: false
+    spawnRangeZ: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - cubePrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      spawnRangeX: !<float> 100.000000
+      spawnRangeZ: !<float> 100.000000
+      spawnHeight: !<float> 100.000000
+      cubeScale: !<float> 1.000000
+      fallSpeed: !<float> 100.000000
+      cubeNum: 0
+      scoreText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}

@@ -1,0 +1,50 @@
+- !<AssetImportMetadata/c6279443-2ddb-00fd-edc5-00819de81ffb>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> e22c4bc0-6848-493c-bf51-ddd16889f06e
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> e22c4bc0-6848-493c-bf51-ddd16889f06e
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> 75fba079-4e9d-478f-8ee5-a61ae66b13f1
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/75fba079-4e9d-478f-8ee5-a61ae66b13f1>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: f63452d9-4b4c-47ba-ac16-88effadd03b0
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    leftArrow: false
+    obstacle2: false
+    obstacleNum: false
+    rightArrow: false
+    speed: false
+    userCamera: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - speed: 0.500000
+      obstacle2: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      userCamera: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      obstacleNum: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      leftArrow: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      rightArrow: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}

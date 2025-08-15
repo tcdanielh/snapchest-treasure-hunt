@@ -1,0 +1,40 @@
+- !<AssetImportMetadata/3112d70b-e863-97f0-d341-d809fc7c733e>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 4b178430-ecab-498c-863c-7649d0f8214a
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 4b178430-ecab-498c-863c-7649d0f8214a
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> ace78ed3-84cb-4b2d-820e-44932cf84e91
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/ace78ed3-84cb-4b2d-820e-44932cf84e91>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 5d768699-ddab-49a7-969a-bdd8d9956df0
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    gameOverText: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - gameOverText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}

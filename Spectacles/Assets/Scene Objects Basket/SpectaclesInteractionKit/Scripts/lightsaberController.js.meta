@@ -1,0 +1,44 @@
+- !<AssetImportMetadata/ebff2fb6-dda1-a902-ae88-c008245a96a0>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> f11e96ef-e1c9-4a4f-8eb1-280b4fff4113
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> f11e96ef-e1c9-4a4f-8eb1-280b4fff4113
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> ad06908b-4966-4706-994e-39b060e6b69a
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/ad06908b-4966-4706-994e-39b060e6b69a>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: cfd0df49-56d5-4e81-9a02-c3afed283d29
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    cubePrefab: false
+    saber: false
+    saberCollider: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - saber: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      saberCollider: !<reference.ColliderComponent> 00000000-0000-0000-0000-000000000000
+      cubePrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}

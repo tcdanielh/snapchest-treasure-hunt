@@ -1,0 +1,45 @@
+- !<AssetImportMetadata/01975493-dcb3-dab6-4939-f224def02e17>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 8cd04d8f-ae3e-47ae-90d4-1ed2319b77c7
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 8cd04d8f-ae3e-47ae-90d4-1ed2319b77c7
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 59798535-ed60-4b29-b4ef-7a4f1505dd21
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/59798535-ed60-4b29-b4ef-7a4f1505dd21>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: fb9ba258-d543-4a7b-b4e5-93925daca952
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    knobObject: false
+    renderMeshVisual: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - renderMeshVisual: !<reference.RenderMeshVisual> 00000000-0000-0000-0000-000000000000
+      knobObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input Component.RenderMeshVisual renderMeshVisual
+    - // @input SceneObject knobObject
