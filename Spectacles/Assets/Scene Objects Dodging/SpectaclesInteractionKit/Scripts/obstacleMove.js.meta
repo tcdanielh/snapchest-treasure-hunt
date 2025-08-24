@@ -33,6 +33,7 @@
     obstacleNum: false
     rightArrow: false
     speed: false
+    swooshSound: false
     userCamera: false
   ScriptTypesHidden:
     {}
@@ -45,6 +46,7 @@
       obstacleNum: !<reference.Text> 00000000-0000-0000-0000-000000000000
       leftArrow: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       rightArrow: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      swooshSound: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}

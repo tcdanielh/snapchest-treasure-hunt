@@ -36,7 +36,7 @@
   Enabled: true
   ScriptAsset: !<reference> e22c4bc0-6848-493c-bf51-ddd16889f06e
   ScriptInputsDefault:
-    {}
+    swooshSound: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -47,6 +47,7 @@
       obstacleNum: !<reference.Text> a4a14223-f246-4474-8d9a-bc7a5f2b6b8c
       leftArrow: !<reference.SceneObject> e178650b-ca19-45d0-9d3e-e3e95e37a4e0
       rightArrow: !<reference.SceneObject> ae0c5df8-4693-4128-bd5e-cba92e0739ec
+      swooshSound: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}
@@ -951,7 +952,7 @@
   Enabled: true
   ScriptAsset: !<reference> e22c4bc0-6848-493c-bf51-ddd16889f06e
   ScriptInputsDefault:
-    {}
+    swooshSound: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -962,6 +963,7 @@
       obstacleNum: !<reference.Text> a4a14223-f246-4474-8d9a-bc7a5f2b6b8c
       leftArrow: !<reference.SceneObject> e178650b-ca19-45d0-9d3e-e3e95e37a4e0
       rightArrow: !<reference.SceneObject> ae0c5df8-4693-4128-bd5e-cba92e0739ec
+      swooshSound: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}
@@ -1157,7 +1159,7 @@
   Enabled: true
   ScriptAsset: !<reference> e22c4bc0-6848-493c-bf51-ddd16889f06e
   ScriptInputsDefault:
-    {}
+    swooshSound: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -1168,6 +1170,7 @@
       obstacleNum: !<reference.Text> a4a14223-f246-4474-8d9a-bc7a5f2b6b8c
       leftArrow: !<reference.SceneObject> e178650b-ca19-45d0-9d3e-e3e95e37a4e0
       rightArrow: !<reference.SceneObject> ae0c5df8-4693-4128-bd5e-cba92e0739ec
+      swooshSound: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}
@@ -3997,7 +4000,7 @@
   Enabled: true
   ScriptAsset: !<reference> e22c4bc0-6848-493c-bf51-ddd16889f06e
   ScriptInputsDefault:
-    {}
+    swooshSound: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -4008,6 +4011,7 @@
       obstacleNum: !<reference.Text> a4a14223-f246-4474-8d9a-bc7a5f2b6b8c
       leftArrow: !<reference.SceneObject> e178650b-ca19-45d0-9d3e-e3e95e37a4e0
       rightArrow: !<reference.SceneObject> ae0c5df8-4693-4128-bd5e-cba92e0739ec
+      swooshSound: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}
@@ -5030,7 +5034,7 @@
   Enabled: true
   ScriptAsset: !<reference> e22c4bc0-6848-493c-bf51-ddd16889f06e
   ScriptInputsDefault:
-    {}
+    swooshSound: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -5041,6 +5045,7 @@
       obstacleNum: !<reference.Text> a4a14223-f246-4474-8d9a-bc7a5f2b6b8c
       leftArrow: !<reference.SceneObject> e178650b-ca19-45d0-9d3e-e3e95e37a4e0
       rightArrow: !<reference.SceneObject> ae0c5df8-4693-4128-bd5e-cba92e0739ec
+      swooshSound: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}
@@ -7640,7 +7645,7 @@
   Enabled: true
   ScriptAsset: !<reference> e22c4bc0-6848-493c-bf51-ddd16889f06e
   ScriptInputsDefault:
-    {}
+    swooshSound: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -7651,6 +7656,7 @@
       obstacleNum: !<reference.Text> a4a14223-f246-4474-8d9a-bc7a5f2b6b8c
       leftArrow: !<reference.SceneObject> e178650b-ca19-45d0-9d3e-e3e95e37a4e0
       rightArrow: !<reference.SceneObject> ae0c5df8-4693-4128-bd5e-cba92e0739ec
+      swooshSound: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}
@@ -8829,7 +8835,7 @@
   Enabled: true
   ScriptAsset: !<reference> e22c4bc0-6848-493c-bf51-ddd16889f06e
   ScriptInputsDefault:
-    {}
+    swooshSound: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -8840,6 +8846,7 @@
       obstacleNum: !<reference.Text> a4a14223-f246-4474-8d9a-bc7a5f2b6b8c
       leftArrow: !<reference.SceneObject> e178650b-ca19-45d0-9d3e-e3e95e37a4e0
       rightArrow: !<reference.SceneObject> ae0c5df8-4693-4128-bd5e-cba92e0739ec
+      swooshSound: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}

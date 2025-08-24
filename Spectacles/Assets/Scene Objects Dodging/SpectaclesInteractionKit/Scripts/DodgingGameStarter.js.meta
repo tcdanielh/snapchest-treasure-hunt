@@ -29,6 +29,8 @@
   MaxVisibility: Editable
   ScriptInputsHidden:
     firstObstacle: false
+    leftArrow: false
+    rightArrow: false
     starterText: false
   ScriptTypesHidden:
     {}
@@ -37,6 +39,8 @@
   DefaultScriptInputs:
     - starterText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       firstObstacle: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      leftArrow: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      rightArrow: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}

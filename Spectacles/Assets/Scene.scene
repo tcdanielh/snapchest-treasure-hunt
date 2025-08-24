@@ -2312,6 +2312,7 @@
     - !<own> f1be7375-21ac-4e6c-9e6e-285d60917727
     - !<own> 205d5cec-6d72-40a3-a310-9c0b65461da4
     - !<own> 508d8912-44bb-4240-acf3-144abf2ef705
+    - !<own> d486d94f-eac0-4c31-8978-b497be43fdc4
     - !<own> cecaaf79-0e7e-4573-947d-8ee816c1454c
   Components:
     []
@@ -3122,6 +3123,7 @@
       obstacleNum: !<reference.Text> bdd0d816-21aa-4ecb-98c0-f39440fc1d8d
       leftArrow: !<reference.SceneObject> 3d9e14a8-317b-40c8-afbb-a8807b6c8fe4
       rightArrow: !<reference.SceneObject> 8ea48741-2512-47ec-aae5-12ae43f0f304
+      swooshSound: !<reference.AudioComponent> 61e21a04-1ea2-482e-bd12-75dfae3407d7
   ScriptTypes:
     "":
       {}
@@ -6841,6 +6843,7 @@
       obstacleNum: !<reference.Text> bdd0d816-21aa-4ecb-98c0-f39440fc1d8d
       leftArrow: !<reference.SceneObject> 3d9e14a8-317b-40c8-afbb-a8807b6c8fe4
       rightArrow: !<reference.SceneObject> 8ea48741-2512-47ec-aae5-12ae43f0f304
+      swooshSound: !<reference.AudioComponent> 61e21a04-1ea2-482e-bd12-75dfae3407d7
   ScriptTypes:
     "":
       {}
@@ -11405,6 +11408,8 @@
     "":
       starterText: !<reference.SceneObject> 05844603-6327-4278-a38b-dffb9fa0db8f
       firstObstacle: !<reference.SceneObject> cc10786a-8ee9-4e17-80b0-cc756f69c7e6
+      leftArrow: !<reference.SceneObject> 3d9e14a8-317b-40c8-afbb-a8807b6c8fe4
+      rightArrow: !<reference.SceneObject> 8ea48741-2512-47ec-aae5-12ae43f0f304
   ScriptTypes:
     "":
       {}
@@ -11986,6 +11991,23 @@
   ScriptTypes:
     "":
       {}
+- !<AudioComponent/61e21a04-1ea2-482e-bd12-75dfae3407d7>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 05b8af30-98b0-4996-9300-8d4900527639
+  EnableAutoplayLoop: false
+  Volume: 0.400000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
 - !<AudioComponent/6226aca3-4778-45df-b452-6fbb63760ba9>
   PrefabRemaps:
     []
@@ -14055,6 +14077,7 @@
       obstacleNum: !<reference.Text> bdd0d816-21aa-4ecb-98c0-f39440fc1d8d
       leftArrow: !<reference.SceneObject> 3d9e14a8-317b-40c8-afbb-a8807b6c8fe4
       rightArrow: !<reference.SceneObject> 8ea48741-2512-47ec-aae5-12ae43f0f304
+      swooshSound: !<reference.AudioComponent> 61e21a04-1ea2-482e-bd12-75dfae3407d7
   ScriptTypes:
     "":
       {}
@@ -15164,6 +15187,7 @@
       obstacleNum: !<reference.Text> bdd0d816-21aa-4ecb-98c0-f39440fc1d8d
       leftArrow: !<reference.SceneObject> 3d9e14a8-317b-40c8-afbb-a8807b6c8fe4
       rightArrow: !<reference.SceneObject> 8ea48741-2512-47ec-aae5-12ae43f0f304
+      swooshSound: !<reference.AudioComponent> 61e21a04-1ea2-482e-bd12-75dfae3407d7
   ScriptTypes:
     "":
       {}
@@ -16376,6 +16400,7 @@
       obstacleNum: !<reference.Text> bdd0d816-21aa-4ecb-98c0-f39440fc1d8d
       leftArrow: !<reference.SceneObject> 3d9e14a8-317b-40c8-afbb-a8807b6c8fe4
       rightArrow: !<reference.SceneObject> 8ea48741-2512-47ec-aae5-12ae43f0f304
+      swooshSound: !<reference.AudioComponent> 61e21a04-1ea2-482e-bd12-75dfae3407d7
   ScriptTypes:
     "":
       {}
@@ -25145,6 +25170,21 @@
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
+- !<SceneObject/d486d94f-eac0-4c31-8978-b497be43fdc4>
+  PrefabRemaps:
+    []
+  Name: swoosh
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 61e21a04-1ea2-482e-bd12-75dfae3407d7
 - !<ScriptComponent/d4d7be38-8693-41a9-aeee-9a3514d2271b>
   PrefabRemaps:
     []
@@ -28456,6 +28496,7 @@
       obstacleNum: !<reference.Text> bdd0d816-21aa-4ecb-98c0-f39440fc1d8d
       leftArrow: !<reference.SceneObject> 3d9e14a8-317b-40c8-afbb-a8807b6c8fe4
       rightArrow: !<reference.SceneObject> 8ea48741-2512-47ec-aae5-12ae43f0f304
+      swooshSound: !<reference.AudioComponent> 61e21a04-1ea2-482e-bd12-75dfae3407d7
   ScriptTypes:
     "":
       {}
@@ -29014,6 +29055,7 @@
       obstacleNum: !<reference.Text> bdd0d816-21aa-4ecb-98c0-f39440fc1d8d
       leftArrow: !<reference.SceneObject> 3d9e14a8-317b-40c8-afbb-a8807b6c8fe4
       rightArrow: !<reference.SceneObject> 8ea48741-2512-47ec-aae5-12ae43f0f304
+      swooshSound: !<reference.AudioComponent> 61e21a04-1ea2-482e-bd12-75dfae3407d7
   ScriptTypes:
     "":
       {}
