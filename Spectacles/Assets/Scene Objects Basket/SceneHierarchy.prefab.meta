@@ -25,6 +25,7 @@
     spawnHeight: true
     fallSpeed: true
     cubeNum: true
+    winAudio: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -37,6 +38,7 @@
       fallSpeed: !<float> 100.000000
       cubeNum: 0
       scoreText: !<reference.Text> ecae9ec7-1155-4e00-b017-e91914ba81fe
+      winAudio: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}

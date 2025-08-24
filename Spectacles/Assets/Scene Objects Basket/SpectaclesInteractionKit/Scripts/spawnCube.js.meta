@@ -36,6 +36,7 @@
     spawnHeight: false
     spawnRangeX: false
     spawnRangeZ: false
+    winAudio: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -49,6 +50,7 @@
       fallSpeed: !<float> 100.000000
       cubeNum: 0
       scoreText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      winAudio: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}

@@ -8,6 +8,7 @@
 // @input float fallSpeed = 100.0 // fallback fall speed
 // @input int cubeNum = 0;
 //@input Component.Text scoreText;
+// @input Component.AudioComponent winAudio;
 
 global.boxNum = 0;
 // Spawn a cube at a random position
@@ -62,6 +63,7 @@ function getRandomInRange(min, max) {
 var spawnEvent = script.createEvent("UpdateEvent");
 var timer = 0.0;
 var interval = 2.0;
+var gameOver = false;
 
 spawnEvent.bind(function () {
     timer += getDeltaTime();
@@ -71,11 +73,14 @@ spawnEvent.bind(function () {
         //print("generate");
 //        script.cubeNum += 1;
 //        global.boxNum += 1;
-        if (script.cubeNum < 10) {
-            print ("Sorry. The aliens took your treasure!");
-        }
-        else {
-            print ("You pass! Now claim your prize");
-        }
+        
     }
+    else if (gameOver == false && script.cubeNum == 20) {
+        if (global.score > 5) {
+            script.winAudio.play(1);
+        }
+        gameOver = true;
+    }
+    
 });
+
