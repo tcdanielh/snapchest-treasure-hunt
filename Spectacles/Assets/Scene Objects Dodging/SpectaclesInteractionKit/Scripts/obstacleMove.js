@@ -63,12 +63,6 @@ function onUpdate(eventData) {
     if (direction) {
         var newPos = cubePos.add(direction.uniformScale(script.speed * deltaTime));
         script.getTransform().setWorldPosition(newPos);
-        
-        // Play swoosh sound when obstacle passes close to player (within 5 units)
-        if (!hasPlayedSwoosh && distance < 5.0 && script.swooshSound) {
-            script.swooshSound.play(1);
-            hasPlayedSwoosh = true;
-        }
     }
 
     
@@ -122,6 +116,14 @@ function onUpdate(eventData) {
         if (isMovingAway && !hasPassedPlayer) {
             hasPassedPlayer = true;
             print("Obstacle has passed the player. Enabling next obstacle.");
+            
+            // Play swoosh sound when obstacle passes the player
+            if (!hasPlayedSwoosh && script.swooshSound) {
+                // Simply play the sound - let each obstacle play its own swoosh
+                script.swooshSound.play(1);
+                hasPlayedSwoosh = true;
+            }
+            
             if (script.obstacle2) {
                 script.obstacle2.enabled = true;
                 nextObstacleEnabled = true;
