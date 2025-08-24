@@ -71,5 +71,11 @@ spawnEvent.bind(function () {
         //print("generate");
 //        script.cubeNum += 1;
 //        global.boxNum += 1;
+        if (script.cubeNum < 10) {
+            print ("Sorry. The aliens took your treasure!");
+        }
+        else {
+            print ("You pass! Now claim your prize");
+        }
     }
 });
