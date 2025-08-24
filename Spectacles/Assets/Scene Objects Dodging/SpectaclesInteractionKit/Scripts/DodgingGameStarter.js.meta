@@ -1,0 +1,42 @@
+- !<AssetImportMetadata/affc353e-1e4f-40b9-b991-9ecab175fdc2>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 119ec538-6631-4141-bd24-9fc1a4603490
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 119ec538-6631-4141-bd24-9fc1a4603490
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> 2853e787-59d7-4680-a0de-e880e602db91
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/2853e787-59d7-4680-a0de-e880e602db91>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 89df2a30-1e2d-4091-931a-c5fb7853871f
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    firstObstacle: false
+    starterText: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - starterText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      firstObstacle: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
