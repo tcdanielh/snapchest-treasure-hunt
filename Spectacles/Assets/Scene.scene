@@ -848,6 +848,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/05844603-6327-4278-a38b-dffb9fa0db8f>
+  PrefabRemaps:
+    []
+  Name: INCOMING METEORS!!!
+  Enabled: false
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: -110.438591}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> d826fbdc-3bac-441e-b42f-e8b798a0742f
 - !<ScreenTransform/05b5a052-0f53-4861-8c8f-06c2d48daeb2>
   PrefabRemaps:
     []
@@ -2279,7 +2294,7 @@
     - fd1fbea4-86a2-45ba-ace6-d41ec603990b: 09eb7514-784b-4795-a49b-a0c94c4e0497
     - feb3d784-c026-4516-afb2-2dde034bcf8f: 8884e496-723e-4e2e-80e9-e1a5b18bb66c
   Name: Scene Objects Dodging
-  Enabled: false
+  Enabled: true
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -2297,6 +2312,7 @@
     - !<own> f1be7375-21ac-4e6c-9e6e-285d60917727
     - !<own> 205d5cec-6d72-40a3-a310-9c0b65461da4
     - !<own> 508d8912-44bb-4240-acf3-144abf2ef705
+    - !<own> cecaaf79-0e7e-4573-947d-8ee816c1454c
   Components:
     []
 - !<SceneObject/0f455197-d71b-43b7-ab8b-eed17a3255d6>
@@ -7878,6 +7894,7 @@
     - !<own> 3d9e14a8-317b-40c8-afbb-a8807b6c8fe4
     - !<own> 8ea48741-2512-47ec-aae5-12ae43f0f304
     - !<own> c6d373a0-aa8a-4ba5-bab2-da7dbde53f27
+    - !<own> 05844603-6327-4278-a38b-dffb9fa0db8f
     - !<own> 28a95eef-b373-4ec7-95f3-2dff485c37cb
     - !<own> 72388656-cd03-4234-ab1d-48a2804f9a94
     - !<own> 709b5d3f-e4fb-4925-914e-e53be147f4ce
@@ -11374,6 +11391,23 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
+- !<ScriptComponent/5ae74bb0-f858-4f4b-a707-03899c325fa8>
+  PrefabRemaps:
+    []
+  Name: DodgingGameStarter
+  Enabled: true
+  ScriptAsset: !<reference> 119ec538-6631-4141-bd24-9fc1a4603490
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      starterText: !<reference.SceneObject> 05844603-6327-4278-a38b-dffb9fa0db8f
+      firstObstacle: !<reference.SceneObject> cc10786a-8ee9-4e17-80b0-cc756f69c7e6
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/5aeb4ebf-dc60-4892-9412-3a919699ac6a>
   PrefabRemaps:
     []
@@ -24143,7 +24177,7 @@
   PrefabRemaps:
     []
   Name: Obstacle1
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 2.426393, y: 0.902054, z: -442.962280}
@@ -24434,6 +24468,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/cecaaf79-0e7e-4573-947d-8ee816c1454c>
+  PrefabRemaps:
+    []
+  Name: Dodging Game Starter
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 5ae74bb0-f858-4f4b-a707-03899c325fa8
 - !<ScriptComponent/cf2fba95-58e3-4cc4-bb03-010fdb1ba7cc>
   PrefabRemaps:
     []
@@ -25414,6 +25463,84 @@
   BlendNormals: false
   BlendShapes:
     {}
+- !<Text/d826fbdc-3bac-441e-b42f-e8b798a0742f>
+  PrefabRemaps:
+    []
+  Name: Text
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Text: |-
+    INCOMING METEORS!!!
+    Tap your phone controller when ready!
+  Editable: false
+  ShowEditingPreview: true
+  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
+  SizeToFit: false
+  FontSize: 48
+  Font: !<reference> 00000000-0000-0000-0000-000000000000
+  LayoutRect:
+    left: -7.500000
+    bottom: -2.250000
+    right: 7.500000
+    top: 2.250000
+  OverflowVertical: Overflow
+  OverflowHorizontal: Overflow
+  Fill: !<TextFill>
+    Mode: Solid
+    Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    TileCount: 5.000000
+    TileZone: Rect
+    TextureStretch: FitWidth
+  Outline: !<OutlineSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Size: 0.250000
+  Dropshadow: !<DropshadowSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    OffsetX: 0.250000
+    OffsetY: 0.250000
+  Background: !<BackgroundSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Margins:
+      left: 0.000000
+      bottom: 0.000000
+      right: 0.000000
+      top: 0.000000
+    CornerRadius: 0.000000
+  AdvancedLayout: !<TextAdvancedLayout>
+    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+    LetterSpacing: 0.000000
+    LineSpacing: 1.000000
+    CapitalizationOverride: None
+  DepthTest: false
+  TwoSided: false
 - !<RenderMeshVisual/d84b09b7-d893-4a0a-8693-816cd1255ebe>
   PrefabRemaps:
     []
