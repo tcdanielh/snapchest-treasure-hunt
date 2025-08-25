@@ -1,0 +1,48 @@
+- !<AssetImportMetadata/bb0c8363-12cc-4d37-839f-9fd4ee608379>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 6ee2dabc-2f34-460e-af14-4865f2a929b8
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 6ee2dabc-2f34-460e-af14-4865f2a929b8
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> 4a434670-3316-4b17-b866-cfb187dfcb5f
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/4a434670-3316-4b17-b866-cfb187dfcb5f>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: baf3e965-47a7-4779-9516-56bc21089e2e
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    basketController: false
+    basketGameManager: false
+    leftArrow: false
+    rightArrow: false
+    starterText: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - starterText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      basketGameManager: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      basketController: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      leftArrow: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      rightArrow: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}

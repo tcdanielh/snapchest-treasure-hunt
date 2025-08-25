@@ -31,7 +31,9 @@
     cubeNum: false
     cubePrefab: false
     cubeScale: false
+    failText: false
     fallSpeed: false
+    passText: false
     scoreText: false
     spawnHeight: false
     spawnRangeX: false
@@ -51,6 +53,8 @@
       cubeNum: 0
       scoreText: !<reference.Text> 00000000-0000-0000-0000-000000000000
       winAudio: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      passText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      failText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
