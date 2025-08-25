@@ -3,6 +3,7 @@
 //var collider = obj.createComponent('Physics.ColliderComponent');
 
 // @input SceneObject gameOverText;
+// @input Component.AudioComponent bonkSound;
 
 global.remainObstacle = 7;
 var collider = script.getSceneObject().getComponent("Physics.ColliderComponent");
@@ -17,6 +18,10 @@ collider.overlapFilter.includeDynamic = true;
 collider.overlapFilter.includeStatic = true;
 
 function showGameOverText() {
+    // Play bonk sound effect on game over
+    if (script.bonkSound) {
+        script.bonkSound.play(1);
+    }
     
     script.gameOverText.enabled = true;
 }
