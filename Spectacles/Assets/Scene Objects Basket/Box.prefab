@@ -12,10 +12,10 @@
   Shape: !<Box>
     FitVisual: true
     Size: {x: 15.000000, y: 15.000000, z: 15.000000}
-  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Matter: !<reference> dbae67ab-ed6b-477c-b50a-abadb16ec716
   Filter: !<reference> 00000000-0000-0000-0000-000000000000
   OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
-  WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 0740026a-4307-4295-9a24-32ebdc8e6902
   EnableSmoothing: false
   PositionTension: 30.000000
   RotationTension: 30.000000
@@ -24,7 +24,7 @@
   ShowCollider: true
   Dynamic: true
   BodySetting: Density
-  BodySettingValue: 1.000000
+  BodySettingValue: 10.000000
   Damping: 0.000000
   AngularDamping: 0.000000
 - !<ScriptComponent/4f74546b-c4fb-452f-b0e9-a2c2c3d5be5c>

@@ -25,6 +25,9 @@
     spawnHeight: true
     fallSpeed: true
     cubeNum: true
+    winAudio: true
+    passText: true
+    failText: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -37,6 +40,9 @@
       fallSpeed: !<float> 100.000000
       cubeNum: 0
       scoreText: !<reference.Text> ecae9ec7-1155-4e00-b017-e91914ba81fe
+      winAudio: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      passText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      failText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}
@@ -4043,7 +4049,7 @@
   Enabled: true
   ScriptAsset: !<reference> a157cebb-c001-4e47-a37b-ecb06895bf67
   ScriptInputsDefault:
-    {}
+    catchAudio: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -4051,6 +4057,7 @@
       basket: !<reference.SceneObject> b84fd417-9caf-46f0-91e9-c1e9f9ef4e7d
       basketCollider: !<reference.ColliderComponent> fe6ad7e0-9306-4055-9bc0-f2e8a1956f3e
       scoreText: !<reference.Text> ecae9ec7-1155-4e00-b017-e91914ba81fe
+      catchAudio: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}

@@ -1,6 +1,7 @@
 //@input SceneObject basket;
 //@input Physics.ColliderComponent basketCollider;
 //@input Component.Text scoreText;
+//@input Component.AudioComponent catchAudio;
 
 
 function debugObject(obj) {
@@ -56,6 +57,7 @@ script.basketCollider.onOverlapEnter.add(function (e) {
     if (!countedCubes.has(cubeName)) {
         countedCubes.add(cubeName);
         score += 1;
+        script.catchAudio.play(1);
         print("New cube entered: " + cubeName + " | Total score: " + score);
     } else {
         print("Cube already counted: " + cubeName);
