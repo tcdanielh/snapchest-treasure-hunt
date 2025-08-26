@@ -13,6 +13,7 @@
     - !<own> 3e2ad263-ea33-4061-ac5c-d7ce0b77dfd0
     - !<own> e5d7d07f-e10f-456c-968e-e415b40e522b
     - !<own> b0b43099-d017-47f9-8983-160fa287218e
+    - !<own> 8d797c02-ed80-42ab-984e-fd10f6fa04a6
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       - |
@@ -5800,7 +5801,7 @@
 - !<ScriptComponent/2cc1fc1c-209d-44da-b9ba-26fd8bf654cf>
   PrefabRemaps:
     []
-  Name: GameManager
+  Name: OldGameManager
   Enabled: true
   ScriptAsset: !<reference> 7ca3d387-bc8b-430e-9af7-140bee2f7577
   ScriptInputsDefault:
@@ -7960,7 +7961,7 @@
     - ff4d67c8-08ab-462c-bc6c-649f3eedb0e7: 5e3d3fff-a046-4656-a280-3230feca9abc
     - ffe4d762-5f33-4c8e-8ecb-7bc28d37985a: 860b203d-7537-4ee6-9d4d-dae7c4ee8a9e
   Name: Scene Objects Basket
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -14829,6 +14830,24 @@
   ScriptTypes:
     "":
       {}
+- !<ScriptComponent/77c2e1c8-fd92-430e-9fdb-a82d81f00a7d>
+  PrefabRemaps:
+    []
+  Name: GameManager
+  Enabled: true
+  ScriptAsset: !<reference> a62a3c12-84ed-4d31-8f7b-0933e34bf782
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      radarMinigame: !<reference.SceneObject> bedc436e-f424-4e51-ae9e-deef39ae3d77
+      dodgingMinigame: !<reference.SceneObject> 0f2aa3b2-14ca-41ad-9be8-044834f87fa3
+      basketMinigame: !<reference.SceneObject> 3e2ad263-ea33-4061-ac5c-d7ce0b77dfd0
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/77e85fdb-4a49-494c-a958-0b9804bbafa9>
   PrefabRemaps:
     []
@@ -17040,6 +17059,21 @@
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
+- !<SceneObject/8d797c02-ed80-42ab-984e-fd10f6fa04a6>
+  PrefabRemaps:
+    []
+  Name: GameManager
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> d0b6210a-5ed6-4d14-b79c-549cdd04b772
+  Components:
+    []
 - !<SceneObject/8dba13b9-dfda-4389-873b-0d623d78c43b>
   PrefabRemaps:
     []
@@ -25130,6 +25164,21 @@
     - !<own> 598e25a0-875b-430a-87af-795706c7cfd3
   Components:
     []
+- !<SceneObject/d0b6210a-5ed6-4d14-b79c-549cdd04b772>
+  PrefabRemaps:
+    []
+  Name: GameManager
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 77c2e1c8-fd92-430e-9fdb-a82d81f00a7d
 - !<RenderMeshVisual/d0b75906-1c1a-4c95-ba45-59beb17e747f>
   PrefabRemaps:
     []

@@ -1,0 +1,44 @@
+- !<AssetImportMetadata/177b3d29-502c-404e-a19c-1997e4d2c54f>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> a62a3c12-84ed-4d31-8f7b-0933e34bf782
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> a62a3c12-84ed-4d31-8f7b-0933e34bf782
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> fa1c15eb-d9bd-4f51-b3fc-922b14dc0a0c
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/fa1c15eb-d9bd-4f51-b3fc-922b14dc0a0c>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 0eb84029-5c14-4c86-9fc2-5a6aae78f6bb
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    basketMinigame: false
+    dodgingMinigame: false
+    radarMinigame: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - radarMinigame: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      dodgingMinigame: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      basketMinigame: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
