@@ -28,6 +28,7 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
+    bonkSound: false
     gameOverText: false
   ScriptTypesHidden:
     {}
@@ -35,6 +36,7 @@
   DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
   DefaultScriptInputs:
     - gameOverText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      bonkSound: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}

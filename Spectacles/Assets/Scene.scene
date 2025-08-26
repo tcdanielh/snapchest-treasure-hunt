@@ -849,6 +849,7 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/05844603-6327-4278-a38b-dffb9fa0db8f> ~
 - !<ScreenTransform/05b5a052-0f53-4861-8c8f-06c2d48daeb2>
   PrefabRemaps:
     []
@@ -908,6 +909,23 @@
   ScriptTypes:
     "":
       {}
+- !<AudioComponent/06676134-5cf8-4252-a432-19ad55cf87f7>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 05b8af30-98b0-4996-9300-8d4900527639
+  EnableAutoplayLoop: false
+  Volume: 0.500000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
 - !<ScreenTransform/0698eeb3-bf6d-4171-8812-b7813e50f16e>
   PrefabRemaps:
     []
@@ -1880,6 +1898,7 @@
     - 055f316f-82bd-4d95-a814-7d91f69e21a6: 96540422-4eb5-418d-b814-9593ec5f9a8a
     - 05b5a052-0f53-4861-8c8f-06c2d48daeb2: b73a957a-fab1-492c-918e-e9af706a8309
     - 0607ec4d-838d-4843-be41-148a6f1d3db8: 03530ae4-5709-4f4a-bda3-0a7fdc665438
+    - 06676134-5cf8-4252-a432-19ad55cf87f7: dcfc350a-2a7a-436a-8d81-a877e1afa664
     - 06d06d5b-86f1-4c3e-b7f1-250a48dcb0c2: 50959081-bc8b-4e84-ad70-9ca32c4d2767
     - 070b593f-6248-4465-aca4-912b40e077ab: cc19f7e9-f974-4837-a024-2f49b438a2d6
     - 07700fce-bfdf-4f7e-862e-bc9b7c32d3f0: 023c266d-d296-44c6-bb68-4c876cde8490
@@ -2004,6 +2023,7 @@
     - 4c190a6c-e318-4865-bad2-70d92f4dc1c1: cee7485b-3818-4828-a1a2-e8aeba85fcd1
     - 4c1dc923-0502-49cf-b9b1-cc5b8ce39337: 462c03f6-7d54-46ae-a4eb-07a0ce68aaee
     - 4c4ba8f5-20e5-478f-9a77-dff0847c171e: 8975c106-d13b-42ee-a3b7-ddeb2fc70bdc
+    - 4c7fa105-9e9a-40f3-8915-2dabe9e0c58c: 9a2896c2-d0e3-4dc4-9a5c-74514654ee6b
     - 4d1d9bf0-6c21-4686-8317-052ccba020ef: c48613b9-a164-419a-a134-aad4a4b82d44
     - 4d4eab73-6b66-44e6-b553-4fec624cba57: 0547d148-cb80-4a80-8cc8-4ea3faacde40
     - 4e8f8d62-911a-4dcc-9bf8-a4cc41a70b5a: fbc46f66-b20e-4d66-8f6a-d91031eb6ee1
@@ -2057,6 +2077,7 @@
     - 6ce9b884-4624-4af8-a655-7fd64761a4e4: 7f3c662c-179d-49ff-bd62-a016c434203c
     - 6d4b306e-0b17-4b18-bcd0-9a4a6965e8ef: dc23a033-ff75-4f5a-9e79-0e4c8e055b52
     - 6d790a5a-672c-4e4a-9960-86fa8578c173: 008348fc-0229-41ba-9acd-be8c5b9d6a90
+    - 6e1efefd-7a08-4f12-b76c-93d5d8b7e8d3: 0795ab51-f835-433e-b040-5b13d86b94f8
     - 6e3c528f-df4e-4501-82ea-c00f7465b29e: c91d94b8-79d4-49f2-b15f-6621f9baafdc
     - 6e6dbf3f-20c7-42ca-9410-b404807ffe6a: 7cef088e-465f-45eb-95f0-6f2d4f9222da
     - 6ed6fce3-eb51-44be-9641-054e8096ca7e: 72ce920f-b8a7-49b9-97e3-d19a5bab13f7
@@ -2085,10 +2106,12 @@
     - 7c31ef9d-4a3f-4cb3-bab5-b9f67393d044: 14977f98-4717-4145-9197-a25d90ffe67f
     - 7f63b027-1c92-4fb2-9450-4eca31ee02f8: 19b2e726-10b1-4f58-858f-a375f8ebffc8
     - 7f81a28d-1d0b-4023-bb66-d7a6cdb3638a: 3d3921b6-dfa7-4052-a13e-6479b60c0ad2
+    - 80197fb5-7c31-4302-ad4e-0300344a93a8: e42acb92-3c2a-46b0-8234-f79fd03dc7d2
     - 81dcca3f-afea-4223-b066-2c5372bddd00: 646de35a-73a3-41ca-86a8-138524dcec60
     - 82f8b6c2-39fe-4317-833c-ec4906808427: 1e073411-015a-471b-8b2e-b72c04c37334
     - 832cd40e-07a5-4272-b80a-a0534a6be348: 0680937c-18c3-4ed6-b67b-cc8f66f00c11
     - 832f800c-38c9-4908-a0b9-a90adef1d1f4: 0c55722c-67c4-45f1-a5e5-956cddef04b5
+    - 836ac3c8-2711-4398-a35b-8e0d54297a8e: 28619593-1a5f-499f-a6b6-53f3b7aa4b54
     - 836f0e65-639e-415f-b931-ed2449752f86: ba46583b-9a83-4e9d-adda-0374ec8c9ca3
     - 837d5834-1cf2-41c2-9883-4ac068178cdf: 6832a5c5-1570-473f-8bcc-80f02de38bdc
     - 839ca4ba-458c-4443-9c9f-1900ffa46b38: 958132cd-3d1f-4819-bcd0-3ffc487a3957
@@ -2104,9 +2127,11 @@
     - 89fc7361-f721-4455-adc8-6a4b886eed9f: 32dd33a7-c5c4-4b97-a7d1-70bbae42ea4f
     - 8ad154f3-8839-44c0-b671-e9e75d42f9c1: 31d7aba0-334c-4554-9e7e-3c42f60d5259
     - 8c2ba332-4708-4e90-a526-acb39aa56283: 9b1354da-d486-4cdf-b5fa-c03655ff6cb4
+    - 8c9dc263-5e23-4cc5-9f05-d044e4f9bd4d: 911c081a-2711-4cc1-9b4d-550f277e64d5
     - 8cb6c2fb-912e-4eaf-9ad3-65afbab88fed: 5a928691-3a5e-45e3-800d-3be7dadb7707
     - 8d075005-3d27-45a3-8ab3-1466fe83d776: bed77a66-0cca-4fe6-8fa0-793a80c08160
     - 8d1cf254-4b07-495b-855f-04840a1ddf73: 4d5485af-8718-447c-897c-bad8b2fc410a
+    - 8d8dfc8b-bf17-457b-a1b4-633df83fa385: 9a3951ac-e173-4b00-9366-9c198581a1be
     - 8ea48741-2512-47ec-aae5-12ae43f0f304: d4df1b55-8eda-4eb0-b3de-8cc387a8773d
     - 8faf7b0b-d037-4c29-a284-66028cbb879d: 016a1792-8376-4828-88a7-c14008941cd6
     - 90043843-c44c-4aaf-8a63-01456fd20da2: 131ea1f7-e54f-44b4-b378-9b3235c0402f
@@ -2184,6 +2209,7 @@
     - b2b5eb6d-3657-45e2-b179-4ef85417aa67: 73c12e59-3cfc-4623-8cab-7b96c6859e2c
     - b2f6a6c6-3021-4baf-9c85-b8c8382b642a: 7d808268-8dac-4f0d-bebf-38627bfc0fab
     - b4324e05-8436-4911-b65c-c1a4c35d1925: 731da3b0-e721-46bb-bafa-c710f679e183
+    - b4d1069f-5b5a-4720-b061-2e61e87e8bda: b0dcaa11-d184-4657-9675-246ea5033248
     - b53dbb37-fdad-4795-8ab4-b142a8aa5ffa: 5daab45d-b408-46d1-aa0c-44f80850ccce
     - b65bd2d6-c85d-4380-b9de-35ad57ab9fca: dbdfc1f0-be02-4a72-8313-db9f74a8414c
     - b7126339-f811-4bbc-94e4-205cfe236d48: 612bbe38-47b8-4d4d-98a1-20fe51443957
@@ -2206,6 +2232,7 @@
     - c28ca02d-d2f3-42bb-9ef4-1b91545a2bfb: 69eebe93-379f-4a49-86da-d12cdc78be95
     - c2de5ccb-b03e-4a77-8e90-ba95f9b39eb6: 95d1f79a-e7d5-4b6c-9a84-9ad364c5e85e
     - c3104a2d-9f06-46c9-a2bf-dad63449d4d4: 249394b8-8052-472f-b9fb-974ef04beb8f
+    - c31050b8-b559-4af2-8b14-f577750c072a: 6f4dbdb1-c66e-4627-b6ef-60c74dc36516
     - c41f34a6-63a1-47f2-8529-7e8017348f95: 8ae8c1d9-2777-4cab-8875-3a7b35c2c2c7
     - c48be673-a175-4a76-95ed-accc659998c6: f05e905c-3c96-4bae-a43c-de12ecf7a725
     - c49c2d54-d06d-4d63-87cc-062afb4f694b: 197613f9-43b7-4172-9d21-3f6890f9ddd4
@@ -2225,7 +2252,9 @@
     - c9320eb3-60d0-4851-b3ed-b1a84ef7416f: 4913a6ad-70ad-4e81-adff-79eddcf77dc1
     - c9cc24ce-33e9-40a8-b941-dc6f621d802f: 3b3d2df5-1d14-4d94-8e88-140a4ee66a8a
     - ca460f98-fba6-4e51-8cb0-c290fb067f9f: beb46a99-ae84-468b-af5a-11ae98688a97
+    - cae26b7b-aade-4a60-9815-9deeec9464b2: 2611cb6e-47b6-4f41-aa86-a786d3b7e05b
     - cb386d53-5f0b-45a5-b1c1-f2895c6619f0: 4f5354c9-2728-4c2b-9b8d-7a6053db001e
+    - cb6c4d24-0208-4d29-81d3-8d9ba005f39c: 53cba65d-2f84-4af8-8dcd-484fa9217596
     - cba41c13-2707-4a4c-b87e-95f784e36bf1: 8fe0688f-dbbf-448c-9ee3-4e84e26c5487
     - cbcb88e9-da23-4ba3-8491-a4b2014810a3: f0553f7b-40b9-4fea-89ad-a77c03dcc868
     - cc10786a-8ee9-4e17-80b0-cc756f69c7e6: a0139cda-1ee2-406d-80e4-bfd0c2ebe016
@@ -2277,6 +2306,7 @@
     - e6dcacdc-284c-4396-800f-dea09d849849: 268251db-57ff-4622-ad6c-73c0e8466e41
     - e731cee0-5a99-4519-a8d8-a9d08e3e7e55: df0a78fd-d730-4df0-9790-7801a8eece5f
     - e7dfb7d8-7456-4831-8c47-07e976efe0fd: 33c365d5-3d59-49ab-98eb-878dc3789e7b
+    - e8393399-331c-44d1-922d-eefb9cf3a297: 180570e5-cee4-4dde-99d7-ca0b4dfc3e4e
     - e9b1dae6-6f7d-4a0a-8261-37c3533c9468: 41e21813-add8-406b-8e88-829d4143167d
     - ea71161b-41e4-4024-b071-36fbeb9d51aa: 719da425-2fbb-4799-a79e-5d54810601cf
     - ea740804-ddf0-4429-b144-904a8bd0fff6: fd40a460-b940-4dfa-9522-3238c3111616
@@ -2288,6 +2318,7 @@
     - ed657d82-4f7f-42c4-9bf3-5769883d13c9: e989bcc3-ce03-4800-966e-1390decc3f87
     - ed79d911-3636-4af4-acd5-458bf6c4db55: 1c15464a-fdc6-4a9c-8fe2-9817aa970858
     - edff6a66-d55a-4db9-9446-6b42b6f6b2fe: b7d10db3-b6e2-4fd0-9082-b8bbe6e0c989
+    - eee6a7e2-4eb7-4f62-b9de-d2d8d5008186: 2dab0000-37a7-4666-92ce-5e7cebc14af5
     - ef8c5251-259e-47c8-9f11-5c0792264f62: cdd8b548-bbb9-421c-976b-da57341061b0
     - f088ce80-c0cb-4b5c-a828-0818cb707601: 3ef2be2a-9351-4c0b-bc3b-90c8093b5ce1
     - f1005882-5141-47ba-8133-d692808d89fe: 695d7afb-321c-478e-976e-a6d6e7b72de7
@@ -2328,16 +2359,16 @@
   Children:
     - !<own> 3e780f72-8e52-453e-94a6-4f4e5812dc21
     - !<own> 4c4ba8f5-20e5-478f-9a77-dff0847c171e
-    - !<own> c60cc3f8-1557-41d1-9264-dd3ebadac859
-    - !<own> 222753e3-1fe2-4fee-bc70-0b9b1ab7c3b2
-    - !<own> ea740804-ddf0-4429-b144-904a8bd0fff6
     - !<own> 48adc9c2-08fc-426d-8919-743ce86635d0
     - !<own> cc10786a-8ee9-4e17-80b0-cc756f69c7e6
+    - !<own> 222753e3-1fe2-4fee-bc70-0b9b1ab7c3b2
+    - !<own> c60cc3f8-1557-41d1-9264-dd3ebadac859
     - !<own> f1be7375-21ac-4e6c-9e6e-285d60917727
-    - !<own> 205d5cec-6d72-40a3-a310-9c0b65461da4
     - !<own> 508d8912-44bb-4240-acf3-144abf2ef705
-    - !<own> e23bd037-56b2-4240-832b-af862d8aa6e5
-    - !<own> 12ad99f7-b3ed-4b44-9674-7a869ef99efb
+    - !<own> 205d5cec-6d72-40a3-a310-9c0b65461da4
+    - !<own> ea740804-ddf0-4429-b144-904a8bd0fff6
+    - !<own> 80197fb5-7c31-4302-ad4e-0300344a93a8
+    - !<own> cecaaf79-0e7e-4573-947d-8ee816c1454c
   Components:
     []
 - !<SceneObject/0f455197-d71b-43b7-ab8b-eed17a3255d6>
@@ -3151,7 +3182,8 @@
   Enabled: true
   ScriptAsset: !<reference> e22c4bc0-6848-493c-bf51-ddd16889f06e
   ScriptInputsDefault:
-    {}
+    victoryText: true
+    applauseSound: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -3162,7 +3194,9 @@
       obstacleNum: !<reference.Text> bdd0d816-21aa-4ecb-98c0-f39440fc1d8d
       leftArrow: !<reference.SceneObject> 3d9e14a8-317b-40c8-afbb-a8807b6c8fe4
       rightArrow: !<reference.SceneObject> 8ea48741-2512-47ec-aae5-12ae43f0f304
-      swooshSound: !<reference.AudioComponent> 46de6960-7353-4f9c-b266-81145bde1443
+      swooshSound: !<reference.AudioComponent> 8d8dfc8b-bf17-457b-a1b4-633df83fa385
+      victoryText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      applauseSound: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}
@@ -4484,6 +4518,7 @@
     - !<own> 5113a3b2-e147-4bbf-80f3-2a147246e898
     - !<own> 3980195f-c3d9-407a-8121-7b49df7a4234
     - !<own> 9b989365-dd99-4651-8702-b20225324700
+    - !<own> eee6a7e2-4eb7-4f62-b9de-d2d8d5008186
 - !<ScriptComponent/2084bab8-5f86-4659-b05d-12cf1a24ccc2>
   PrefabRemaps:
     []
@@ -4768,6 +4803,7 @@
     - !<own> 376854dc-330b-4ff8-bf92-7a1ae87345dd
     - !<own> 13dca3f6-1d79-4f83-8081-3aef473f145a
     - !<own> 0cb3c520-8f0a-4fc6-930b-fd1882759232
+    - !<own> 8d8dfc8b-bf17-457b-a1b4-633df83fa385
 - !<ScreenTransform/2254eced-796a-464e-9318-2dc19c0b4a65>
   PrefabRemaps:
     []
@@ -5462,7 +5498,7 @@
   Enabled: false
   Layers: 1
   LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: -55.219296}
+    position: {x: 0.000000, y: 0.000000, z: -50.000000}
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
@@ -6949,7 +6985,8 @@
   Enabled: true
   ScriptAsset: !<reference> e22c4bc0-6848-493c-bf51-ddd16889f06e
   ScriptInputsDefault:
-    {}
+    victoryText: true
+    applauseSound: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -6960,7 +6997,9 @@
       obstacleNum: !<reference.Text> bdd0d816-21aa-4ecb-98c0-f39440fc1d8d
       leftArrow: !<reference.SceneObject> 3d9e14a8-317b-40c8-afbb-a8807b6c8fe4
       rightArrow: !<reference.SceneObject> 8ea48741-2512-47ec-aae5-12ae43f0f304
-      swooshSound: !<reference.AudioComponent> 46de6960-7353-4f9c-b266-81145bde1443
+      swooshSound: !<reference.AudioComponent> eee6a7e2-4eb7-4f62-b9de-d2d8d5008186
+      victoryText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      applauseSound: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}
@@ -8015,7 +8054,8 @@
     - !<own> 3d9e14a8-317b-40c8-afbb-a8807b6c8fe4
     - !<own> 8ea48741-2512-47ec-aae5-12ae43f0f304
     - !<own> c6d373a0-aa8a-4ba5-bab2-da7dbde53f27
-    - !<own> bb70d53c-3948-4550-b82d-85e900e80c51
+    - !<own> 836ac3c8-2711-4398-a35b-8e0d54297a8e
+    - !<own> 05844603-6327-4278-a38b-dffb9fa0db8f
     - !<own> 28a95eef-b373-4ec7-95f3-2dff485c37cb
     - !<own> 72388656-cd03-4234-ab1d-48a2804f9a94
     - !<own> 709b5d3f-e4fb-4925-914e-e53be147f4ce
@@ -9927,6 +9967,23 @@
     - !<own> e10c5a63-7ccc-4e40-b68f-525a5e0531f9
   Components:
     []
+- !<AudioComponent/4c7fa105-9e9a-40f3-8915-2dabe9e0c58c>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 05b8af30-98b0-4996-9300-8d4900527639
+  EnableAutoplayLoop: false
+  Volume: 0.500000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
 - !<ScriptComponent/4c827ada-3d8e-48bf-bae4-2a9810c4d3fa>
   PrefabRemaps:
     []
@@ -10356,6 +10413,7 @@
     - !<own> 99ba8574-516c-4ea0-9881-918e16a840b2
     - !<own> 724c9c88-a531-40f5-9bf8-b7846b81b0d6
     - !<own> eb5750aa-4d11-431a-b17b-defa41c4f1b6
+    - !<own> 8c9dc263-5e23-4cc5-9f05-d044e4f9bd4d
 - !<RenderMeshVisual/5113a3b2-e147-4bbf-80f3-2a147246e898>
   PrefabRemaps:
     []
@@ -14220,7 +14278,7 @@
 - !<SceneObject/72388656-cd03-4234-ab1d-48a2804f9a94>
   PrefabRemaps:
     []
-  Name: Box
+  Name: Head Collider
   Enabled: true
   Layers: 1
   LocalTransform:
@@ -14234,6 +14292,7 @@
     - !<own> 1db1b713-dbc1-4b5e-82ac-ec7e363577be
     - !<own> c1fba1ef-5e81-4c17-9d84-75ac041e6960
     - !<own> c48be673-a175-4a76-95ed-accc659998c6
+    - !<own> e8393399-331c-44d1-922d-eefb9cf3a297
 - !<ScriptComponent/723bb8d4-e3dd-4472-8e88-8eb38950d483>
   PrefabRemaps:
     []
@@ -14281,7 +14340,8 @@
   Enabled: true
   ScriptAsset: !<reference> e22c4bc0-6848-493c-bf51-ddd16889f06e
   ScriptInputsDefault:
-    {}
+    victoryText: true
+    applauseSound: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -14292,7 +14352,9 @@
       obstacleNum: !<reference.Text> bdd0d816-21aa-4ecb-98c0-f39440fc1d8d
       leftArrow: !<reference.SceneObject> 3d9e14a8-317b-40c8-afbb-a8807b6c8fe4
       rightArrow: !<reference.SceneObject> 8ea48741-2512-47ec-aae5-12ae43f0f304
-      swooshSound: !<reference.AudioComponent> 46de6960-7353-4f9c-b266-81145bde1443
+      swooshSound: !<reference.AudioComponent> 8c9dc263-5e23-4cc5-9f05-d044e4f9bd4d
+      victoryText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      applauseSound: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}
@@ -15424,7 +15486,8 @@
   Enabled: true
   ScriptAsset: !<reference> e22c4bc0-6848-493c-bf51-ddd16889f06e
   ScriptInputsDefault:
-    {}
+    victoryText: true
+    applauseSound: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -15435,7 +15498,9 @@
       obstacleNum: !<reference.Text> bdd0d816-21aa-4ecb-98c0-f39440fc1d8d
       leftArrow: !<reference.SceneObject> 3d9e14a8-317b-40c8-afbb-a8807b6c8fe4
       rightArrow: !<reference.SceneObject> 8ea48741-2512-47ec-aae5-12ae43f0f304
-      swooshSound: !<reference.AudioComponent> 46de6960-7353-4f9c-b266-81145bde1443
+      swooshSound: !<reference.AudioComponent> cae26b7b-aade-4a60-9815-9deeec9464b2
+      victoryText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      applauseSound: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}
@@ -15507,6 +15572,21 @@
   Components:
     - !<own> 3ffd748e-8734-4f92-bf51-f50f7d98345b
     - !<own> 41d4c477-2fba-44bd-bac4-d620ed41c40a
+- !<SceneObject/80197fb5-7c31-4302-ad4e-0300344a93a8>
+  PrefabRemaps:
+    []
+  Name: Cheering Sound
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 117.434311, y: 22.644199, z: -715.401001}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 10.000000, y: 10.000000, z: 10.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> b4d1069f-5b5a-4720-b061-2e61e87e8bda
 - !<RenderMeshVisual/802a52cb-1bfd-4fdd-b595-cb52f84521b0>
   PrefabRemaps:
     []
@@ -15812,6 +15892,21 @@
     - !<own> 862f3084-8861-43e4-8217-1b67d3327819
     - !<own> c277b287-6c8a-49bc-a9fe-d3a582de4bf1
     - !<own> 4c827ada-3d8e-48bf-bae4-2a9810c4d3fa
+- !<SceneObject/836ac3c8-2711-4398-a35b-8e0d54297a8e>
+  PrefabRemaps:
+    []
+  Name: You Passed!
+  Enabled: false
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: -50.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> c31050b8-b559-4af2-8b14-f577750c072a
 - !<ScreenTransform/836f0e65-639e-415f-b931-ed2449752f86>
   PrefabRemaps:
     []
@@ -16653,7 +16748,8 @@
   Enabled: true
   ScriptAsset: !<reference> e22c4bc0-6848-493c-bf51-ddd16889f06e
   ScriptInputsDefault:
-    {}
+    victoryText: true
+    applauseSound: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -16664,7 +16760,9 @@
       obstacleNum: !<reference.Text> bdd0d816-21aa-4ecb-98c0-f39440fc1d8d
       leftArrow: !<reference.SceneObject> 3d9e14a8-317b-40c8-afbb-a8807b6c8fe4
       rightArrow: !<reference.SceneObject> 8ea48741-2512-47ec-aae5-12ae43f0f304
-      swooshSound: !<reference.AudioComponent> 46de6960-7353-4f9c-b266-81145bde1443
+      swooshSound: !<reference.AudioComponent> 4c7fa105-9e9a-40f3-8915-2dabe9e0c58c
+      victoryText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      applauseSound: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}
@@ -16844,6 +16942,23 @@
   ScriptTypes:
     "":
       {}
+- !<AudioComponent/8c9dc263-5e23-4cc5-9f05-d044e4f9bd4d>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 05b8af30-98b0-4996-9300-8d4900527639
+  EnableAutoplayLoop: false
+  Volume: 0.500000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
 - !<SceneObject/8ca963a5-0a03-4623-b95c-028910278f89>
   PrefabRemaps:
     []
@@ -17074,6 +17189,23 @@
     - !<own> d0b6210a-5ed6-4d14-b79c-549cdd04b772
   Components:
     []
+- !<AudioComponent/8d8dfc8b-bf17-457b-a1b4-633df83fa385>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 05b8af30-98b0-4996-9300-8d4900527639
+  EnableAutoplayLoop: false
+  Volume: 0.500000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
 - !<SceneObject/8dba13b9-dfda-4389-873b-0d623d78c43b>
   PrefabRemaps:
     []
@@ -22216,6 +22348,23 @@
   MaxDistance: 100.000000
   EnableDirectivityEffect: true
   EnablePositionEffect: true
+- !<AudioComponent/b4d1069f-5b5a-4720-b061-2e61e87e8bda>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 7086b1ce-87db-4214-a387-b14037555f60
+  EnableAutoplayLoop: false
+  Volume: 0.500000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
 - !<SceneObject/b5849f84-f190-43dd-ac82-ddd7b46939ed>
   PrefabRemaps:
     []
@@ -23811,6 +23960,84 @@
   Components:
     - !<own> a2a4bf6f-bb0e-4fb5-944b-99a03cb8eb23
     - !<own> 92de6246-1069-4ec1-a3e9-e949daa61024
+- !<Text/c31050b8-b559-4af2-8b14-f577750c072a>
+  PrefabRemaps:
+    []
+  Name: Text
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Text: |-
+    You Passed!
+    Tap to continue.
+  Editable: false
+  ShowEditingPreview: true
+  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
+  SizeToFit: false
+  FontSize: 48
+  Font: !<reference> 00000000-0000-0000-0000-000000000000
+  LayoutRect:
+    left: -7.500000
+    bottom: -2.250000
+    right: 7.500000
+    top: 2.250000
+  OverflowVertical: Overflow
+  OverflowHorizontal: Overflow
+  Fill: !<TextFill>
+    Mode: Solid
+    Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    TileCount: 5.000000
+    TileZone: Rect
+    TextureStretch: FitWidth
+  Outline: !<OutlineSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Size: 0.250000
+  Dropshadow: !<DropshadowSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    OffsetX: 0.250000
+    OffsetY: 0.250000
+  Background: !<BackgroundSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Margins:
+      left: 0.000000
+      bottom: 0.000000
+      right: 0.000000
+      top: 0.000000
+    CornerRadius: 0.000000
+  AdvancedLayout: !<TextAdvancedLayout>
+    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+    LetterSpacing: 0.000000
+    LineSpacing: 1.000000
+    CapitalizationOverride: None
+  DepthTest: false
+  TwoSided: false
 - !<SceneObject/c3265e0b-2058-4f58-b31a-40bddfd01449>
   PrefabRemaps:
     []
@@ -24004,6 +24231,7 @@
   ScriptInputs:
     "":
       gameOverText: !<reference.SceneObject> 28a95eef-b373-4ec7-95f3-2dff485c37cb
+      bonkSound: !<reference.AudioComponent> e8393399-331c-44d1-922d-eefb9cf3a297
   ScriptTypes:
     "":
       {}
@@ -24193,6 +24421,7 @@
     - !<own> a94c167d-7df8-4884-a535-05df2bef5463
     - !<own> f6255e83-3eba-465a-b6b1-9041e77cc1f9
     - !<own> 1cc7816e-159a-426f-b218-008771e2846b
+    - !<own> 06676134-5cf8-4252-a432-19ad55cf87f7
 - !<SceneObject/c63ef283-82ed-4385-98c8-79fb537634fc>
   PrefabRemaps:
     []
@@ -24608,6 +24837,23 @@
   BlendNormals: false
   BlendShapes:
     {}
+- !<AudioComponent/cae26b7b-aade-4a60-9815-9deeec9464b2>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 05b8af30-98b0-4996-9300-8d4900527639
+  EnableAutoplayLoop: false
+  Volume: 0.500000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
 - !<ScriptComponent/cb386d53-5f0b-45a5-b1c1-f2895c6619f0>
   PrefabRemaps:
     []
@@ -24624,6 +24870,23 @@
   ScriptTypes:
     "":
       {}
+- !<AudioComponent/cb6c4d24-0208-4d29-81d3-8d9ba005f39c>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 05b8af30-98b0-4996-9300-8d4900527639
+  EnableAutoplayLoop: false
+  Volume: 0.500000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
 - !<SceneObject/cb97fc4c-46f9-4383-8b3e-c92022242f9f>
   PrefabRemaps:
     []
@@ -24718,6 +24981,7 @@
     - !<own> c87b65fc-c044-4c7e-af76-ab2b1d634601
     - !<own> 8ad154f3-8839-44c0-b671-e9e75d42f9c1
     - !<own> d43bbb51-a435-438d-add8-b2c6ca707f16
+    - !<own> 4c7fa105-9e9a-40f3-8915-2dabe9e0c58c
 - !<ScriptComponent/cc2a6350-ffed-4ce8-ac66-e30110ced9bc>
   PrefabRemaps:
     []
@@ -27331,6 +27595,23 @@
     - !<own> e3b241ea-b956-4215-81d2-9844e152896d
   Components:
     []
+- !<AudioComponent/e8393399-331c-44d1-922d-eefb9cf3a297>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 4eb17ec3-7f08-4479-8da8-1449db32e368
+  EnableAutoplayLoop: false
+  Volume: 0.500000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
 - !<ScriptComponent/e8e77f57-4004-4bb3-bfe9-9afb428c9569>
   PrefabRemaps:
     []
@@ -27594,6 +27875,7 @@
     - !<own> e0aa1e9d-dc28-4257-a2f0-2a8d2f84f0dc
     - !<own> fb4a10e3-28dd-4feb-b1f0-14dda8558b65
     - !<own> 52bf092a-e8ae-4810-aa46-e66b32d1515b
+    - !<own> cb6c4d24-0208-4d29-81d3-8d9ba005f39c
 - !<SceneObject/ea87ae03-6d2f-4af2-8885-38e54466fe00>
   PrefabRemaps:
     []
@@ -28030,6 +28312,23 @@
     []
   Components:
     - !<own> 4fe3149b-9342-413d-bea0-9b6a284eba77
+- !<AudioComponent/eee6a7e2-4eb7-4f62-b9de-d2d8d5008186>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 05b8af30-98b0-4996-9300-8d4900527639
+  EnableAutoplayLoop: false
+  Volume: 0.500000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
 - !<SceneObject/ef31fa8a-b029-499f-b0f6-a7ead7c6f578>
   PrefabRemaps:
     []
@@ -28312,6 +28611,7 @@
     - !<own> e6b17d2c-8b5f-4cab-a546-ae9aaff0d6f1
     - !<own> 7f81a28d-1d0b-4023-bb66-d7a6cdb3638a
     - !<own> 73d9742c-28fd-4590-8fbc-170e97d6ae0e
+    - !<own> cae26b7b-aade-4a60-9815-9deeec9464b2
 - !<Image/f1e6c1d6-58a6-4868-bfb6-a445d0dca4ee>
   PrefabRemaps:
     []
@@ -28929,7 +29229,8 @@
   Enabled: true
   ScriptAsset: !<reference> e22c4bc0-6848-493c-bf51-ddd16889f06e
   ScriptInputsDefault:
-    {}
+    victoryText: true
+    applauseSound: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -28940,7 +29241,9 @@
       obstacleNum: !<reference.Text> bdd0d816-21aa-4ecb-98c0-f39440fc1d8d
       leftArrow: !<reference.SceneObject> 3d9e14a8-317b-40c8-afbb-a8807b6c8fe4
       rightArrow: !<reference.SceneObject> 8ea48741-2512-47ec-aae5-12ae43f0f304
-      swooshSound: !<reference.AudioComponent> 46de6960-7353-4f9c-b266-81145bde1443
+      swooshSound: !<reference.AudioComponent> 06676134-5cf8-4252-a432-19ad55cf87f7
+      victoryText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      applauseSound: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}
@@ -29499,7 +29802,9 @@
       obstacleNum: !<reference.Text> bdd0d816-21aa-4ecb-98c0-f39440fc1d8d
       leftArrow: !<reference.SceneObject> 3d9e14a8-317b-40c8-afbb-a8807b6c8fe4
       rightArrow: !<reference.SceneObject> 8ea48741-2512-47ec-aae5-12ae43f0f304
-      swooshSound: !<reference.AudioComponent> 46de6960-7353-4f9c-b266-81145bde1443
+      swooshSound: !<reference.AudioComponent> cb6c4d24-0208-4d29-81d3-8d9ba005f39c
+      victoryText: !<reference.SceneObject> 836ac3c8-2711-4398-a35b-8e0d54297a8e
+      applauseSound: !<reference.AudioComponent> b4d1069f-5b5a-4720-b061-2e61e87e8bda
   ScriptTypes:
     "":
       {}

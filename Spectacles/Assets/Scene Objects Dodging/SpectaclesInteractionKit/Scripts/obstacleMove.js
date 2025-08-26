@@ -5,6 +5,8 @@
 //@input SceneObject leftArrow;
 //@input SceneObject rightArrow;
 // @input Component.AudioComponent swooshSound;
+// @input SceneObject victoryText;
+// @input Component.AudioComponent applauseSound;
 
 
 
@@ -127,6 +129,21 @@ function onUpdate(eventData) {
             if (script.obstacle2) {
                 script.obstacle2.enabled = true;
                 nextObstacleEnabled = true;
+            }
+            
+            // Check if this was the last obstacle (victory condition)
+            if (global.remainObstacle <= 0) {
+                print("All obstacles dodged! Victory!");
+                
+                // Show victory text
+                if (script.victoryText) {
+                    script.victoryText.enabled = true;
+                }
+                
+                // Play applause sound
+                if (script.applauseSound) {
+                    script.applauseSound.play(1);
+                }
             }
         }
     }
