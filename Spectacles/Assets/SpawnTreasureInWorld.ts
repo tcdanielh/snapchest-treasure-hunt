@@ -27,6 +27,7 @@ export class NewScript extends BaseScriptComponent {
     
     onAwake() {
         this.found = false;
+        this.targetObject.enabled = false;
         this.chooseTreasurePosition();
 
         
