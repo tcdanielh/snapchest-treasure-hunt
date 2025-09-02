@@ -91,3 +91,21 @@ spawnEvent.bind(function () {
     
 });
 
+// Expose a reset API so external managers can restart the spawner
+script.api = script.api || {};
+script.api.reset = function () {
+    // Reset internal counters/timers
+    script.cubeNum = 0;
+    timer = 0.0;
+    gameOver = false;
+
+    // Reset global counters
+    if (typeof global.boxNum !== 'undefined') global.boxNum = 0;
+    if (typeof global.score !== 'undefined') global.score = -1;
+
+    // Hide pass/fail UI and reset score text
+    if (script.passText) script.passText.enabled = false;
+    if (script.failText) script.failText.enabled = false;
+    if (script.scoreText) script.scoreText.text = global.score.toString() + " / " + global.boxNum.toString();
+};
+

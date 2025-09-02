@@ -14889,6 +14889,12 @@
       radarMinigame: !<reference.SceneObject> bedc436e-f424-4e51-ae9e-deef39ae3d77
       dodgingMinigame: !<reference.SceneObject> 0f2aa3b2-14ca-41ad-9be8-044834f87fa3
       basketMinigame: !<reference.SceneObject> 3e2ad263-ea33-4061-ac5c-d7ce0b77dfd0
+      treasureHuntScript: !<reference.ScriptComponent> 62a92615-078b-4c83-819d-8cce5aa61c3a
+      dodgingGameOverText: !<reference.SceneObject> 28a95eef-b373-4ec7-95f3-2dff485c37cb
+      dodgingVictoryText: !<reference.SceneObject> 836ac3c8-2711-4398-a35b-8e0d54297a8e
+      basketPassText: !<reference.SceneObject> bf1cb2f5-83a8-42c3-90b3-59f93d1ca647
+      basketFailText: !<reference.SceneObject> fb6eacae-05f3-46a8-b50f-b7c6e745cb82
+      basketSpawnScript: !<reference.ScriptComponent> c10d12ae-a6fa-43a0-a4a8-1b958ff364d2
   ScriptTypes:
     "":
       {}
@@ -17145,7 +17151,7 @@
   PrefabRemaps:
     []
   Name: GameManager
-  Enabled: false
+  Enabled: true
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}

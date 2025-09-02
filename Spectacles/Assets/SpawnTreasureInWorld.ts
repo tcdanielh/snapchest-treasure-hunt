@@ -40,6 +40,9 @@ export class NewScript extends BaseScriptComponent {
     }
     
     chooseTreasurePosition() {
+        // Reset found state when choosing new position
+        this.found = false;
+        
         // Randomize the x and z coordinate ()  
         var frontOrBackX;
         if (Math.random() < 0.5) {

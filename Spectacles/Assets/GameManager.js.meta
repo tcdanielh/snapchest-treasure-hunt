@@ -28,9 +28,15 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
+    basketFailText: false
     basketMinigame: false
+    basketPassText: false
+    basketSpawnScript: false
+    dodgingGameOverText: false
     dodgingMinigame: false
+    dodgingVictoryText: false
     radarMinigame: false
+    treasureHuntScript: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -39,6 +45,12 @@
     - radarMinigame: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       dodgingMinigame: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       basketMinigame: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      treasureHuntScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      dodgingGameOverText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      dodgingVictoryText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      basketPassText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      basketFailText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      basketSpawnScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
