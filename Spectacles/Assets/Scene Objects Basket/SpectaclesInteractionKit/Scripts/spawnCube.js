@@ -13,13 +13,14 @@
 // @input SceneObject failText;
 
 global.boxNum = 0;
+var actualCubeNum = 0; // Internal counter since script.cubeNum is read-only
 // Spawn a cube at a random position
 function spawnCube() {
     var instance = script.cubePrefab.instantiate(script.getSceneObject());
     
-     script.cubeNum += 1;
+    actualCubeNum += 1;
     global.boxNum += 1;
-    instance.name = "box" + script.cubeNum;
+    instance.name = "box" + actualCubeNum;
 
 
     var posX = getRandomInRange(-script.spawnRangeX, script.spawnRangeX);
@@ -69,7 +70,7 @@ var gameOver = false;
 
 spawnEvent.bind(function () {
     timer += getDeltaTime();
-    if (gameOver == false && timer >= interval && script.cubeNum < 20) {
+    if (gameOver == false && timer >= interval && actualCubeNum < 20) {
         spawnCube();
         timer = 0.0;
         //print("generate");
@@ -77,7 +78,7 @@ spawnEvent.bind(function () {
 //        global.boxNum += 1;
         
     }
-    else if (gameOver == false && script.cubeNum == 20) {
+    else if (gameOver == false && actualCubeNum == 20) {
         if (global.score > 5) {
             script.passText.enabled = true;
             script.winAudio.play(1);
@@ -91,11 +92,10 @@ spawnEvent.bind(function () {
     
 });
 
-// Expose a reset API so external managers can restart the spawner
-script.api = script.api || {};
-script.api.reset = function () {
+// Expose a reset function via global scope instead of script.api to avoid read-only issues
+global.resetBasketSpawner = function () {
     // Reset internal counters/timers
-    script.cubeNum = 0;
+    actualCubeNum = 0;
     timer = 0.0;
     gameOver = false;
 

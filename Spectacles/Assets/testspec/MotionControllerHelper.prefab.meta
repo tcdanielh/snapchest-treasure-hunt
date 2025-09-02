@@ -21,26 +21,57 @@
   Enabled: true
   ScriptAsset: !<reference> 84af6140-7ca5-4d9d-90d7-12c69fc84535
   ScriptInputsDefault:
-    beepAudio: true
+    {}
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
       childObject: !<reference.SceneObject> c74112db-1807-4551-a774-1fbb3c1af475
       childCollider: !<reference.ColliderComponent> 7db8c894-0452-4a36-acbd-d5a1527fbbfe
-      treasureBound: !<reference.SceneObject> f4a2fd4b-8f37-4f61-b2b0-44e9b6f31be8
-      beepAudio: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      treasureBound: !<reference.SceneObject> 538dc83d-2119-4ec2-aa5c-32f89fd1e0fc
+      beepAudio: !<reference.AudioComponent> fc0467c2-88c6-4230-8a13-9167af376c0e
   ScriptTypes:
     "":
       {}
+- !<ObjectPrefab/0a1e367a-289e-4086-9ea2-24aeea5f0d1f>
+  PackagePath: ""
+  objects:
+    - !<own> d1c2f71a-6788-4e30-8dbb-922511bccfec
+  LazyLoading: false
+  RetainAssets: true
+- !<ColliderComponent/2e50a7d7-3bf9-42b5-b479-d151c3651f5e>
+  PrefabRemaps:
+    []
+  Name: Physics Collider
+  Enabled: true
+  Shape: !<Mesh>
+    Mesh: !<reference> 7ee762fc-381a-4ff7-9616-0b7730a07284
+    Convex: false
+    Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: true
 - !<ObjectPrefabAssetData/3cbcabc5-4706-43ea-9953-cfdc71e3798d>
   SourceRemaps:
     - 64378c9f-43a6-4203-93eb-d0153f8a5e9a: 08b0e879-bb2a-4557-b62a-95ceb490c44b
+    - 71a80a3c-28a6-4352-89df-5372be7cb3b3: 0a1e367a-289e-4086-9ea2-24aeea5f0d1f
+    - 8664edca-e3c3-44e1-a48d-953bc667a6c2: 2e50a7d7-3bf9-42b5-b479-d151c3651f5e
+    - 944c6bae-fb20-48e3-86a7-5872f9ede7bc: 5bf4bed5-4393-4b30-a8e9-34edb0112b2e
     - 9494de33-0779-45d5-9140-ba71c684919f: 7db8c894-0452-4a36-acbd-d5a1527fbbfe
+    - bb7b6254-b052-4091-84af-1610094bd81e: 9f084c6d-57b9-4fb6-9c60-13c2b54e66ee
+    - cd90a10f-d23d-4617-9283-79b87bc15857: 95e659fb-8b71-4066-ad1d-e5162cd91777
     - ce49abc5-6d68-4634-9f3f-5819ce68ffb8: c74112db-1807-4551-a774-1fbb3c1af475
     - e88d1d94-7dfb-401a-bafc-89a7832ecd9c: d1c2f71a-6788-4e30-8dbb-922511bccfec
+    - f0fe2733-b207-4c1e-aa95-9d1ab832be31: fc0467c2-88c6-4230-8a13-9167af376c0e
     - fff3d258-ed19-4a1f-823d-ab06a62ae540: 4552a15f-09d3-476a-83fd-80270548b6ec
-  SourceState: !<own> cbad456d-3321-41e8-b0b1-f6415649299f
+  SourceState: !<own> 0a1e367a-289e-4086-9ea2-24aeea5f0d1f
 - !<RenderMeshVisual/4552a15f-09d3-476a-83fd-80270548b6ec>
   PrefabRemaps:
     []
@@ -57,6 +88,26 @@
     - !<reference> bd589f12-4d74-4042-bef3-ba904188847c
   Mesh: !<reference> 6a5728bc-f4ac-4a69-818d-1dbbbb4e59b7
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/5bf4bed5-4393-4b30-a8e9-34edb0112b2e>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 8097e431-c947-442e-9ff9-609ca429312d
+  Mesh: !<reference> 7ee762fc-381a-4ff7-9616-0b7730a07284
+  Skin: !<reference> 27c4bd88-ac92-4605-b414-0024f6ed4aae
   BlendShapesEnabled: true
   BlendNormals: false
   BlendShapes:
@@ -78,7 +129,39 @@
   RotationTension: 30.000000
   ForceCompound: false
   Intangible: false
-  ShowCollider: false
+  ShowCollider: true
+- !<SceneObject/95e659fb-8b71-4066-ad1d-e5162cd91777>
+  PrefabRemaps:
+    []
+  Name: BaseballBat
+  Enabled: false
+  Layers: 4
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 5bf4bed5-4393-4b30-a8e9-34edb0112b2e
+    - !<own> 2e50a7d7-3bf9-42b5-b479-d151c3651f5e
+- !<SceneObject/9f084c6d-57b9-4fb6-9c60-13c2b54e66ee>
+  PrefabRemaps:
+    []
+  Name: Objects
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> c74112db-1807-4551-a774-1fbb3c1af475
+    - !<own> 95e659fb-8b71-4066-ad1d-e5162cd91777
+  Components:
+    []
 - !<SceneObject/c74112db-1807-4551-a774-1fbb3c1af475>
   PrefabRemaps:
     []
@@ -86,21 +169,15 @@
   Enabled: true
   Layers: 2
   LocalTransform:
-    position: {x: 0.000000, y: 50.000000, z: 0.000000}
+    position: {x: 0.000000, y: 500.000000, z: 0.000000}
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 10.000000, y: 100.000000, z: 10.000000}
+    scale: {x: 10.000000, y: 1000.000000, z: 10.000000}
     hasSegmentScaleCompensation: false
   Children:
     []
   Components:
     - !<own> 4552a15f-09d3-476a-83fd-80270548b6ec
     - !<own> 7db8c894-0452-4a36-acbd-d5a1527fbbfe
-- !<ObjectPrefab/cbad456d-3321-41e8-b0b1-f6415649299f>
-  PackagePath: ""
-  objects:
-    - !<own> d1c2f71a-6788-4e30-8dbb-922511bccfec
-  LazyLoading: false
-  RetainAssets: true
 - !<SceneObject/d1c2f71a-6788-4e30-8dbb-922511bccfec>
   PrefabRemaps:
     []
@@ -113,6 +190,24 @@
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
-    - !<own> c74112db-1807-4551-a774-1fbb3c1af475
+    - !<own> 9f084c6d-57b9-4fb6-9c60-13c2b54e66ee
   Components:
     - !<own> 08b0e879-bb2a-4557-b62a-95ceb490c44b
+    - !<own> fc0467c2-88c6-4230-8a13-9167af376c0e
+- !<AudioComponent/fc0467c2-88c6-4230-8a13-9167af376c0e>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 9569be74-2c53-4712-ab8f-d1db73a9efaf
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false

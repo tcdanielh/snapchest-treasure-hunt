@@ -202,18 +202,12 @@ function resetBasketGame() {
     if (script.basketPassText) script.basketPassText.enabled = false;
     if (script.basketFailText) script.basketFailText.enabled = false;
 
-    // Reset spawn counters and globals used by spawnCube.js
-    if (script.basketSpawnScript) {
-        // try to reset named properties if they exist
-        if (typeof script.basketSpawnScript.api !== 'undefined' && script.basketSpawnScript.api.reset) {
-            // custom API reset on the component
-            script.basketSpawnScript.api.reset();
-        }
+    // Call the global reset function instead of script API to avoid read-only issues
+    if (typeof global.resetBasketSpawner === 'function') {
+        global.resetBasketSpawner();
+    } else {
+        // Fallback reset if global function not available
+        if (typeof global.boxNum !== 'undefined') global.boxNum = 0;
+        if (typeof global.score !== 'undefined') global.score = -1;
     }
-
-    // Reset global counters used by basket game
-    if (typeof global.boxNum !== 'undefined') global.boxNum = 0;
-    if (typeof global.score !== 'undefined') global.score = -1;
-    
-    // You may also want to reset any spawned boxes or timers in the basket scene depending on setup
 }
