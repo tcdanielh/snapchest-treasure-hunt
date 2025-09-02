@@ -4998,23 +4998,6 @@
   ScriptTypes:
     "":
       {}
-- !<AudioComponent/24bfb592-23b6-40cc-91bf-9b106f256865>
-  PrefabRemaps:
-    []
-  Name: Audio
-  Enabled: true
-  AudioTrack: !<reference> 9569be74-2c53-4712-ab8f-d1db73a9efaf
-  EnableAutoplayLoop: false
-  Volume: 1.000000
-  EnableMixToSnap: false
-  RecordVolume: 1.000000
-  EnableSpatialAudio: false
-  EnableDistanceEffect: false
-  CurveType: Logarithm
-  MinDistance: 0.000000
-  MaxDistance: 100.000000
-  EnableDirectivityEffect: false
-  EnablePositionEffect: false
 - !<ScriptComponent/24ced6af-5be7-48ea-85ad-ee299a7991b3>
   PrefabRemaps:
     []
@@ -8016,7 +7999,7 @@
     - ff4d67c8-08ab-462c-bc6c-649f3eedb0e7: 5e3d3fff-a046-4656-a280-3230feca9abc
     - ffe4d762-5f33-4c8e-8ecb-7bc28d37985a: 860b203d-7537-4ee6-9d4d-dae7c4ee8a9e
   Name: Scene Objects Basket
-  Enabled: false
+  Enabled: true
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -18013,7 +17996,6 @@
       childObject: !<reference.SceneObject> ea87ae03-6d2f-4af2-8885-38e54466fe00
       childCollider: !<reference.ColliderComponent> e49c6fa1-f15c-43d4-bd3c-a93869e17662
       treasureBound: !<reference.SceneObject> 538dc83d-2119-4ec2-aa5c-32f89fd1e0fc
-      beepAudio: !<reference.AudioComponent> 24bfb592-23b6-40cc-91bf-9b106f256865
   ScriptTypes:
     "":
       {}
@@ -19943,7 +19925,6 @@
     - !<own> 49bca8b4-eb6e-40f0-9a19-722ac1decece
   Components:
     - !<own> 94bf6c5a-964a-48e0-96f6-db40e94e006c
-    - !<own> 24bfb592-23b6-40cc-91bf-9b106f256865
 - !<ScreenTransform/a10684c6-dff1-4fa6-bb55-9d6a36d805ef>
   PrefabRemaps:
     []

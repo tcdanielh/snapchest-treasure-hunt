@@ -21,7 +21,7 @@
   Enabled: true
   ScriptAsset: !<reference> 84af6140-7ca5-4d9d-90d7-12c69fc84535
   ScriptInputsDefault:
-    beepAudio: true
+    {}
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -29,7 +29,6 @@
       childObject: !<reference.SceneObject> c74112db-1807-4551-a774-1fbb3c1af475
       childCollider: !<reference.ColliderComponent> 7db8c894-0452-4a36-acbd-d5a1527fbbfe
       treasureBound: !<reference.SceneObject> f4a2fd4b-8f37-4f61-b2b0-44e9b6f31be8
-      beepAudio: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}
