@@ -28,6 +28,7 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
+    beepAudio: false
     childCollider: false
     childObject: false
     treasureBound: false
@@ -39,6 +40,7 @@
     - childObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       childCollider: !<reference.ColliderComponent> 00000000-0000-0000-0000-000000000000
       treasureBound: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      beepAudio: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
@@ -46,3 +48,4 @@
     - // @input SceneObject childObject
     - // @input Component.ColliderComponent childCollider
     - // @input SceneObject treasureBound
+    - // @input Component.AudioComponent beepAudio
