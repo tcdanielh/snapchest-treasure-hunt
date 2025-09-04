@@ -93,7 +93,7 @@ export class NewScript extends BaseScriptComponent {
         //      this.targetObject.getTransform().getWorldPosition()  ));
         var distanceToTreasure = this.cameraObject.getTransform().getWorldPosition().distance(this.targetObject.getTransform().getWorldPosition());
         //print(distanceToTreasure);   
-        if (distanceToTreasure < 100) {
+        if (distanceToTreasure < 150) {
             if (this.showTargetOnProximity && this.targetObject) {
                 this.targetObject.enabled = true;
             }
