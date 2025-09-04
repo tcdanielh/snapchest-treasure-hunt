@@ -21565,7 +21565,7 @@
   Text: |-
     This game is played with the phone controller. Please calibrate your phone controller.
     
-    For the best experience, please play in an open space. Tap your phone controller when ready!
+    For the best experience, please play in a 12m x 12m open space. Tap your phone controller when ready!
   Editable: false
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
