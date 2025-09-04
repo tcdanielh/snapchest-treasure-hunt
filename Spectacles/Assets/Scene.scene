@@ -134,6 +134,7 @@
     - !<own> b30cc167-03d7-4281-8ba0-c01a46842996
     - !<own> fd02bf74-0ebe-447a-b407-0840a429f49e
     - !<own> aa805138-a0f2-4797-ad17-69489704adeb
+    - !<own> 5df26447-6b4c-4bc1-8363-54b6a517d4b3
     - !<own> 3830c4ac-e268-494a-b0c9-7f5c685cf66e
   Components:
     - !<own> 00000000-0000-0065-0000-000000000065
@@ -12857,6 +12858,21 @@
     - !<own> 430ada45-8398-45f6-a513-8cb02465f6f9
   Components:
     []
+- !<SceneObject/5df26447-6b4c-4bc1-8363-54b6a517d4b3>
+  PrefabRemaps:
+    []
+  Name: Victory
+  Enabled: false
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: -50.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 655288ef-cf36-4e4a-a6e8-97ea4653b6e6
 - !<SceneObject/5e2edd9f-c5af-4f9b-9d6a-eeef43228b82>
   PrefabRemaps:
     []
@@ -13626,6 +13642,85 @@
     []
   Components:
     - !<own> 0b358099-710f-44f3-a741-4686036b5739
+- !<Text/655288ef-cf36-4e4a-a6e8-97ea4653b6e6>
+  PrefabRemaps:
+    []
+  Name: Text
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Text: |-
+    You will get the treasure if you complete the Red Panda’s challenges. Get two treasure chests to complete the mission! 
+    
+    The treasure should be nearby! Now tap your phone to start hunting for treasure!
+  Editable: false
+  ShowEditingPreview: true
+  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
+  SizeToFit: false
+  FontSize: 48
+  Font: !<reference> 00000000-0000-0000-0000-000000000000
+  LayoutRect:
+    left: -10.000000
+    bottom: -2.250000
+    right: 10.000000
+    top: 2.250000
+  OverflowVertical: Overflow
+  OverflowHorizontal: Wrap
+  Fill: !<TextFill>
+    Mode: Solid
+    Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    TileCount: 5.000000
+    TileZone: Rect
+    TextureStretch: FitWidth
+  Outline: !<OutlineSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Size: 0.250000
+  Dropshadow: !<DropshadowSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    OffsetX: 0.250000
+    OffsetY: 0.250000
+  Background: !<BackgroundSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Margins:
+      left: 0.000000
+      bottom: 0.000000
+      right: 0.000000
+      top: 0.000000
+    CornerRadius: 0.000000
+  AdvancedLayout: !<TextAdvancedLayout>
+    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+    LetterSpacing: 0.000000
+    LineSpacing: 1.000000
+    CapitalizationOverride: None
+  DepthTest: false
+  TwoSided: false
 - !<ScreenTransform/6558d2a3-b90e-478b-bc25-37ad8dd0f972>
   PrefabRemaps:
     []
@@ -16219,10 +16314,10 @@
       promptTapReturn: !<reference.SceneObject> 53e3910a-c390-4b0e-a4c0-88f8a6f45339
       treasureSuccessText: !<reference.SceneObject> 45d4b90b-ee1f-46b6-84e8-8c52ac0012dd
       startScreen1: !<reference.SceneObject> a7223f0d-2c64-44ab-b2b1-7d109e101c54
-      startScreen2: !<reference.SceneObject> a7223f0d-2c64-44ab-b2b1-7d109e101c54
-      startScreen3: !<reference.SceneObject> b30cc167-03d7-4281-8ba0-c01a46842996
-      startScreen4: !<reference.SceneObject> fd02bf74-0ebe-447a-b407-0840a429f49e
-      finishPanel: !<reference.SceneObject> aa805138-a0f2-4797-ad17-69489704adeb
+      startScreen2: !<reference.SceneObject> b30cc167-03d7-4281-8ba0-c01a46842996
+      startScreen3: !<reference.SceneObject> fd02bf74-0ebe-447a-b407-0840a429f49e
+      startScreen4: !<reference.SceneObject> aa805138-a0f2-4797-ad17-69489704adeb
+      finishPanel: !<reference.SceneObject> 5df26447-6b4c-4bc1-8363-54b6a517d4b3
       finishTimeText: !<reference.Text> 00000000-0000-0000-0000-000000000000
       timerText: !<reference.Text> 9dd9db89-9b46-492f-9ee6-4016e2e9fdae
   ScriptTypes:
