@@ -38,6 +38,17 @@ const transform = sceneObject.getTransform();
 var countedCubes = new Set();
 global.score = -1;
 
+function findCubeRoot(obj) {
+    var cur = obj;
+    while (cur) {
+        if (cur.name && cur.name.indexOf("box") === 0) {
+            return cur;
+        }
+        cur = cur.getParent ? cur.getParent() : null;
+    }
+    return null;
+}
+
 
 motionController.onTransformEvent.add((worldPosition, worldRotation) => {
   transform.setWorldPosition(worldPosition);
@@ -51,22 +62,31 @@ script.basketCollider.onOverlapEnter.add(function (e) {
         return;
     }
 
-    var cubeName = otherObj.name;
+    // Find the cube root object named boxN to avoid disabling basket parts
+    var cubeObj = findCubeRoot(otherObj);
+    if (!cubeObj) {
+        // Not a cube we spawned; ignore
+        return;
+    }
 
-    // 检查是否是新 cube
+    var cubeName = cubeObj.name;
+
+    // New cube catch?
     if (!countedCubes.has(cubeName)) {
         countedCubes.add(cubeName);
-        score += 1;
-        script.catchAudio.play(1);
-        print("New cube entered: " + cubeName + " | Total score: " + score);
+        global.score += 1;
+        if (script.catchAudio) { script.catchAudio.play(1); }
+        print("New cube entered: " + cubeName + " | Total score: " + global.score);
     } else {
         print("Cube already counted: " + cubeName);
     }
-  //print('OverlapEnter(' + e.overlap.id + '): ' + e.overlap.collider.getSceneObject().name);
-   script.scoreText.text = global.score.toString() + " / " + global.boxNum.toString();
 
-    otherObj.enabled = false;
-    //print(global.boxNum);
+    if (script.scoreText) {
+        script.scoreText.text = global.score.toString() + " / " + global.boxNum.toString();
+    }
+
+    // Disable the cube we caught
+    cubeObj.enabled = false;
 });
 
 //script.basketCollider.onOverlapStay.add(function (e) {

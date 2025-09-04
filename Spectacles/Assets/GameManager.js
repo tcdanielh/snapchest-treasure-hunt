@@ -26,6 +26,7 @@
 //@input SceneObject finishPanel
 //@input Component.Text finishTimeText
 //@input Component.Text timerText {"hint":"HUD timer text always visible"}
+//@input Component.Text treasureCountText {"hint":"HUD progress text: 'Treasure Found X/2'"}
 
 
 //Each minigame is its own Scene Object
@@ -44,6 +45,7 @@ var gameStates = {
     DODGING_GAME: "dodgingGame", 
     BASKET_GAME: "basketGame",
     LOSE_DELAY: "loseDelay",
+    SUCCESS_DELAY: "successDelay",
     RESULT_WAIT_TAP: "resultWaitTap",
     FINISHED: "finished"
 };
@@ -70,6 +72,10 @@ var basketSuccess = false;
 var loseDelayTimer = 0.0;
 var loseDelayDuration = 1.0; // seconds
 var pendingLoseSource = null; // "dodging" or "basket"
+// Success delay (to allow win audio to play before disabling the minigame)
+var successDelayTimer = 0.0;
+var successDelayDuration = 2.0; // seconds
+var pendingSuccessSource = null; // "dodging" or "basket"
 
 // Initialize game state
 function initializeGame() {
@@ -87,10 +93,20 @@ function initializeGame() {
     basketSuccess = false;
     sessionTimer = 0.0;
     timerRunning = false;
+    // Reset delay helpers
+    loseDelayTimer = 0.0;
+    pendingLoseSource = null;
+    successDelayTimer = 0.0;
+    pendingSuccessSource = null;
     // Initialize timer HUD
     if (script.timerText) {
         script.timerText.text = formatTime(0);
         script.timerText.enabled = true;
+    }
+    // Initialize treasure progress HUD
+    if (script.treasureCountText) {
+        script.treasureCountText.text = getTreasureProgressText(0);
+        script.treasureCountText.enabled = true;
     }
 }
 
@@ -240,8 +256,23 @@ gameplayEvent.bind(function () {
         if (dodgeResult) {
                 // Show result UI at chest
                 if (dodgeResult === "success") {
-            setDodgingEnabled(false);
                     dodgingSuccess = true;
+                    updateTreasureCountText();
+                    // If this completes both treasures, show Victory immediately but delay disabling
+                    if (basketSuccess) {
+                        timerRunning = false;
+                        if (script.finishPanel) script.finishPanel.enabled = true;
+                        if (script.finishTimeText) script.finishTimeText.text = formatTime(sessionTimer);
+                        hideTreasureUI();
+                        hideResultUI();
+                        setRadarEnabled(false);
+                        pendingSuccessSource = "dodging";
+                        successDelayTimer = 0.0;
+                        currentState = gameStates.SUCCESS_DELAY;
+                        break;
+                    }
+                    // First success only: proceed with chest UI and disable minigame
+                    setDodgingEnabled(false);
                     if (script.chestOpen) script.chestOpen.enabled = true;
                     if (script.chestClosed) script.chestClosed.enabled = false;
                     if (script.aliensTookItMessage) script.aliensTookItMessage.enabled = false;
@@ -262,8 +293,23 @@ gameplayEvent.bind(function () {
             var basketResult = getBasketResult();
         if (basketResult) {
                 if (basketResult === "success") {
-            setBasketEnabled(false);
                     basketSuccess = true;
+                    updateTreasureCountText();
+                    // If both treasures are completed now, show Victory immediately but delay disabling
+                    if (dodgingSuccess) {
+                        timerRunning = false;
+                        if (script.finishPanel) script.finishPanel.enabled = true;
+                        if (script.finishTimeText) script.finishTimeText.text = formatTime(sessionTimer);
+                        hideTreasureUI();
+                        hideResultUI();
+                        setRadarEnabled(false);
+                        pendingSuccessSource = "basket";
+                        successDelayTimer = 0.0;
+                        currentState = gameStates.SUCCESS_DELAY;
+                        break;
+                    }
+                    // First success only: proceed with chest UI and disable minigame
+                    setBasketEnabled(false);
                     if (script.chestOpen) script.chestOpen.enabled = true;
                     if (script.chestClosed) script.chestClosed.enabled = false;
                     if (script.aliensTookItMessage) script.aliensTookItMessage.enabled = false;
@@ -296,6 +342,20 @@ gameplayEvent.bind(function () {
                 }
                 currentState = gameStates.RESULT_WAIT_TAP;
                 pendingLoseSource = null;
+            }
+            break;
+
+        case gameStates.SUCCESS_DELAY:
+            // Keep the winning minigame enabled briefly so its win audio can finish
+            successDelayTimer += deltaTime;
+            if (successDelayTimer >= successDelayDuration) {
+                if (pendingSuccessSource === "dodging") {
+                    setDodgingEnabled(false);
+                } else if (pendingSuccessSource === "basket") {
+                    setBasketEnabled(false);
+                }
+                pendingSuccessSource = null;
+                currentState = gameStates.FINISHED;
             }
             break;
 
@@ -432,4 +492,17 @@ function formatTime(t) {
     var ms = totalMs % 1000;
     function pad(n, w) { n = n.toString(); return n.length >= w ? n : new Array(w - n.length + 1).join('0') + n; }
     return pad(minutes, 2) + ":" + pad(seconds, 2) + "." + pad(Math.floor(ms/10), 2);
+}
+
+// HUD: Treasure progress helpers
+function getTreasureProgressText(count) {
+    return "Treasure Found: " + count + "/2";
+}
+
+function updateTreasureCountText() {
+    if (!script.treasureCountText) { return; }
+    var count = 0;
+    if (dodgingSuccess) { count++; }
+    if (basketSuccess) { count++; }
+    script.treasureCountText.text = getTreasureProgressText(count);
 }

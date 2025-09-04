@@ -271,7 +271,7 @@
     []
   Name: Audio
   Enabled: true
-  AudioTrack: !<reference> 2a6f48e0-07fc-4ec2-81a6-428475485fb0
+  AudioTrack: !<reference> 7086b1ce-87db-4214-a387-b14037555f60
   EnableAutoplayLoop: false
   Volume: 1.000000
   EnableMixToSnap: false
@@ -1037,7 +1037,7 @@
   PrefabRemaps:
     []
   Name: Start Game
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: -50.000000}

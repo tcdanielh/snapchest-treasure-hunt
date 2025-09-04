@@ -48,6 +48,7 @@
     startScreen3: false
     startScreen4: false
     timerText: false
+    treasureCountText: false
     treasureHuntScript: false
     treasureSuccessText: false
   ScriptTypesHidden:
@@ -77,6 +78,7 @@
       finishPanel: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       finishTimeText: !<reference.Text> 00000000-0000-0000-0000-000000000000
       timerText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      treasureCountText: !<reference.Text> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}

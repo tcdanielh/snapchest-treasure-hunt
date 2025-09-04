@@ -136,6 +136,7 @@
     - !<own> aa805138-a0f2-4797-ad17-69489704adeb
     - !<own> 5df26447-6b4c-4bc1-8363-54b6a517d4b3
     - !<own> 3830c4ac-e268-494a-b0c9-7f5c685cf66e
+    - !<own> d8a66058-491a-4270-9a70-ea6184be2961
   Components:
     - !<own> 00000000-0000-0065-0000-000000000065
     - !<own> e5553c8a-0b7e-4ef4-92d9-3e1318fb82c1
@@ -2538,7 +2539,7 @@
   LocalTransform:
     position: {x: 0.000000, y: 500.000000, z: 0.000000}
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 10.000000, y: 1000.000000, z: 10.000000}
+    scale: {x: 100.000000, y: 1000.000000, z: 25.000000}
     hasSegmentScaleCompensation: false
   Children:
     []
@@ -6613,7 +6614,7 @@
   Enabled: false
   Layers: 1
   LocalTransform:
-    position: {x: -4.000000, y: 10.000000, z: 0.000000}
+    position: {x: -4.000000, y: 20.000000, z: 0.000000}
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     scale: {x: 2.000000, y: 2.000000, z: 2.000000}
     hasSegmentScaleCompensation: false
@@ -6674,7 +6675,7 @@
   Enabled: false
   Layers: 1
   LocalTransform:
-    position: {x: 4.000000, y: 10.000000, z: 0.000000}
+    position: {x: 4.000000, y: 20.000000, z: 0.000000}
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     scale: {x: 2.000000, y: 2.000000, z: 2.000000}
     hasSegmentScaleCompensation: false
@@ -7602,7 +7603,7 @@
   Enabled: false
   Layers: 1
   LocalTransform:
-    position: {x: -4.000000, y: 10.000000, z: 0.000000}
+    position: {x: -4.000000, y: 20.000000, z: 0.000000}
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     scale: {x: 2.000000, y: 2.000000, z: 2.000000}
     hasSegmentScaleCompensation: false
@@ -9681,7 +9682,7 @@
   Enabled: false
   Layers: 1
   LocalTransform:
-    position: {x: 0.000000, y: 7.500000, z: -50.000000}
+    position: {x: 0.000000, y: 5.000000, z: -50.000000}
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
@@ -10960,7 +10961,7 @@
   Enabled: false
   Layers: 1
   LocalTransform:
-    position: {x: 4.000000, y: 10.000000, z: 0.000000}
+    position: {x: 4.000000, y: 20.000000, z: 0.000000}
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     scale: {x: 2.000000, y: 2.000000, z: 2.000000}
     hasSegmentScaleCompensation: false
@@ -12880,7 +12881,7 @@
   Enabled: false
   Layers: 1
   LocalTransform:
-    position: {x: 4.000000, y: 10.000000, z: 0.000000}
+    position: {x: 4.000000, y: 20.000000, z: 0.000000}
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     scale: {x: 2.000000, y: 2.000000, z: 2.000000}
     hasSegmentScaleCompensation: false
@@ -13298,7 +13299,7 @@
     []
   Name: Audio
   Enabled: true
-  AudioTrack: !<reference> 2a6f48e0-07fc-4ec2-81a6-428475485fb0
+  AudioTrack: !<reference> 7086b1ce-87db-4214-a387-b14037555f60
   EnableAutoplayLoop: false
   Volume: 1.000000
   EnableMixToSnap: false
@@ -13655,9 +13656,8 @@
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
   Text: |-
-    You will get the treasure if you complete the Red Panda’s challenges. Get two treasure chests to complete the mission! 
-    
-    The treasure should be nearby! Now tap your phone to start hunting for treasure!
+    You got all the treasures!
+     Try to beat your time! Tap to play again.
   Editable: false
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
@@ -16320,6 +16320,7 @@
       finishPanel: !<reference.SceneObject> 5df26447-6b4c-4bc1-8363-54b6a517d4b3
       finishTimeText: !<reference.Text> 00000000-0000-0000-0000-000000000000
       timerText: !<reference.Text> 9dd9db89-9b46-492f-9ee6-4016e2e9fdae
+      treasureCountText: !<reference.Text> b7e24888-78fe-4d89-8c7c-fa43124e259b
   ScriptTypes:
     "":
       {}
@@ -16460,7 +16461,7 @@
   Enabled: false
   Layers: 1
   LocalTransform:
-    position: {x: 0.000000, y: 10.000000, z: 0.000000}
+    position: {x: 0.000000, y: 20.000000, z: 0.000000}
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     scale: {x: 2.000000, y: 2.000000, z: 2.000000}
     hasSegmentScaleCompensation: false
@@ -22695,7 +22696,7 @@
   Enabled: false
   Layers: 1
   LocalTransform:
-    position: {x: 0.000000, y: 10.000000, z: 0.000000}
+    position: {x: 0.000000, y: 20.000000, z: 0.000000}
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     scale: {x: 2.000000, y: 2.000000, z: 2.000000}
     hasSegmentScaleCompensation: false
@@ -23769,7 +23770,7 @@
   Enabled: false
   Layers: 1
   LocalTransform:
-    position: {x: -4.000000, y: 10.000000, z: 0.000000}
+    position: {x: -4.000000, y: 20.000000, z: 0.000000}
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     scale: {x: 2.000000, y: 2.000000, z: 2.000000}
     hasSegmentScaleCompensation: false
@@ -24856,6 +24857,84 @@
     []
   Components:
     - !<own> d1babf10-e562-4fc1-89da-84b75ee88e24
+- !<Text/b7e24888-78fe-4d89-8c7c-fa43124e259b>
+  PrefabRemaps:
+    []
+  Name: Text
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Right
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Text: |
+    Treasure Found: 0/2
+
+  Editable: false
+  ShowEditingPreview: true
+  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
+  SizeToFit: false
+  FontSize: 48
+  Font: !<reference> 00000000-0000-0000-0000-000000000000
+  LayoutRect:
+    left: -7.500000
+    bottom: -2.250000
+    right: 7.500000
+    top: 2.250000
+  OverflowVertical: Overflow
+  OverflowHorizontal: Overflow
+  Fill: !<TextFill>
+    Mode: Solid
+    Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    TileCount: 5.000000
+    TileZone: Rect
+    TextureStretch: FitWidth
+  Outline: !<OutlineSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Size: 0.250000
+  Dropshadow: !<DropshadowSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    OffsetX: 0.250000
+    OffsetY: 0.250000
+  Background: !<BackgroundSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Margins:
+      left: 0.000000
+      bottom: 0.000000
+      right: 0.000000
+      top: 0.000000
+    CornerRadius: 0.000000
+  AdvancedLayout: !<TextAdvancedLayout>
+    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+    LetterSpacing: 0.000000
+    LineSpacing: 1.000000
+    CapitalizationOverride: None
+  DepthTest: false
+  TwoSided: false
 - !<SceneObject/b7e24d75-2d44-4312-a5a4-fe51608a0a8f>
   PrefabRemaps:
     []
@@ -27158,7 +27237,7 @@
   Enabled: false
   Layers: 1
   LocalTransform:
-    position: {x: 0.000000, y: 10.000000, z: 0.000000}
+    position: {x: 0.000000, y: 20.000000, z: 0.000000}
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     scale: {x: 2.000000, y: 2.000000, z: 2.000000}
     hasSegmentScaleCompensation: false
@@ -29095,6 +29174,21 @@
     - !<own> f320733b-3034-47b6-8fbc-e29c49dcceeb
     - !<own> aaebd375-eb43-487c-9b33-64a6a865dd5d
     - !<own> 8cb54971-5490-4880-87ca-0a2cf810afa7
+- !<SceneObject/d8a66058-491a-4270-9a70-ea6184be2961>
+  PrefabRemaps:
+    []
+  Name: Treasure Found
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 2.500000, y: 7.500000, z: -50.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> b7e24888-78fe-4d89-8c7c-fa43124e259b
 - !<ScriptComponent/d8c46153-66fd-4eaa-846c-90e91d1c2f82>
   PrefabRemaps:
     []
@@ -29338,7 +29432,7 @@
   LocalTransform:
     position: {x: 0.000000, y: 500.000000, z: 0.000000}
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 10.000000, y: 1000.000000, z: 10.000000}
+    scale: {x: 100.000000, y: 1000.000000, z: 25.000000}
     hasSegmentScaleCompensation: false
   Children:
     []
@@ -30956,7 +31050,7 @@
   LocalTransform:
     position: {x: 0.000000, y: 500.000000, z: 0.000000}
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 10.000000, y: 1000.000000, z: 10.000000}
+    scale: {x: 100.000000, y: 1000.000000, z: 25.000000}
     hasSegmentScaleCompensation: false
   Children:
     []
