@@ -31,7 +31,7 @@
   Enabled: false
   Layers: 1
   LocalTransform:
-    position: {x: 4.000000, y: 20.000000, z: 0.000000}
+    position: {x: 4.000000, y: 11.000000, z: 0.000000}
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     scale: {x: 2.000000, y: 2.000000, z: 2.000000}
     hasSegmentScaleCompensation: false
@@ -184,7 +184,7 @@
   Enabled: false
   Layers: 1
   LocalTransform:
-    position: {x: -4.000000, y: 20.000000, z: 0.000000}
+    position: {x: -4.000000, y: 11.000000, z: 0.000000}
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     scale: {x: 2.000000, y: 2.000000, z: 2.000000}
     hasSegmentScaleCompensation: false
@@ -247,7 +247,7 @@
   Enabled: false
   Layers: 1
   LocalTransform:
-    position: {x: 0.000000, y: 20.000000, z: 0.000000}
+    position: {x: 0.000000, y: 11.000000, z: 0.000000}
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     scale: {x: 2.000000, y: 2.000000, z: 2.000000}
     hasSegmentScaleCompensation: false
