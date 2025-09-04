@@ -17,10 +17,18 @@ export class MotionControllerHelper extends BaseScriptComponent {
   @input
   beepAudio: AudioComponent;
 
+  @input
+  signalObject1: SceneObject;
+  @input
+  signalObject2: SceneObject;
+  @input
+  signalObject3: SceneObject;
+
   private timer;
   private lowInterval;
   private mediumInterval;
   private highInterval;
+  private flashBool;
 
   onAwake() {
     var options = MotionController.Options.create();
@@ -38,11 +46,13 @@ export class MotionControllerHelper extends BaseScriptComponent {
     //this.childCollider.onOverlapExit.add(this.leaveCollision.bind(this));
 
     this.childCollider.onOverlapEnter.add(this.enterCollision.bind(this));
+    this.childCollider.onOverlapExit.add(this.exitCollision.bind(this));
 
     this.timer = 0.0;
     this.lowInterval = 2.0;
     this.mediumInterval = 1.0;
     this.highInterval = 0.5;
+    this.flashBool = true;
   }
 
   updateTransform(position, rotation) {
@@ -78,6 +88,19 @@ export class MotionControllerHelper extends BaseScriptComponent {
             this.beepAudio.play(1)
             this.timer = 0.0
 
+            if (this.flashBool){
+              this.signalObject3.enabled = true
+              this.signalObject2.enabled = true
+              this.signalObject1.enabled = true
+              this.flashBool = !this.flashBool
+            } else {
+              this.signalObject3.enabled = false
+              this.signalObject2.enabled = false
+              this.signalObject1.enabled = false
+              this.flashBool = !this.flashBool
+            }
+            
+
             request.hapticFeedback = MotionController.HapticFeedback.VibrationHigh
             request.duration = 0.25
             this.controller.invokeHaptic(request)
@@ -87,6 +110,18 @@ export class MotionControllerHelper extends BaseScriptComponent {
             this.beepAudio.play(1)
             this.timer = 0.0
 
+            if (this.flashBool){
+              this.signalObject3.enabled = false
+              this.signalObject2.enabled = true
+              this.signalObject1.enabled = true
+              this.flashBool = !this.flashBool
+            } else {
+              this.signalObject3.enabled = false
+              this.signalObject2.enabled = false
+              this.signalObject1.enabled = false
+              this.flashBool = !this.flashBool
+            }
+
             request.hapticFeedback = MotionController.HapticFeedback.VibrationMedium
             request.duration = 0.25
             this.controller.invokeHaptic(request)
@@ -95,6 +130,18 @@ export class MotionControllerHelper extends BaseScriptComponent {
           if (this.timer >= this.lowInterval) {
             this.beepAudio.play(1)
             this.timer = 0.0
+
+            if (this.flashBool){
+              this.signalObject3.enabled = false
+              this.signalObject2.enabled = false
+              this.signalObject1.enabled = true
+              this.flashBool = !this.flashBool
+            } else {
+              this.signalObject3.enabled = false
+              this.signalObject2.enabled = false
+              this.signalObject1.enabled = false
+              this.flashBool = !this.flashBool
+            }
 
             request.hapticFeedback = MotionController.HapticFeedback.VibrationLow
             request.duration = 0.25
@@ -118,6 +165,10 @@ export class MotionControllerHelper extends BaseScriptComponent {
         this.beepAudio.play(1)
         this.timer = 0.0
 
+        this.signalObject3.enabled = true
+        this.signalObject2.enabled = true
+        this.signalObject1.enabled = true
+
         request.hapticFeedback = MotionController.HapticFeedback.VibrationHigh
         request.duration = 0.25
         this.controller.invokeHaptic(request)    
@@ -125,6 +176,10 @@ export class MotionControllerHelper extends BaseScriptComponent {
     } else if (distToBox < 600){
         this.beepAudio.play(1)
         this.timer = 0.0
+
+        this.signalObject3.enabled = false
+        this.signalObject2.enabled = true
+        this.signalObject1.enabled = true
 
         request.hapticFeedback = MotionController.HapticFeedback.VibrationMedium
         request.duration = 0.5
@@ -134,13 +189,24 @@ export class MotionControllerHelper extends BaseScriptComponent {
         this.beepAudio.play(1)
         this.timer = 0.0
 
+        this.signalObject3.enabled = false
+        this.signalObject2.enabled = false
+        this.signalObject1.enabled = true
+
         request.hapticFeedback = MotionController.HapticFeedback.VibrationLow
         request.duration = 1.0
         this.controller.invokeHaptic(request)
     } 
   }
 
+  exitCollision(){
+    this.signalObject3.enabled = false
+    this.signalObject2.enabled = false
+    this.signalObject1.enabled = false
+  }
 }
+
+
 
 //   testFunc() {
 //     this.controller.isControllerAvailable;

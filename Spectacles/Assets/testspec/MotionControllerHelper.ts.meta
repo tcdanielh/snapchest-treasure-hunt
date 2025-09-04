@@ -31,6 +31,9 @@
     beepAudio: false
     childCollider: false
     childObject: false
+    signalObject1: false
+    signalObject2: false
+    signalObject3: false
     treasureBound: false
   ScriptTypesHidden:
     {}
@@ -41,6 +44,9 @@
       childCollider: !<reference.ColliderComponent> 00000000-0000-0000-0000-000000000000
       treasureBound: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       beepAudio: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      signalObject1: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      signalObject2: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      signalObject3: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
@@ -49,3 +55,6 @@
     - // @input Component.ColliderComponent childCollider
     - // @input SceneObject treasureBound
     - // @input Component.AudioComponent beepAudio
+    - // @input SceneObject signalObject1
+    - // @input SceneObject signalObject2
+    - // @input SceneObject signalObject3
