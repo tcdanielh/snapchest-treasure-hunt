@@ -64,6 +64,8 @@ script.basketCollider.onOverlapEnter.add(function (e) {
     }
   //print('OverlapEnter(' + e.overlap.id + '): ' + e.overlap.collider.getSceneObject().name);
    script.scoreText.text = global.score.toString() + " / " + global.boxNum.toString();
+
+    otherObj.enabled = false;
     //print(global.boxNum);
 });
 
