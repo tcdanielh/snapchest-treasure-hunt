@@ -31,6 +31,7 @@
     cameraObject: false
     filterEnabled: false
     found: false
+    showTargetOnProximity: false
     targetObject: false
     treasureBound: false
   ScriptTypesHidden:
@@ -43,6 +44,7 @@
       filterEnabled: false
       treasureBound: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       found: false
+      showTargetOnProximity: false
   ScriptTypes:
     -
       {}
@@ -52,3 +54,4 @@
     - // @input bool filterEnabled
     - // @input SceneObject treasureBound
     - // @input bool found
+    - // @input bool showTargetOnProximity

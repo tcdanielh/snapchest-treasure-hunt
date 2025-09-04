@@ -25,9 +25,16 @@ export class NewScript extends BaseScriptComponent {
     @input
     found: boolean;
     
+    // If true, this script will enable targetObject when user is close.
+    // Leave false to let GameManager control chest visuals.
+    @input
+    showTargetOnProximity: boolean;
+    
     onAwake() {
         this.found = false;
-        this.targetObject.enabled = false;
+        if (this.targetObject) {
+            this.targetObject.enabled = false;
+        }
         this.chooseTreasurePosition();
 
         
@@ -43,6 +50,10 @@ export class NewScript extends BaseScriptComponent {
     chooseTreasurePosition() {
         // Reset found state when choosing new position
         this.found = false;
+        // Ensure target stays hidden until explicitly shown
+        if (this.targetObject) {
+            this.targetObject.enabled = false;
+        }
         
         // Randomize the x and z coordinate ()  
         var frontOrBackX;
@@ -83,7 +94,9 @@ export class NewScript extends BaseScriptComponent {
         var distanceToTreasure = this.cameraObject.getTransform().getWorldPosition().distance(this.targetObject.getTransform().getWorldPosition());
         //print(distanceToTreasure);   
         if (distanceToTreasure < 200) {
-            this.targetObject.enabled = true;
+            if (this.showTargetOnProximity && this.targetObject) {
+                this.targetObject.enabled = true;
+            }
             //Added this line for game manager tracking
             this.found = true;
             //Activate the 2nd and 3rd treasure chests
@@ -93,5 +106,17 @@ export class NewScript extends BaseScriptComponent {
     
     getTaskCompleted() {
         return this.found;
+    }
+
+    // API for external control (GameManager)
+    hideTargetObject() {
+        if (this.targetObject) {
+            this.targetObject.enabled = false;
+        }
+    }
+    showTargetObject() {
+        if (this.targetObject) {
+            this.targetObject.enabled = true;
+        }
     }
 }

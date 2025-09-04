@@ -6,7 +6,26 @@
 //@input SceneObject dodgingVictoryText {"hint":"Drag the VictoryText from dodging game here"}
 //@input SceneObject basketPassText {"hint":"Drag the passText from basket game here"}
 //@input SceneObject basketFailText {"hint":"Drag the failText from basket game here"}
-//@input Component.ScriptComponent basketSpawnScript {"hint":"Drag the spawnCube script component from basket game here"}
+
+// UI and world objects for treasure result flow
+//@input SceneObject chestClosed {"hint":"Closed chest object near treasure"}
+//@input SceneObject chestOpen {"hint":"Open chest object near treasure"}
+//@input SceneObject redPanda {"hint":"Red Panda guard model"}
+//@input SceneObject promptTapStartMinigame {"hint":"Prompt shown when treasure found (Tap to start challenge)"}
+//@input SceneObject aliensTookItMessage {"hint":"Message to show on fail: aliens took it away"}
+//@input SceneObject promptTapReturn {"hint":"Prompt shown after result to tap to return"}
+//@input SceneObject treasureSuccessText {"hint":"Shown when player wins a minigame: 'You got the treasure!'"}
+
+// Start screens (4 pages)
+//@input SceneObject startScreen1
+//@input SceneObject startScreen2
+//@input SceneObject startScreen3
+//@input SceneObject startScreen4
+
+// Finish UI
+//@input SceneObject finishPanel
+//@input Component.Text finishTimeText
+//@input Component.Text timerText {"hint":"HUD timer text always visible"}
 
 
 //Each minigame is its own Scene Object
@@ -15,60 +34,128 @@
 //The pattern: treasure hunt -> minigame (dodging/basket alternating) -> treasure hunt -> other minigame -> repeat
 
 var gameplayEvent = script.createEvent("UpdateEvent");
+var tapEvent = script.createEvent("TapEvent");
 
 // Game state management
 var gameStates = {
+    START_SCREENS: "startScreens",
     TREASURE_HUNT: "treasureHunt",
+    TREASURE_FOUND_WAIT_TAP: "treasureFoundWaitTap",
     DODGING_GAME: "dodgingGame", 
     BASKET_GAME: "basketGame",
-    GAME_END_DELAY: "gameEndDelay"
+    LOSE_DELAY: "loseDelay",
+    RESULT_WAIT_TAP: "resultWaitTap",
+    FINISHED: "finished"
 };
 
-var currentState = gameStates.TREASURE_HUNT;
+var currentState = gameStates.START_SCREENS;
 var gameOver = false;
-var nextMinigame = "dodging"; // alternates between "dodging" and "basket"
+var nextMinigame = "dodging"; // starts with dodging
 
 // Track completion states
 var treasureFound = false;
 var minigameCompleted = false;
 
-// Timer for game end delay
-var gameEndTimer = 0.0;
-var gameEndDelay = 5.0; // 5 seconds delay
+// Session timer
+var sessionTimer = 0.0;
+var timerRunning = false;
+
+// Start screen paging
+var startPageIndex = 0; // 0..3 for 4 screens
+
+// Success tracking
+var dodgingSuccess = false;
+var basketSuccess = false;
+// Lose delay timer
+var loseDelayTimer = 0.0;
+var loseDelayDuration = 1.0; // seconds
+var pendingLoseSource = null; // "dodging" or "basket"
 
 // Initialize game state
 function initializeGame() {
-    script.radarMinigame.enabled = true;
-    script.dodgingMinigame.enabled = false;
-    script.basketMinigame.enabled = false;
-    currentState = gameStates.TREASURE_HUNT;
+    // Hide gameplay objects initially
+    setRadarEnabled(false);
+    setDodgingEnabled(false);
+    setBasketEnabled(false);
+    hideTreasureUI();
+    hideResultUI();
+    showStartScreen(0);
+    currentState = gameStates.START_SCREENS;
     treasureFound = false;
     minigameCompleted = false;
+    dodgingSuccess = false;
+    basketSuccess = false;
+    sessionTimer = 0.0;
+    timerRunning = false;
+    // Initialize timer HUD
+    if (script.timerText) {
+        script.timerText.text = formatTime(0);
+        script.timerText.enabled = true;
+    }
+}
+
+function setRadarEnabled(v) { if (script.radarMinigame) script.radarMinigame.enabled = v; }
+function setDodgingEnabled(v) { if (script.dodgingMinigame) script.dodgingMinigame.enabled = v; }
+function setBasketEnabled(v) { if (script.basketMinigame) script.basketMinigame.enabled = v; }
+
+function hideTreasureUI() {
+    if (script.chestClosed) script.chestClosed.enabled = false;
+    if (script.chestOpen) script.chestOpen.enabled = false;
+    if (script.redPanda) script.redPanda.enabled = false;
+    if (script.promptTapStartMinigame) script.promptTapStartMinigame.enabled = false;
+}
+
+function hideResultUI() {
+    if (script.aliensTookItMessage) script.aliensTookItMessage.enabled = false;
+    if (script.promptTapReturn) script.promptTapReturn.enabled = false;
+    if (script.treasureSuccessText) script.treasureSuccessText.enabled = false;
+}
+
+function showStartScreen(index) {
+    startPageIndex = index;
+    var screens = [script.startScreen1, script.startScreen2, script.startScreen3, script.startScreen4];
+    for (var i = 0; i < screens.length; i++) {
+        if (screens[i]) screens[i].enabled = (i === index);
+    }
 }
 
 // Switch to minigame state
 function startMinigame() {
-    if (nextMinigame === "dodging") {
-        script.radarMinigame.enabled = false;
-        script.dodgingMinigame.enabled = true;
-        script.basketMinigame.enabled = false;
+    hideTreasureUI();
+    hideResultUI();
+    setRadarEnabled(false);
+
+    // Determine which minigame is next based on success gating
+    if (!dodgingSuccess) {
+        nextMinigame = "dodging";
+        setDodgingEnabled(true);
+        setBasketEnabled(false);
         currentState = gameStates.DODGING_GAME;
-        nextMinigame = "basket"; // alternate for next time
-    } else {
-        script.radarMinigame.enabled = false;
-        script.dodgingMinigame.enabled = false;
-        script.basketMinigame.enabled = true;
+    } else if (!basketSuccess) {
+        nextMinigame = "basket";
+        setDodgingEnabled(false);
+        setBasketEnabled(true);
+        // Auto-start basket game via API if available
+        if (global && typeof global.startBasketGame === 'function') {
+            global.startBasketGame();
+        } else if (script.basketMinigame && script.basketMinigame.getComponent) {
+            // optional: if a component exposes api.startGame
+            var comps = script.basketMinigame.getComponents("Component.ScriptComponent");
+            for (var i = 0; i < comps.length; i++) {
+                var comp = comps[i];
+                if (comp && comp.api && comp.api.startGame) { comp.api.startGame(); break; }
+            }
+        }
         currentState = gameStates.BASKET_GAME;
-        nextMinigame = "dodging"; // alternate for next time
     }
     minigameCompleted = false;
 }
 
 // Switch back to treasure hunt
 function startTreasureHunt() {
-    script.radarMinigame.enabled = true;
-    script.dodgingMinigame.enabled = false;
-    script.basketMinigame.enabled = false;
+    setRadarEnabled(true);
+    setDodgingEnabled(false);
+    setBasketEnabled(false);
     currentState = gameStates.TREASURE_HUNT;
     treasureFound = false;
     
@@ -80,14 +167,12 @@ function startTreasureHunt() {
     if (script.treasureHuntScript && script.treasureHuntScript.chooseTreasurePosition) {
         script.treasureHuntScript.chooseTreasurePosition();
     }
+    hideTreasureUI();
+    hideResultUI();
 }
 
 // Start the 5-second delay after a minigame ends
-function startGameEndDelay() {
-    currentState = gameStates.GAME_END_DELAY;
-    gameEndTimer = 0.0; // Reset timer
-    print("Game ended. Waiting " + gameEndDelay + " seconds before returning to treasure hunt...");
-}
+// no longer used (tap-driven flow)
 
 // Initialize the game
 initializeGame();
@@ -96,64 +181,151 @@ gameplayEvent.bind(function () {
     if (gameOver) return;
     
     var deltaTime = getDeltaTime();
+    if (timerRunning) {
+        sessionTimer += deltaTime;
+        if (script.timerText) {
+            script.timerText.text = formatTime(sessionTimer);
+        }
+    }
     
     // Check current game state and handle transitions
     switch (currentState) {
+        case gameStates.START_SCREENS:
+            // Waiting for taps, nothing per-frame
+            break;
+
         case gameStates.TREASURE_HUNT:
             // Check if treasure has been found
             if (script.treasureHuntScript && script.treasureHuntScript.getTaskCompleted) {
                 treasureFound = script.treasureHuntScript.getTaskCompleted();
                 if (treasureFound) {
-                    print("Treasure found! Starting minigame: " + nextMinigame);
-                    startMinigame();
+                    print("Treasure found! Show chest & panda, wait for tap to start challenge");
+                    // Position chest/panda at treasure
+                    if (script.treasureHuntScript.getTreasurePosition) {
+                        var pos = script.treasureHuntScript.getTreasurePosition();
+                        if (script.chestClosed) script.chestClosed.getTransform().setWorldPosition(pos);
+                        if (script.chestOpen) script.chestOpen.getTransform().setWorldPosition(pos);
+                        // Place red panda 50 units in front of the chest (using chest forward),
+                        // default to world -Z if chest not available
+                        if (script.redPanda) {
+                            var fwd = new vec3(0, 0, -1);
+                            if (script.chestClosed) {
+                                fwd = script.chestClosed.getTransform().forward;
+                            } else if (script.chestOpen) {
+                                fwd = script.chestOpen.getTransform().forward;
+                            }
+                            // Normalize and offset by 50
+                            var dir = fwd.normalize ? fwd.normalize() : fwd;
+                            var pandaPos = pos.add(dir.uniformScale(50));
+                            script.redPanda.getTransform().setWorldPosition(pandaPos);
+                        }
+                    }
+                    // Ensure proximity target (e.g., open chest from spawn script) is hidden
+                    if (script.treasureHuntScript.hideTargetObject) {
+                        script.treasureHuntScript.hideTargetObject();
+                    }
+                    // Show closed chest and panda, prompt to start
+                    if (script.chestClosed) script.chestClosed.enabled = true;
+                    if (script.chestOpen) script.chestOpen.enabled = false;
+                    if (script.redPanda) script.redPanda.enabled = true;
+                    if (script.promptTapStartMinigame) script.promptTapStartMinigame.enabled = true;
+                    currentState = gameStates.TREASURE_FOUND_WAIT_TAP;
                 }
             }
             break;
             
         case gameStates.DODGING_GAME:
             // Check if dodging minigame is completed
-            if (checkDodgingGameCompleted()) {
-                print("Dodging game completed! Starting 5 second delay...");
-                startGameEndDelay();
+            var dodgeResult = getDodgingResult();
+        if (dodgeResult) {
+                // Show result UI at chest
+                if (dodgeResult === "success") {
+            setDodgingEnabled(false);
+                    dodgingSuccess = true;
+                    if (script.chestOpen) script.chestOpen.enabled = true;
+                    if (script.chestClosed) script.chestClosed.enabled = false;
+                    if (script.aliensTookItMessage) script.aliensTookItMessage.enabled = false;
+                    if (script.treasureSuccessText) script.treasureSuccessText.enabled = true;
+                    if (script.promptTapReturn) script.promptTapReturn.enabled = true;
+                    currentState = gameStates.RESULT_WAIT_TAP;
+                } else {
+                    // Start lose delay to allow SFX to play
+                    pendingLoseSource = "dodging";
+                    loseDelayTimer = 0.0;
+                    currentState = gameStates.LOSE_DELAY;
+                }
             }
             break;
             
         case gameStates.BASKET_GAME:
             // Check if basket minigame is completed  
-            if (checkBasketGameCompleted()) {
-                print("Basket game completed! Starting 5 second delay...");
-                startGameEndDelay();
+            var basketResult = getBasketResult();
+        if (basketResult) {
+                if (basketResult === "success") {
+            setBasketEnabled(false);
+                    basketSuccess = true;
+                    if (script.chestOpen) script.chestOpen.enabled = true;
+                    if (script.chestClosed) script.chestClosed.enabled = false;
+                    if (script.aliensTookItMessage) script.aliensTookItMessage.enabled = false;
+                    if (script.treasureSuccessText) script.treasureSuccessText.enabled = true;
+                    if (script.promptTapReturn) script.promptTapReturn.enabled = true;
+                    currentState = gameStates.RESULT_WAIT_TAP;
+                } else {
+                    pendingLoseSource = "basket";
+                    loseDelayTimer = 0.0;
+                    currentState = gameStates.LOSE_DELAY;
+                }
             }
             break;
-            
-        case gameStates.GAME_END_DELAY:
-            // Count down the delay timer
-            gameEndTimer += deltaTime;
-            if (gameEndTimer >= gameEndDelay) {
-                print("Delay complete! Back to treasure hunt");
-                startTreasureHunt();
+
+        case gameStates.LOSE_DELAY:
+            // Wait briefly before showing the fail UI
+            loseDelayTimer += deltaTime;
+            if (loseDelayTimer >= loseDelayDuration) {
+                // Show fail UI now
+                if (script.chestOpen) script.chestOpen.enabled = false;
+                if (script.chestClosed) script.chestClosed.enabled = true;
+                if (script.aliensTookItMessage) script.aliensTookItMessage.enabled = true;
+                if (script.treasureSuccessText) script.treasureSuccessText.enabled = false;
+                if (script.promptTapReturn) script.promptTapReturn.enabled = true;
+                // Now disable the minigame we just failed
+                if (pendingLoseSource === "dodging") {
+                    setDodgingEnabled(false);
+                } else if (pendingLoseSource === "basket") {
+                    setBasketEnabled(false);
+                }
+                currentState = gameStates.RESULT_WAIT_TAP;
+                pendingLoseSource = null;
+            }
+            break;
+
+        case gameStates.RESULT_WAIT_TAP:
+            // Waiting for tap handled by tapEvent
+            break;
+
+        case gameStates.FINISHED:
+            // Nothing to update
+            // Keep showing final time on HUD as well
+            if (script.timerText) {
+                script.timerText.text = formatTime(sessionTimer);
             }
             break;
     }
 });
 
 // Check if dodging game is completed (win or lose)
-function checkDodgingGameCompleted() {
-    // Check for win condition (all obstacles dodged)
+function getDodgingResult() {
+    // Win condition (all obstacles dodged)
     if (global.remainObstacle !== undefined && global.remainObstacle <= 0) {
         print("Dodging game won! All obstacles dodged.");
-        // Don't reset immediately - let the delay timer handle the transition
-        return true;
+        return "success";
     }
-    
-    // Check for lose condition (collision detected - game over text is shown)
+    // Lose condition (collision)
     if (script.dodgingGameOverText && script.dodgingGameOverText.enabled) {
         print("Dodging game lost! Collision detected.");
-        // Don't reset immediately - let the delay timer handle the transition
-        return true;
+        return "fail";
     }
-    
-    return false;
+    return null;
 }
 
 // Reset dodging game state for next play (called when transitioning back to treasure hunt)
@@ -180,20 +352,16 @@ function resetDodgingGame() {
     // This depends on your specific obstacle setup in the dodging game scene
 }
 
-function checkBasketGameCompleted() {
-    // Basket win: passText enabled
+function getBasketResult() {
     if (script.basketPassText && script.basketPassText.enabled) {
         print("Basket game won!");
-        return true;
+        return "success";
     }
-
-    // Basket fail: failText enabled
     if (script.basketFailText && script.basketFailText.enabled) {
         print("Basket game lost!");
-        return true;
+        return "fail";
     }
-
-    return false;
+    return null;
 }
 
 // Reset basket game state when returning to treasure hunt
@@ -210,4 +378,58 @@ function resetBasketGame() {
         if (typeof global.boxNum !== 'undefined') global.boxNum = 0;
         if (typeof global.score !== 'undefined') global.score = -1;
     }
+}
+
+// Handle taps globally based on state
+tapEvent.bind(function () {
+    switch (currentState) {
+        case gameStates.START_SCREENS:
+            if (startPageIndex < 3) {
+                showStartScreen(startPageIndex + 1);
+            } else {
+                // End of start screens: hide them and start treasure hunt + timer
+                showStartScreen(-1); // hide all
+                var screens = [script.startScreen1, script.startScreen2, script.startScreen3, script.startScreen4];
+                for (var i = 0; i < screens.length; i++) { if (screens[i]) screens[i].enabled = false; }
+                timerRunning = true;
+                startTreasureHunt();
+            }
+            break;
+
+        case gameStates.TREASURE_FOUND_WAIT_TAP:
+            // Tap to enter the appropriate minigame
+            startMinigame();
+            break;
+
+        case gameStates.RESULT_WAIT_TAP:
+            // Tap to return to treasure hunt (unless finished)
+            if (dodgingSuccess && basketSuccess) {
+                // Completed both: finish session
+                timerRunning = false;
+                if (script.finishPanel) script.finishPanel.enabled = true;
+                if (script.finishTimeText) script.finishTimeText.text = formatTime(sessionTimer);
+                if (script.timerText) script.timerText.text = formatTime(sessionTimer);
+                hideTreasureUI();
+                hideResultUI();
+                setRadarEnabled(false);
+                currentState = gameStates.FINISHED;
+            } else {
+                hideResultUI();
+                startTreasureHunt();
+            }
+            break;
+
+        case gameStates.FINISHED:
+            // Could reset/restart on tap if desired
+            break;
+    }
+});
+
+function formatTime(t) {
+    var totalMs = Math.floor(t * 1000);
+    var minutes = Math.floor(totalMs / 60000);
+    var seconds = Math.floor((totalMs % 60000) / 1000);
+    var ms = totalMs % 1000;
+    function pad(n, w) { n = n.toString(); return n.length >= w ? n : new Array(w - n.length + 1).join('0') + n; }
+    return pad(minutes, 2) + ":" + pad(seconds, 2) + "." + pad(Math.floor(ms/10), 2);
 }

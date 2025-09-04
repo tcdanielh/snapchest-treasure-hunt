@@ -27,3 +27,13 @@ tapEvent.bind(function() {
     }
 
 });
+
+// Allow external start (from GameManager)
+global.startBasketGame = function () {
+    if (!startGame) {
+        script.starterText.enabled = false;
+        script.basketGameManager.enabled = true;
+        script.basketController.enabled = true;
+        startGame = true;
+    }
+};

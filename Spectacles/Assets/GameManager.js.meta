@@ -28,15 +28,28 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
+    aliensTookItMessage: false
     basketFailText: false
     basketMinigame: false
     basketPassText: false
-    basketSpawnScript: false
+    chestClosed: false
+    chestOpen: false
     dodgingGameOverText: false
     dodgingMinigame: false
     dodgingVictoryText: false
+    finishPanel: false
+    finishTimeText: false
+    promptTapReturn: false
+    promptTapStartMinigame: false
     radarMinigame: false
+    redPanda: false
+    startScreen1: false
+    startScreen2: false
+    startScreen3: false
+    startScreen4: false
+    timerText: false
     treasureHuntScript: false
+    treasureSuccessText: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -50,7 +63,20 @@
       dodgingVictoryText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       basketPassText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       basketFailText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      basketSpawnScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      chestClosed: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      chestOpen: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      redPanda: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      promptTapStartMinigame: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      aliensTookItMessage: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      promptTapReturn: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      treasureSuccessText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      startScreen1: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      startScreen2: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      startScreen3: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      startScreen4: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      finishPanel: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      finishTimeText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      timerText: !<reference.Text> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
