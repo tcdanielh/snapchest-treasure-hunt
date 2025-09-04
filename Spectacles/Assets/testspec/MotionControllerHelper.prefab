@@ -4,6 +4,41 @@
     - !<own> e88d1d94-7dfb-401a-bafc-89a7832ecd9c
   LazyLoading: false
   RetainAssets: true
+- !<RenderMeshVisual/2eef5c08-309f-4562-b588-4137425d4a26>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 4c6bfac8-be6a-4810-b2bc-a63196f3ad2b
+  Mesh: !<reference> 93eff555-38e1-495d-a323-6479cb718df1
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/5938a28b-6f75-4678-a306-2ebdaaeeb1b0>
+  PrefabRemaps:
+    []
+  Name: Signal 3
+  Enabled: false
+  Layers: 1
+  LocalTransform:
+    position: {x: 4.000000, y: 10.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 2.000000, y: 2.000000, z: 2.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 2eef5c08-309f-4562-b588-4137425d4a26
 - !<ScriptComponent/64378c9f-43a6-4203-93eb-d0153f8a5e9a>
   PrefabRemaps:
     []
@@ -11,9 +46,7 @@
   Enabled: true
   ScriptAsset: !<reference> 84af6140-7ca5-4d9d-90d7-12c69fc84535
   ScriptInputsDefault:
-    signalObject1: true
-    signalObject2: true
-    signalObject3: true
+    {}
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -22,12 +55,52 @@
       childCollider: !<reference.ColliderComponent> 9494de33-0779-45d5-9140-ba71c684919f
       treasureBound: !<reference.SceneObject> 538dc83d-2119-4ec2-aa5c-32f89fd1e0fc
       beepAudio: !<reference.AudioComponent> f0fe2733-b207-4c1e-aa95-9d1ab832be31
-      signalObject1: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      signalObject2: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      signalObject3: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      signalObject1: !<reference.SceneObject> bda63d6c-900f-4128-a2dc-3c161b38e7fd
+      signalObject2: !<reference.SceneObject> ead221a1-3d6a-4813-8cb7-dd247e8da9ef
+      signalObject3: !<reference.SceneObject> 5938a28b-6f75-4678-a306-2ebdaaeeb1b0
   ScriptTypes:
     "":
       {}
+- !<RenderMeshVisual/6b12c42f-3e17-48d0-9777-734d41a87f6c>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 4c6bfac8-be6a-4810-b2bc-a63196f3ad2b
+  Mesh: !<reference> 93eff555-38e1-495d-a323-6479cb718df1
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/80ab5bf8-652b-4448-9624-30576b220398>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 4c6bfac8-be6a-4810-b2bc-a63196f3ad2b
+  Mesh: !<reference> 93eff555-38e1-495d-a323-6479cb718df1
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
 - !<ColliderComponent/8664edca-e3c3-44e1-a48d-953bc667a6c2>
   PrefabRemaps:
     []
@@ -99,8 +172,26 @@
   Children:
     - !<own> ce49abc5-6d68-4634-9f3f-5819ce68ffb8
     - !<own> cd90a10f-d23d-4617-9283-79b87bc15857
+    - !<own> bda63d6c-900f-4128-a2dc-3c161b38e7fd
+    - !<own> ead221a1-3d6a-4813-8cb7-dd247e8da9ef
+    - !<own> 5938a28b-6f75-4678-a306-2ebdaaeeb1b0
   Components:
     []
+- !<SceneObject/bda63d6c-900f-4128-a2dc-3c161b38e7fd>
+  PrefabRemaps:
+    []
+  Name: Signal 1
+  Enabled: false
+  Layers: 1
+  LocalTransform:
+    position: {x: -4.000000, y: 10.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 2.000000, y: 2.000000, z: 2.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 80ab5bf8-652b-4448-9624-30576b220398
 - !<SceneObject/cd90a10f-d23d-4617-9283-79b87bc15857>
   PrefabRemaps:
     []
@@ -149,6 +240,21 @@
   Components:
     - !<own> 64378c9f-43a6-4203-93eb-d0153f8a5e9a
     - !<own> f0fe2733-b207-4c1e-aa95-9d1ab832be31
+- !<SceneObject/ead221a1-3d6a-4813-8cb7-dd247e8da9ef>
+  PrefabRemaps:
+    []
+  Name: Signal 2
+  Enabled: false
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 10.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 2.000000, y: 2.000000, z: 2.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 6b12c42f-3e17-48d0-9777-734d41a87f6c
 - !<AudioComponent/f0fe2733-b207-4c1e-aa95-9d1ab832be31>
   PrefabRemaps:
     []
