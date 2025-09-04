@@ -4662,7 +4662,7 @@
   LocalTransform:
     position: {x: -55.186234, y: 22.644199, z: -345.722290}
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 10.000000, y: 10.000000, z: 10.000000}
+    scale: {x: 5.000000, y: 5.000000, z: 5.000000}
     hasSegmentScaleCompensation: false
   Children:
     []
@@ -4962,7 +4962,7 @@
   LocalTransform:
     position: {x: 6.117104, y: 2.055915, z: -345.722260}
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 10.322134, y: 10.322134, z: 10.322134}
+    scale: {x: 5.000000, y: 5.000000, z: 5.000000}
     hasSegmentScaleCompensation: false
   Children:
     []
@@ -7187,8 +7187,8 @@
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
   Materials:
-    - !<reference> eb5ff50f-caaa-4c85-8411-727c0a425759
-  Mesh: !<reference> d5f6d0b8-d371-41db-ab8f-c858c6ed5adb
+    - !<reference> b36b2c4a-c5a2-4d1d-83bc-039c323b277a
+  Mesh: !<reference> 937d4f7c-aa08-4e4a-8e3f-032b648c329a
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
@@ -9999,7 +9999,7 @@
   PrefabRemaps:
     []
   Name: SIK Examples
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -11169,7 +11169,7 @@
   LocalTransform:
     position: {x: 50.919853, y: 22.644199, z: -345.722290}
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 10.000000, y: 10.000000, z: 10.000000}
+    scale: {x: 5.000000, y: 5.000000, z: 5.000000}
     hasSegmentScaleCompensation: false
   Children:
     []
@@ -11191,8 +11191,8 @@
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
   Materials:
-    - !<reference> eb5ff50f-caaa-4c85-8411-727c0a425759
-  Mesh: !<reference> d5f6d0b8-d371-41db-ab8f-c858c6ed5adb
+    - !<reference> b36b2c4a-c5a2-4d1d-83bc-039c323b277a
+  Mesh: !<reference> 937d4f7c-aa08-4e4a-8e3f-032b648c329a
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
@@ -20409,8 +20409,8 @@
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
   Materials:
-    - !<reference> eb5ff50f-caaa-4c85-8411-727c0a425759
-  Mesh: !<reference> d5f6d0b8-d371-41db-ab8f-c858c6ed5adb
+    - !<reference> b36b2c4a-c5a2-4d1d-83bc-039c323b277a
+  Mesh: !<reference> 937d4f7c-aa08-4e4a-8e3f-032b648c329a
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
@@ -22813,8 +22813,8 @@
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
   Materials:
-    - !<reference> eb5ff50f-caaa-4c85-8411-727c0a425759
-  Mesh: !<reference> d5f6d0b8-d371-41db-ab8f-c858c6ed5adb
+    - !<reference> b36b2c4a-c5a2-4d1d-83bc-039c323b277a
+  Mesh: !<reference> 937d4f7c-aa08-4e4a-8e3f-032b648c329a
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
@@ -26424,7 +26424,7 @@
   LocalTransform:
     position: {x: 139.963455, y: 2.000000, z: -345.722290}
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 10.322100, y: 10.322100, z: 10.322100}
+    scale: {x: 5.000000, y: 5.000000, z: 5.000000}
     hasSegmentScaleCompensation: false
   Children:
     []
@@ -26694,8 +26694,8 @@
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
   Materials:
-    - !<reference> eb5ff50f-caaa-4c85-8411-727c0a425759
-  Mesh: !<reference> d5f6d0b8-d371-41db-ab8f-c858c6ed5adb
+    - !<reference> b36b2c4a-c5a2-4d1d-83bc-039c323b277a
+  Mesh: !<reference> 937d4f7c-aa08-4e4a-8e3f-032b648c329a
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
@@ -27064,7 +27064,7 @@
   LocalTransform:
     position: {x: 2.426393, y: 0.902054, z: -442.962280}
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 10.000000, y: 10.000000, z: 10.000000}
+    scale: {x: 5.000000, y: 5.000000, z: 5.000000}
     hasSegmentScaleCompensation: false
   Children:
     []
@@ -29500,8 +29500,8 @@
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
   Materials:
-    - !<reference> eb5ff50f-caaa-4c85-8411-727c0a425759
-  Mesh: !<reference> d5f6d0b8-d371-41db-ab8f-c858c6ed5adb
+    - !<reference> b36b2c4a-c5a2-4d1d-83bc-039c323b277a
+  Mesh: !<reference> 937d4f7c-aa08-4e4a-8e3f-032b648c329a
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
@@ -30188,8 +30188,8 @@
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
   Materials:
-    - !<reference> eb5ff50f-caaa-4c85-8411-727c0a425759
-  Mesh: !<reference> d5f6d0b8-d371-41db-ab8f-c858c6ed5adb
+    - !<reference> b36b2c4a-c5a2-4d1d-83bc-039c323b277a
+  Mesh: !<reference> 937d4f7c-aa08-4e4a-8e3f-032b648c329a
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
@@ -30609,7 +30609,7 @@
   LocalTransform:
     position: {x: 117.434311, y: 22.644199, z: -715.401001}
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 10.000000, y: 10.000000, z: 10.000000}
+    scale: {x: 5.000000, y: 5.000000, z: 5.000000}
     hasSegmentScaleCompensation: false
   Children:
     []
@@ -31414,7 +31414,7 @@
   LocalTransform:
     position: {x: -111.658661, y: 2.000000, z: -345.722290}
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 10.322100, y: 10.322100, z: 10.322100}
+    scale: {x: 7.000000, y: 7.000000, z: 7.000000}
     hasSegmentScaleCompensation: false
   Children:
     []
